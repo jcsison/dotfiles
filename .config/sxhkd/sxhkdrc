@@ -1,0 +1,305 @@
+#!/bin/sh
+
+############################
+# Acer C720 Convenience Keys
+############################
+# Make up for useful keys that aren't on this small keyboard
+alt + BackSpace
+  xvkbd -xsendevent -text '\[Delete]' &> /dev/null
+alt + comma
+  xvkbd -xsendevent -text "\[Prior]" &> /dev/null
+alt + period
+  xvkbd -xsendevent -text "\[Next]" &> /dev/null
+ctrl + comma
+  xvkbd -xsendevent -text '\[Home]' &> /dev/null
+ctrl + period
+  xvkbd -xsendevent -text '\[End]' &> /dev/null
+{XF86PowerOff}
+  xvkbd -xsenedvent -text '\[Delete]' &> /dev/null
+# super + {XF86PowerOff}
+  # slimlock
+
+#########################
+# Acer C720 Function Keys
+#########################
+# Desktop/window cycling #
+# Cycle desktops
+# F1
+#	bspc desktop --focus prev
+# Cycle monitors
+# super + F1
+#	bspc monitor --focus prev
+# Move the desktop to the previous monitor
+# shift + super + F1
+#   bspc desktop --to-monitor prev;\
+#   ~/.config/bspwm/scripts/renumber_desktops.sh
+# Move the window to the desktop to the left and also remove the current desktop if it's empty after moving.
+# alt + F1
+# 	bspc window --to-desktop prev;\
+# 	~/.config/bspwm/scripts/remove_desktop.sh
+# Move the window to the previous monitor and also remove the current desktop if it's empty after moving.
+# alt + super + F1
+#   bspc window --to-monitor prev;\
+#   ~/.config/bspwm/scripts/remove_desktop.sh
+# Cycle desktops in reverse
+#   F2
+super + period
+  bspc desktop --focus next
+# Cycle monitors in reverse
+##super + F2
+super + comma
+  bspc desktop --focus prev
+# Move the desktop to the next monitor
+#shift + super + F2
+#  bspc desktop --to-monitor next;\
+#  ~/.config/bspwm/scripts/renumber_desktops.sh
+# Move the window to the desktop to the right and also remove the current desktop if it's empty after moving.
+#alt + F2
+#	bspc window --to-desktop next;\
+#	~/.config/bspwm/scripts/remove_desktop.sh
+# Move the window to the next monitor and also remove the current desktop if it's empty after moving.
+##alt + super + F2
+##  bspc window --to-monitor next;\
+##  ~/.config/bspwm/scripts/remove_desktop.sh
+
+# Desktop splitting #
+# Flip the desktop window tree
+{super,super + shift} + F3
+  bspc node @focused:/ --flip {vertical,horizontal}
+# Rotate the desktop window tree
+super + {ctrl,alt} + F3
+  bspc node @focused:/ --rotate {270,90}
+
+# Maximization #
+# Toggle monocle/tiled
+F4
+  bspc desktop --layout next
+# Toggle fullscreen
+super + F4
+  bspc node -t ~fullscreen
+# Toggle display of windows
+alt + F4
+  bspc node @focused:/ --flag hidden
+
+# Desktop management #
+# Make a new desktop and switch to it
+# super + F5
+  # ~/.config/bspwm/scripts/add_desktop.sh;\
+  # bspc desktop --focus next.free
+# Move the current window onto a new desktop in the background
+##super + F5
+##	~/.config/bspwm/scripts/add_desktop.sh;\
+##	bspc window --to-desktop next.free
+# Move the current window onto a new desktop and switch to it
+##alt + F5
+##	~/.config/bspwm/scripts/add_desktop.sh;\
+##	bspc window --to-desktop next.free;\
+##	bspc window --focus last
+
+# Backlight#
+# Adjust backlight
+{F6,F7}
+  brightness {down,up}
+# Fine adjust backlight
+# ctrl + {F6,F7}
+  # brightness {down,up}
+
+# Volume #
+# Toggle mute/unmute volume
+F8
+  amixer -D cras set Master toggle
+super + F8
+  mpc toggle
+alt + F8
+  mpc stop
+ctrl + F8
+  mpc play
+# Adjust volume
+{F9,F10}
+  amixer -D cras set Master 5{-,+} unmute
+# Fine adjust volume
+ctrl + {F9,F10}
+  amixer -D cras set Master 1{-,+} unmute
+
+# Power
+# Show logout menu
+# {XF86PowerOff}
+#	pkill -x oblogout; oblogout
+
+###############
+# bspwm hotkeys
+###############
+# Window & Desktop management #
+# Close the current window, and also remove the current desktop after closing (if possible).
+# super + alt + c
+  # bspc node --close;\
+  # sleep 0.1;\
+  # ~/.config/bspwm/scripts/remove_desktop.sh
+# Close the current window without removing the current desktop
+super + {_, shift +}c
+  bspc node --{close,kill}
+# Move a window to a desktop, and remove the current desktop after closing (if possible).
+super + shift + {1-9,0}
+  bspc node --to-desktop ^{1-9,10}
+#  ~/.config/bspwm/scripts/remove_desktop.sh
+
+# Window & Desktop switching #
+# Jump to a desktop
+super + {1-9,0}
+  bspc desktop --focus ^{1-9,10}
+# Focus windows through the focusing history
+##  super + {q,e}
+##  bspc control --record-history off;\
+##  bspc window --focus {older,newer};\
+##  bspc control --record-history on
+# Focus the last desktop/window
+##  super + {Tab,grave}
+##	bspc {window,desktop} --focus last
+# Swap with the last desktop
+##  alt + grave
+##  bspc desktop --swap last;\
+##  ~/.config/bspwm/scripts/renumber_desktops.sh
+# Swap with the last window
+alt + Tab
+  bspc node --focus next.local
+alt + grave
+  bspc node --focus prev.local
+# Swap with the biggest window on the current desktop
+super + Tab
+  bspc node --swap last
+# Focus windows by direction
+super + {Left,Down,Up,Right}
+  bspc node --focus {west,south,north,east}
+# Swap windows by direction
+##super + alt + {h,j,k,l}
+##	bspc window --swap {left,down,up,right}
+
+# Special windows #
+# Change window state
+super + {t,f}
+  bspc node -t {tiled,floating}
+
+
+# Desktop splitting #
+# Adjust splitting ratio
+super + alt + {z,x,c,v,b}
+  bspc config -d focused split_ratio {0.299,0.3947,0.5,0.585,0.68012};\
+  bspc node @focused:/ --equalize
+# super + grave
+#   bspc node --ratio 0.50;\
+#   bspc node --equalize
+# Move the specified edge outwards
+shift + super + {Left,Down,Up,Right}
+  bspc node --resize {left -50 0,bottom 0 +50,top 0 -50,right +50 0}
+# Move the specified edge inwards
+shift + super + alt + {Right,Up,Down,Left}
+  bspc node --resize {left +50 0,bottom 0 -50,top 0 +50,right -50 0}
+# Circulate windows
+shift + super + {comma,period}
+  bspc node @focused:/ --circulate {backward,forward}
+
+shift + super + ctrl + {Left,Down,Up,Right}
+  bspc node --resize {left -25 0,bottom 0 +25,top 0 -25,right +25 0}
+shift + super + alt + ctrl + {Right,Up,Down,Left}
+  bspc node --resize {left +25 0,bottom 0 -25,top 0 +25,right -25 0}
+# super + alt + grave
+#  bspc config -d focused split_ratio 0.35;\
+#  bspc desktop --equalize
+
+# Manual splitting mode...I can't find much utility for this right now #
+# Preselect a region for the next window
+#super + ctrl + {h,j,k,l}
+#	bspc window -p {left,down,up,right}
+# Adjust region size for the next window
+#super + ctrl + {1-9}
+#	bspc window -r 0.{1-9}
+# No idea what this is useful for
+#super + y
+#	bspc window -w last.manual
+
+# Mouse #
+# Focus the window that was just clicked, and send the click to that window too
+#~button1
+#	bspc pointer --grab focus
+# Window/edge dragging
+#super + button{1,3}
+#	bspc pointer --grab {move,resize_side}
+#super + !button{1-3}
+#	bspc pointer -t %i %i
+#super + @button{1-3}
+#	bspc pointer -u
+
+# Eye candy #
+# Window gap
+super + {minus,equal}
+  bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 5 ))
+
+#################
+# Launch programs
+#################
+# Launch terminator
+super + Return
+  urxvt
+# Launch thunar
+alt + Return
+  thunar
+# Launch dmenu
+alt + space
+  galculator
+# Launch dwb
+# super + {space,r}
+  # dmenu_launch
+Print
+  scrot ~/pictures/screenshots/$(date +%F-%S).png
+# Reload the autorandr profile and restart sxhkd
+super + Escape
+  # autorandr --change;
+  pkill -USR1 -x sxhkd
+
+super + a
+  bspc node --focus next.free
+
+super + alt + {7-9,0}
+  size={0,20,40,60};\
+  bspc config top_padding "$(($size+20))";\
+  bspc config bottom_padding "$size";\
+  bspc config left_padding "$size";\
+  bspc config right_padding "$size"
+
+super + grave
+  bspc config -d focused split_ratio 0.5;\
+  bspc node @focused:/ --equalize;\
+  bspc config -d focused window_gap 40;\
+  bspc config top_padding 30;\
+  bspc config bottom_padding 15;\
+  bspc config left_padding 15;\
+  bspc config right_padding 15
+
+super + {_,shift +}i
+  insert={true,false};\
+  $insert && bspc node -i || \
+  for win in `bspc query -N -n .leaf.\!window.local`; do bspc node $win -k; done;
+
+# F5
+  # notify-send -t 15000 "$(fortune)"
+
+F1
+  bspc desktop --focus prev
+
+F2
+  bspc desktop --focus next
+
+super + ctrl + {Left,Down,Up,Right}
+  bspc node -v {-20 0,0 20,0 -20,20 0}
+
+super + {space,r}
+  rofi -show run -color-window "#273238, #273238, #1e2529" -color-normal "#273238, #c1c1c1, #273238, #394249, #ffffff" -color-active "#273238, #80cbc4, #273238, #394249, #80cbc4" -color-urgent "#273238, #ff1844, #273238, #394249, #ff1844" -font "Cousine 11" -lines 5 -width 25
+
+# super + {_,alt + }{1-9,0}
+#   kind={desktop,monitor}; \
+#   item="^{1-9,10}"; \
+#   bspc query --"$kind"s --"$kind" "$\{item\}.focused" > /dev/null && item=last; \
+#   bspc "$kind" -f "$item"
+
+super + b
+  bspc node @/ -B

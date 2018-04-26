@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "urxvt\nfirefox\nsubl\nthunar\nditch\nqbittorrent\ntrackma-gtk\nevince\nfbreader\nahoviewer\noregano\nskype\nshutter\natom\ngimp\nsoundnode" | sort -u | dmenu "$@" -h 20 | ${SHELL:-"/bin/bash"} &

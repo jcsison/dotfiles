@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ -e ~/Downloads/subtitles ]
+   then
+       echo "==== ~/Downloads/subtitles directory already exists ===="
+   else
+       echo "==== Creating ~/Downloads/subtitles ===="
+       mkdir ~/Downloads/subtitles
+fi
+
+echo "==== Extracting subtitles ===="
+find . -type f -name "*.mkv" -print0 | while IFS= read -r -d '' file
+do
+    home=~
+    subid=$(mkvmerge -i "$file" | grep -m 1 subtitles | awk -F" " '{print $3}')
+    # echo mkvextract tracks "$file" "$subid$home/Downloads/subtitles/$(echo "$file" | awk -F"./" '{print $2}' | awk -F".mkv" '{print $1}').srt"
+    mkvextract tracks "$file" "$subid$home/Downloads/subtitles/$(echo "$file" | awk -F"./" '{print $2}' | awk -F".mkv" '{print $1}').srt"
+done

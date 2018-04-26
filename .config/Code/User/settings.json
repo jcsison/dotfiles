@@ -1,0 +1,90 @@
+{
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.cursorBlinking": "solid",
+    "editor.fontFamily": "'Cousine', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.wordWrap": "on",
+    "extensions.ignoreRecommendations": true,
+    "files.insertFinalNewline": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.statusBar.feedback.visible": false,
+
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-shell-escape",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-shell-escape",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.latex.autoBuild.onSave.enabled": false,
+    "latex-workshop.message.error.show": false,
+    "latex-workshop.message.warning.show": false,
+    "latex-workshop.view.pdf.external.command": {
+        "command": "okular",
+        "args": [
+            "%PDF%"
+        ]
+    },
+    "latex-workshop.view.pdf.external.synctex": {
+        "command": "okular",
+        "args": [
+            "%LINE%",
+            "%PDF%",
+            "%TEX%"
+        ]
+    },
+}

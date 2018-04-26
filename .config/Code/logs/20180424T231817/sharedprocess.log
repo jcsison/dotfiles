@@ -1,0 +1,208 @@
+[2018-04-24 23:18:19.959] [sharedprocess] [info] main {"machineId":"573a42d5eb64b8063a84c3d0f8a3afba8fe5124752eb548e5d6256ccc2dcc749"}
+[2018-04-24 23:18:20.042] [sharedprocess] [info] Scanned user extensions: 0
+[2018-04-24 23:18:20.204] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:18:26.794] [sharedprocess] [info] Scanned user extensions: 0
+[2018-04-24 23:18:26.815] [sharedprocess] [info] Scanned user extensions: 0
+[2018-04-24 23:18:26.851] [sharedprocess] [info] Scanned user extensions: 0
+[2018-04-24 23:18:27.251] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:18:27.265] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:18:28.847] [sharedprocess] [info] Scanned user extensions: 0
+[2018-04-24 23:18:59.987] [sharedprocess] [info] Starting to clean up unused language packs.
+[2018-04-24 23:23:28.869] [sharedprocess] [info] Scanned user extensions: 0
+[2018-04-24 23:24:44.138] [sharedprocess] [info] Scanned user extensions: 0
+[2018-04-24 23:24:44.267] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:24:44.585] [sharedprocess] [info] Installing extension: vim
+[2018-04-24 23:24:46.256] [sharedprocess] [info] Downloaded extension: vim
+[2018-04-24 23:24:52.573] [sharedprocess] [info] Extracted extension to /home/chieri/.vscode/extensions/.vscodevim.vim-0.11.5: vscodevim.vim-0.11.5
+[2018-04-24 23:24:52.574] [sharedprocess] [info] Renamed to /home/chieri/.vscode/extensions/vscodevim.vim-0.11.5
+[2018-04-24 23:24:52.575] [sharedprocess] [info] Installation completed. vscodevim.vim-0.11.5
+[2018-04-24 23:24:52.637] [sharedprocess] [info] Extensions installed successfully: vscodevim.vim
+[2018-04-24 23:24:52.867] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:24:52.869] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:24:52.961] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:24:53.027] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:24:53.075] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:24:53.131] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:24:53.178] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:24:53.555] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:24:53.564] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:24:53.588] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:24:53.600] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:24:53.616] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:24:53.627] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:24:53.632] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:25:34.634] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:25:34.660] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:25:34.662] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:25:34.926] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:25:34.945] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:27:12.913] [sharedprocess] [info] Installing extension: linux-themes
+[2018-04-24 23:27:13.597] [sharedprocess] [info] Downloaded extension: linux-themes
+[2018-04-24 23:27:14.174] [sharedprocess] [info] Extracted extension to /home/chieri/.vscode/extensions/.SolarLiner.linux-themes-1.0.1: SolarLiner.linux-themes-1.0.1
+[2018-04-24 23:27:14.174] [sharedprocess] [info] Renamed to /home/chieri/.vscode/extensions/SolarLiner.linux-themes-1.0.1
+[2018-04-24 23:27:14.174] [sharedprocess] [info] Installation completed. SolarLiner.linux-themes-1.0.1
+[2018-04-24 23:27:14.195] [sharedprocess] [info] Extensions installed successfully: SolarLiner.linux-themes
+[2018-04-24 23:27:14.473] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:27:14.706] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:27:22.968] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:27:22.970] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:27:23.009] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:27:23.145] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:27:23.159] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:27:23.261] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:27:23.283] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:27:24.093] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:27:24.122] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:27:24.165] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:27:24.197] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:27:24.240] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:27:26.767] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:29:28.367] [sharedprocess] [info] Installing extension: nord-visual-studio-code
+[2018-04-24 23:29:28.839] [sharedprocess] [info] Downloaded extension: nord-visual-studio-code
+[2018-04-24 23:29:28.964] [sharedprocess] [info] Extracted extension to /home/chieri/.vscode/extensions/.arcticicestudio.nord-visual-studio-code-0.6.0: arcticicestudio.nord-visual-studio-code-0.6.0
+[2018-04-24 23:29:28.966] [sharedprocess] [info] Renamed to /home/chieri/.vscode/extensions/arcticicestudio.nord-visual-studio-code-0.6.0
+[2018-04-24 23:29:28.966] [sharedprocess] [info] Installation completed. arcticicestudio.nord-visual-studio-code-0.6.0
+[2018-04-24 23:29:28.999] [sharedprocess] [info] Extensions installed successfully: arcticicestudio.nord-visual-studio-code
+[2018-04-24 23:29:29.497] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:29:29.641] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:29:36.292] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:29:36.304] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:29:36.327] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:29:36.484] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:29:36.508] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:29:36.637] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:29:36.668] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:29:37.214] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:29:37.247] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:29:37.281] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:29:37.318] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:29:37.344] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:29:40.471] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:34:07.080] [sharedprocess] [info] Installing extension: Theme-TomorrowKit
+[2018-04-24 23:34:07.778] [sharedprocess] [info] Downloaded extension: Theme-TomorrowKit
+[2018-04-24 23:34:07.987] [sharedprocess] [info] Extracted extension to /home/chieri/.vscode/extensions/.ms-vscode.theme-tomorrowkit-0.1.4: ms-vscode.theme-tomorrowkit-0.1.4
+[2018-04-24 23:34:07.988] [sharedprocess] [info] Renamed to /home/chieri/.vscode/extensions/ms-vscode.theme-tomorrowkit-0.1.4
+[2018-04-24 23:34:07.991] [sharedprocess] [info] Installation completed. ms-vscode.theme-tomorrowkit-0.1.4
+[2018-04-24 23:34:08.017] [sharedprocess] [info] Extensions installed successfully: ms-vscode.theme-tomorrowkit
+[2018-04-24 23:34:08.566] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:34:08.693] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:34:15.257] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:34:15.298] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:34:15.377] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:34:15.539] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:34:15.552] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:34:15.677] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:34:15.727] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:34:16.111] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:34:16.123] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:34:16.130] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:34:16.141] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:34:16.149] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:34:19.241] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:35:22.620] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:35:22.628] [sharedprocess] [info] Uninstalling extension: ms-vscode.theme-tomorrowkit-0.1.4
+[2018-04-24 23:35:22.629] [sharedprocess] [info] Requesting for confirmation to uninstall extension ms-vscode.theme-tomorrowkit-0.1.4
+[2018-04-24 23:35:22.630] [sharedprocess] [info] Routing dialog request to the client window:1
+[2018-04-24 23:35:24.742] [sharedprocess] [info] Scanned user extensions: 4
+[2018-04-24 23:35:24.781] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode.theme-tomorrowkit-0.1.4
+[2018-04-24 23:35:25.379] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:35:25.469] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:35:36.423] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:35:36.424] [sharedprocess] [info] Uninstalling extension: SolarLiner.linux-themes-1.0.1
+[2018-04-24 23:35:36.425] [sharedprocess] [info] Requesting for confirmation to uninstall extension SolarLiner.linux-themes-1.0.1
+[2018-04-24 23:35:36.425] [sharedprocess] [info] Routing dialog request to the client window:1
+[2018-04-24 23:35:38.337] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:35:38.343] [sharedprocess] [info] Successfully uninstalled extension: SolarLiner.linux-themes-1.0.1
+[2018-04-24 23:35:38.686] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:35:38.759] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:35:43.382] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:35:43.386] [sharedprocess] [info] Uninstalling extension: arcticicestudio.nord-visual-studio-code-0.6.0
+[2018-04-24 23:35:43.386] [sharedprocess] [info] Requesting for confirmation to uninstall extension arcticicestudio.nord-visual-studio-code-0.6.0
+[2018-04-24 23:35:43.387] [sharedprocess] [info] Routing dialog request to the client window:1
+[2018-04-24 23:35:45.372] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:35:45.392] [sharedprocess] [info] Successfully uninstalled extension: arcticicestudio.nord-visual-studio-code-0.6.0
+[2018-04-24 23:35:45.976] [sharedprocess] [info] Scanned user extensions: 1
+[2018-04-24 23:35:46.216] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:36:19.396] [sharedprocess] [info] Installing extension: Material-theme
+[2018-04-24 23:36:20.095] [sharedprocess] [info] Downloaded extension: Material-theme
+[2018-04-24 23:36:20.343] [sharedprocess] [info] Extracted extension to /home/chieri/.vscode/extensions/.zhuangtongfa.material-theme-2.13.4: zhuangtongfa.material-theme-2.13.4
+[2018-04-24 23:36:20.343] [sharedprocess] [info] Renamed to /home/chieri/.vscode/extensions/zhuangtongfa.material-theme-2.13.4
+[2018-04-24 23:36:20.343] [sharedprocess] [info] Installation completed. zhuangtongfa.material-theme-2.13.4
+[2018-04-24 23:36:20.368] [sharedprocess] [info] Extensions installed successfully: zhuangtongfa.material-theme
+[2018-04-24 23:36:20.733] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:36:20.798] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:38:32.928] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:38:33.155] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:38:33.524] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:38:33.935] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:38:33.986] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:38:34.010] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:38:34.191] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:38:34.197] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:38:34.216] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:38:34.222] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:38:34.247] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:38:34.284] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:38:38.532] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:43:38.596] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:48:24.352] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:48:24.428] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:25.074] [sharedprocess] [info] Installing extension: atom-keybindings
+[2018-04-24 23:48:25.896] [sharedprocess] [info] Downloaded extension: atom-keybindings
+[2018-04-24 23:48:26.017] [sharedprocess] [info] Extracted extension to /home/chieri/.vscode/extensions/.ms-vscode.atom-keybindings-3.0.4: ms-vscode.atom-keybindings-3.0.4
+[2018-04-24 23:48:26.018] [sharedprocess] [info] Renamed to /home/chieri/.vscode/extensions/ms-vscode.atom-keybindings-3.0.4
+[2018-04-24 23:48:26.018] [sharedprocess] [info] Installation completed. ms-vscode.atom-keybindings-3.0.4
+[2018-04-24 23:48:26.032] [sharedprocess] [info] Extensions installed successfully: ms-vscode.atom-keybindings
+[2018-04-24 23:48:26.349] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:26.417] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:26.471] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:26.509] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:26.524] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:26.538] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:27.514] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:27.663] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:27.779] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:27.865] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:27.907] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:27.930] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:38.623] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:54.176] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:54.412] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:54.711] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:54.833] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:54.847] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:54.873] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:54.890] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:54.916] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:54.920] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:48:54.944] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:54.968] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:54.990] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:48:59.015] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:49:07.879] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:49:07.880] [sharedprocess] [info] Uninstalling extension: ms-vscode.atom-keybindings-3.0.4
+[2018-04-24 23:49:07.880] [sharedprocess] [info] Requesting for confirmation to uninstall extension ms-vscode.atom-keybindings-3.0.4
+[2018-04-24 23:49:07.880] [sharedprocess] [info] Routing dialog request to the client window:1
+[2018-04-24 23:49:09.652] [sharedprocess] [info] Scanned user extensions: 3
+[2018-04-24 23:49:09.683] [sharedprocess] [info] Successfully uninstalled extension: ms-vscode.atom-keybindings-3.0.4
+[2018-04-24 23:49:09.943] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:09.986] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:10.091] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:10.105] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:14.192] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:14.235] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:14.295] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:14.305] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:20.454] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:20.682] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:20.988] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:21.288] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:21.340] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:21.371] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:21.427] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:21.465] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:21.479] [sharedprocess] [info] Scanned system extensions: 69
+[2018-04-24 23:49:21.540] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:21.560] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:21.579] [sharedprocess] [info] Scanned user extensions: 2
+[2018-04-24 23:49:25.402] [sharedprocess] [info] Scanned user extensions: 2

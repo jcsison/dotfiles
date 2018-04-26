@@ -1,0 +1,240 @@
+servers = (
+  {
+    address = "rizonbnc.us.rizon.net";
+    chatnet = "rizonbnc";
+    port = "12345";
+    password = "";
+    use_ssl = "yes";
+    ssl_verify = "no";
+    autoconnect = "no";
+  },
+  {
+    address = "irc.chat.twitch.tv";
+    chatnet = "twitch";
+    port = "6667";
+    password = "oauth:v6tx62vua942vkag8duunrbslnkxth";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "no";
+  },
+  {
+    address = "irc.rizon.net";
+    chatnet = "rizon";
+    port = "6667";
+    use_ssl = "no";
+    ssl_verify = "no";
+    autoconnect = "no";
+  }
+);
+
+chatnets = {
+  twitch = { type = "IRC"; nick = "ayece"; };
+  rizonbnc = { type = "IRC"; };
+  rizon = {
+    type = "IRC";
+    autosendcmd = "/msg NickServ IDENTIFY pitchdark";
+  };
+};
+
+channels = (
+  { name = "#ayece"; chatnet = "twitch"; autojoin = "yes"; }
+);
+
+aliases = {
+  J = "join";
+  WJOIN = "join -window";
+  WQUERY = "query -window";
+  LEAVE = "part";
+  BYE = "quit";
+  EXIT = "quit";
+  SIGNOFF = "quit";
+  DESCRIBE = "action";
+  DATE = "time";
+  HOST = "userhost";
+  LAST = "lastlog";
+  SAY = "msg *";
+  WI = "whois";
+  WII = "whois $0 $0";
+  WW = "whowas";
+  W = "who";
+  N = "names";
+  M = "msg";
+  T = "topic";
+  C = "clear";
+  CL = "clear";
+  K = "kick";
+  KB = "kickban";
+  KN = "knockout";
+  BANS = "ban";
+  B = "ban";
+  MUB = "unban *";
+  UB = "unban";
+  IG = "ignore";
+  UNIG = "unignore";
+  SB = "scrollback";
+  UMODE = "mode $N";
+  WC = "window close";
+  WN = "window new hide";
+  GOTO = "sb goto";
+  CHAT = "dcc chat";
+  RUN = "SCRIPT LOAD";
+  SBAR = "STATUSBAR";
+  INVITELIST = "mode $C +I";
+  Q = "QUERY";
+  EXEMPTLIST = "mode $C +e";
+  ATAG = "WINDOW SERVER";
+  UNSET = "set -clear";
+  RESET = "set -default";
+};
+
+statusbar = {
+  # formats:
+  # when using {templates}, the template is shown only if it's argument isn't
+  # empty unless no argument is given. for example {sb} is printed always,
+  # but {sb $T} is printed only if $T isn't empty.
+
+  items = {
+    barstart = "{sbstart}";
+    barend = "{sbend}";
+    topicbarstart = "{topicsbstart}";
+    topicbarend = "{topicsbend}";
+    time = "{sb {sbtime $Z}{sbaway $A}}";
+    channel = "{sb {sbchan $C}{sbmode $M}}";
+    prompt = "{prompt $[.15]itemname}";
+    prompt_empty = "{prompt $winname}";
+    topic = "{sb $topic}";
+    act = "$*";
+  };
+
+  # there's two type of statusbars. root statusbars are either at the top
+  # of the screen or at the bottom of the screen. window statusbars are at
+  # the top/bottom of each split window in screen.
+  default = {
+    # the "default statusbar" to be displayed at the bottom of the window.
+    # contains all the normal items.
+
+    # we treat input line as yet another statusbar :) It's possible to
+    # add other items before or after the input line item.
+    prompt = {
+      type = "root";
+      placement = "bottom";
+      # we want to be at the bottom always
+      position = "100";
+      visible = "always";
+      items = {
+        prompt = { priority = "-1"; };
+        prompt_empty = { priority = "-1"; };
+        # treated specially, this is the real input line.
+        input = { priority = "10"; };
+      };
+    };
+
+    # topicbar
+    topic = {
+      type = "root";
+      placement = "top";
+      position = "1";
+      items = {
+        topicbarstart = { priority = "100"; };
+        topic = { };
+        topic_empty = { };
+        topicbarend = { priority = "100"; alignment = "right"; };
+      };
+      disabled = "yes";
+    };
+    dccstat = {
+      placement = "top";
+      position = "3";
+      items = { dccstat = { priority = "100"; }; };
+      disabled = "yes";
+    };
+    window = {
+      items = {
+        barstart = { priority = "100"; };
+        channel = { };
+        usercount = { };
+        chanact = { alignment = "right"; };
+        more = { priority = "-1"; alignment = "right"; };
+        barend = { priority = "100"; alignment = "right"; };
+      };
+      position = "100";
+      placement = "top";
+    };
+  };
+};
+settings = {
+  core = {
+    real_name = "Unknown";
+    user_name = "chieri";
+    nick = "chieri";
+    timestamp_format = "%H:%M:%S";
+  };
+  "fe-text" = { actlist_sort = "refnum"; indent_always = "no"; };
+  "perl/core/scripts" = {
+    awl_display_key = "%R$Q%K|%n$H$C$S";
+    awl_block = "12";
+    neat_melength = "12";
+    neat_maxlength = "12";
+    awl_maxlines = "2";
+    awl_placement = "bottom";
+    awl_position = "0";
+    awl_automode = "emulate_lightbar";
+    awl_all_disable = "yes";
+    awl_hide_data = "1";
+    awl_prefer_name = "yes";
+    awl_custom_sb = "yes";
+    nicklist_automode = "fifo";
+    nicklist_width = "14";
+    autoaway_timeout = "900";
+    neat_right_mode = "no";
+    twtopic_size = "86";
+    twtopic_refresh = "150";
+    twtopic = "no";
+    neat_colors = "mMrRwgGcCbB";
+    neat_left_actions = "no";
+    neat_left_messages = "no";
+    neat_allow_shrinking = "no";
+    dccstat_cycle_through_transfers = "yes";
+    dccstat_refresh = "1";
+    dccstat_hide_sbar_when_inactive = "yes";
+    dccstat_filename_max_length = "34";
+    nicklist_height = "65";
+    title_string = "[$N@$tag]$.C";
+    chanact_display = "%r$N%K|%W$C";
+    chanact_filter = "2";
+    chanact_header = " ";
+    chanact_remove_hash = "no";
+    chanact_abbreviate_names = "6";
+    neat_colorize = "yes";
+    neat_ignorechars = "_`";
+    notify_icon = "/home/mokou/.irssi/scripts/notify-icon.png";
+    mg_next_delay = "5";
+    mg_no_transfer_delay = "60";
+    mg_dcc_closed_retry_delay = "10";
+    mg_transfer_confirmation_delay = "30";
+    mg_message_prefix = "xdcc send ";
+    dccmove_dir = "~/Anime";
+  };
+  "fe-common/core" = {
+    theme = "ahoka";
+    #bell_beeps = "yes";
+    beep_msg_level = "MSGS NOTICES INVITES DCC DCCMSGS HILIGHT";
+    hilight_color = "%Y";
+    activity_hide_level = "MODES";
+    completion_char = "";
+  };
+  "irc/dcc" = {
+    dcc_autoget = "yes";
+    dcc_autoresume = "yes";
+    dcc_download_path = "~/Downloads";
+  };
+  "irc/core" = { lag_max_before_disconnect = "300"; skip_motd = "yes"; };
+};
+keyboard = (
+  { key = "meta-[M"; id = "command"; data = "mouse_xterm "; }
+);
+logs = { };
+ignores = (
+  { level = "JOINS PARTS QUITS MODES"; channels = ( "#news" ); },
+  { level = "JOINS PARTS QUITS MODES"; channels = ( "#nibl" ); }
+);
