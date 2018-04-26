@@ -1,9 +1,13 @@
 .config/mimeapps.list
 .config/Trolltech.conf
+.mpd/mpd.log
 
 .config/ahoviewer/
 .config/Atom/
 .config/autostart/
+.config/Code/Cache*
+.config/Code/GPUCache/
+.config/Code/logs/
 .config/dconf/
 .config/discord/
 .config/galculator/

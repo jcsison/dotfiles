@@ -457,10 +457,11 @@
             }
         }
     },
-    "pickerWorkingDir": "/home/chieri",
+    "pickerWorkingDir": "/home/chieri/dotfiles",
     "openedPathsList": {
         "workspaces": [],
         "files": [
+            "/home/chieri/dotfiles/.bash_aliases",
             "/var/host/media/removable/horo/Projects/rescuedrone-ml/.gitignore",
             "/home/chieri/.bash_aliases",
             "/home/chieri/.xinitrc",
