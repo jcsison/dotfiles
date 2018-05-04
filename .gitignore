@@ -25,3 +25,5 @@
 .config/Thunar/
 .config/xfce4/
 .emacs.d/.cache/
+
+*.bak
