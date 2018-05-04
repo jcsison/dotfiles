@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "evil-exchange" "evil-exchange.el" (23265 25144
-;;;;;;  884800 215000))
-;;; Generated autoloads from evil-exchange.el
+;;;### (autoloads nil "evil-exchange" "../../../../.emacs.d/elpa/evil-exchange-20170510.1959/evil-exchange.el"
+;;;;;;  "4ed1fb0051be67d22510db43bd449ca4")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/evil-exchange-20170510.1959/evil-exchange.el
 
 (autoload 'evil-exchange "evil-exchange" "\
 Exchange two regions with evil motion." t)
@@ -24,6 +24,12 @@ Setting evil-exchange key bindings.
 Setting evil-exchange key bindings in a vim-compatible way
 
 \(fn)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/evil-exchange-20170510.1959/evil-exchange-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/evil-exchange-20170510.1959/evil-exchange.el")
+;;;;;;  (23267 20990 646016 665000))
 
 ;;;***
 

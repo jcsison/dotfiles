@@ -122,3 +122,5 @@ export PYTHONPATH=/home/chieri:/home/chieri/slim:/media/removable/horo/Projects/
 export GOPATH=/media/removable/horo/.go
 export QT_WEBKIT=true
 export QT_DIR=/media/removable/horo/bin/Qt
+export TEXMFHOME=~/.texmf
+export PATH=$PATH:$GOPATH/bin

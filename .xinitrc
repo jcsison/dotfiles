@@ -23,3 +23,4 @@ mpc stop
 sudo --user=chieri wmname LG3D
 sudo hostname clover
 exec bspwm
+

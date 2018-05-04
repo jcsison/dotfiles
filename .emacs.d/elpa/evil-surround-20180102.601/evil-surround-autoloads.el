@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "evil-surround" "evil-surround.el" (23265 25165
-;;;;;;  710799 488000))
-;;; Generated autoloads from evil-surround.el
+;;;### (autoloads nil "evil-surround" "../../../../.emacs.d/elpa/evil-surround-20180102.601/evil-surround.el"
+;;;;;;  "795fe61e4adcc1514b797abfcb399402")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/evil-surround-20180102.601/evil-surround.el
 
 (autoload 'evil-surround-delete "evil-surround" "\
 Delete the surrounding delimiters represented by CHAR.
@@ -58,6 +58,12 @@ Evil-Surround mode is enabled in all buffers where
 See `evil-surround-mode' for more information on Evil-Surround mode.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/evil-surround-20180102.601/evil-surround-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/evil-surround-20180102.601/evil-surround.el")
+;;;;;;  (23267 20988 498117 378000))
 
 ;;;***
 

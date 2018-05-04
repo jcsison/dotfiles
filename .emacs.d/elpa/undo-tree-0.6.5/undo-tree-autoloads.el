@@ -3,9 +3,9 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "undo-tree" "undo-tree.el" (23265 25127 155800
-;;;;;;  834000))
-;;; Generated autoloads from undo-tree.el
+;;;### (autoloads nil "undo-tree" "../../../../.emacs.d/elpa/undo-tree-0.6.5/undo-tree.el"
+;;;;;;  "694d9d2bb8e90b4b01ecf954d3b093da")
+;;; Generated autoloads from ../../../../.emacs.d/elpa/undo-tree-0.6.5/undo-tree.el
 
 (autoload 'undo-tree-mode "undo-tree" "\
 Toggle undo-tree mode.
@@ -47,6 +47,12 @@ Undo-Tree mode is enabled in all buffers where
 See `undo-tree-mode' for more information on Undo-Tree mode.
 
 \(fn &optional ARG)" t nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../.emacs.d/elpa/undo-tree-0.6.5/undo-tree-autoloads.el"
+;;;;;;  "../../../../.emacs.d/elpa/undo-tree-0.6.5/undo-tree.el")
+;;;;;;  (23267 20980 753675 600000))
 
 ;;;***
 
