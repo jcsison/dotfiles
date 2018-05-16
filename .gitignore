@@ -1,21 +1,22 @@
 .config/mimeapps.list
+.config/QtProject.conf
 .config/Trolltech.conf
 .mpd/mpd.log
+.mpd/state
 
 .bin/
 .config/ahoviewer/
 .config/autostart/
-.config/Code/Cache*
-.config/Code/GPUCache/
-.config/Code/logs/
+.config/cef_user_data/
+.config/Code/
 .config/dconf/
-.config/discord/
 .config/Electron
 .config/galculator/
 .config/gcloud/
 .config/htop/
 .config/inkscape/
 .config/matplotlib/
+.config/ModTheSpire/
 .config/mopidy/
 .config/neofetch/
 .config/NuGet/

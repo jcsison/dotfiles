@@ -1,0 +1,109 @@
+% <-- Default Commands --> %
+
+\RequirePackage[english]{babel}
+\RequirePackage[backend=biber,style=ieee,sorting=ynt]{biblatex}
+\RequirePackage[T1]{fontenc}
+\RequirePackage[hmargin=1in,top=1.2in,bottom=1in]{geometry}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[section]{minted}
+\RequirePackage[x11names]{xcolor}
+
+\RequirePackage{algpseudocode}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{array}
+\RequirePackage{booktabs}
+\RequirePackage{caption}
+\RequirePackage{csquotes}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{fancyvrb}
+\RequirePackage{fix-cm}
+\RequirePackage{graphicx}
+\RequirePackage{lastpage}
+\RequirePackage{lipsum}
+\RequirePackage{lmodern}
+\RequirePackage{lscape}
+\RequirePackage{makecell}
+\RequirePackage{microtype}
+\RequirePackage{multicol}
+\RequirePackage{ragged2e}
+\RequirePackage{setspace}
+\RequirePackage{siunitx}
+\RequirePackage{subcaption}
+\RequirePackage{tabularx}
+\RequirePackage{tikz}
+\RequirePackage{titlesec}
+\RequirePackage{tocloft}
+\RequirePackage{wrapfig}
+\RequirePackage{xintexpr}
+
+\renewcommand{\!}{\hspace*{0em}}
+\renewcommand{\-}{\vspace*{-0.5em}}
+\renewcommand{\_}{\vspace*{-1em}}
+\renewcommand{\;}{\vspace*{0.5em}}
+\renewcommand{\:}{\vspace*{1em}}
+\renewcommand{\|}{ $|$ }
+\renewcommand{\thesection}{\arabic{section}}
+\newcommand{\acenter[2]}{\begin{center}#2\end{center}}
+\newcommand{\aleft[2]}{\begin{flushleft}#2\end{flushleft}}
+\newcommand{\aright[2]}{\begin{flushright}#2\end{flushright}}
+\newcommand{\up[2]}{\ensuremath{\mathrm{#2}}}
+\newcommand{\hidesection[2]}{\phantomsection\addcontentsline{toc}{section}{#2}
+    \markboth{}{#2}\section*{#2}}
+\newcommand{\class}{}
+\newcommand{\name}{}
+\newcommand{\subtitle}{}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{Z}{>{\raggedleft\arraybackslash}X}
+\newenvironment{block}{\vspace*{-0.5\baselineskip}\list{}{\leftmargin=0em\rightmargin=0em %
+    \itemsep=0.5\baselineskip\parsep=0em\item\relax}}{\endlist\vspace*{0.75\baselineskip}}
+\newenvironment{subblock}{\vspace*{-0.5\baselineskip}\list{}{\leftmargin=1em\rightmargin=1em %
+    \itemsep=0.5\baselineskip\parsep=0em\item\relax}}{\endlist\vspace*{0.75\baselineskip}}
+\newenvironment{parblock}{\vspace*{-\baselineskip}\list{}{\leftmargin=0em %
+    \rightmargin=0em\itemindent=\parindent\itemsep=0em\parsep=0em} %
+    \item\relax}{\endlist\vspace*{0.25\baselineskip}}
+
+\addto\captionsenglish{\renewcommand{\contentsname}{\normalsize\!Table of Contents}}
+\captionsetup{labelformat=empty,labelsep=none}
+\graphicspath{{./images/}}
+\hypersetup{linktoc=all}
+\mathcode`@="8000{\catcode`\@=\active\gdef@{\mkern1mu}}
+\setenumerate[2]{label=\alph*)}
+\SetExtraKerning[unit=space]{encoding={*},family={bch},series={*}, %
+    size={footnotesize,small,normalsize}}{\textendash={400,400},"28={ ,150}, %
+    "29={150, },\textquotedblleft={ ,150},\textquotedblright={150, }}
+\setlength{\fboxsep}{0em}
+\setlength{\fboxrule}{0.04em}
+\setlength{\multicolsep}{0em}
+\setlist[description]{style=multiline,leftmargin=1em,rightmargin=1em}
+\setlist[enumerate]{leftmargin=2.4em,rightmargin=1em}
+\setlist[itemize]{labelsep=0.8em,leftmargin=2.4em,rightmargin=1em}
+\setminted{autogobble,breakindent=-11pt,breaklines,breaksymbolsep=1.2em, %
+    fontsize=\small,tabsize=4,xleftmargin=2em}
+\setstretch{1.2}
+\sisetup{bracket-unit-denominator=false,per-mode=symbol}
+\titlespacing{\section}{0em}{0em}{0em}
+\titlespacing{\subsection}{0em}{0em}{0em}
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\itshape}{\thesubsection}{1em}{}
+
+\renewcommand{\maketitle}{\begin{titlepage}\vspace*{\fill}\vspace*{-6em} %
+    \acenter{\LARGE~\title~\\[0.1em]\large~\subtitle~\\[3em]\small~\name~\\ %
+    ~\class~\\~\date~}\vspace*{\fill}\end{titlepage}}
+\newcommand{\makesmalltitle}{\thispagestyle{empty}\vspace*{-6em}\aright{\small %
+    ~\name~\\~\date~\\~\class~}\acenter{\large~\title~\\\normalsize~\subtitle~}}
+\newcommand{\makeheader}{\pagestyle{fancy}\lhead{\footnotesize\title} %
+    \rhead{\footnotesize\!Page~\thepage~of~\pageref{LastPage}}\cfoot{}}
+\newcommand{\makesecheader}{\pagestyle{fancy}\lhead{\footnotesize\nouppercase{\rightmark}} %
+    \rhead{\footnotesize\!Page~\thepage~of~\pageref{LastPage}}\cfoot{} %
+    \renewcommand{\sectionmark}[1]{\markright{\thesection\hspace*{1em}##1}}}
+\newcommand{\maketoc}{\setlength{\cftbeforetoctitleskip}{0em} %
+    \setlength{\cftaftertoctitleskip}{1em}\newpage %
+    \tableofcontents\thispagestyle{empty}\vspace*{\fill}\newpage}
+\newcommand{\makeref}{\newpage\thispagestyle{empty}\phantomsection\markboth{}{References} %
+    \nocite{*}\printbibliography[heading=subbibintoc,title={References}]\newpage}
