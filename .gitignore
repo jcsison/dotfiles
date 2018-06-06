@@ -2,6 +2,7 @@
 .config/QtProject.conf
 .config/Trolltech.conf
 .mpd/mpd.log
+.mpd/pid
 .mpd/state
 
 .bin/
