@@ -1,0 +1,95 @@
+snippet ifdef "#ifdef ... #endif"
+#ifdef ${1}
+	$0
+#endif // $1
+endsnippet
+
+snippet main "main() (main)"
+int main(int argc, char **argv)
+{
+	${VISUAL}${0}
+	return 0;
+}
+endsnippet
+
+snippet for "for loop (for)"
+for (${2:i} = 0; $2 < ${1:count}; ${3:++$2})
+{
+	${VISUAL}${0}
+}
+endsnippet
+
+snippet fori "for int loop (fori)"
+for (${4:int} ${2:i} = 0; $2 < ${1:count}; ${3:++$2})
+{
+	${VISUAL}${0}
+}
+endsnippet
+
+snippet cla "An entire .h generator" b
+#pragma once
+
+class ${1:`!v substitute(substitute(vim_snippets#Filename('$1','ClassName'),'^.','\u&',''), '_\(\w\)', '\u\1', 'g')`}
+{
+public:
+	$1(${2:args});
+	virtual ~$1();
+
+private:
+	${3:/* data */}
+};
+endsnippet
+
+snippet map "std::map (map)"
+std::map<${1:key}, ${2:value}> ${3:map};$0
+endsnippet
+
+snippet vector "std::vector (v)"
+std::vector<${1:char}> ${2:v};$0
+endsnippet
+
+snippet do
+do
+{
+	${2}
+}
+while (${1:/* condition */});
+endsnippet
+
+# switch
+snippet switch
+	switch (${1:/* variable */})
+	{
+		case ${2:/* variable case */}:
+			${3}
+			${4:break;}${5}
+		default:
+			${6}
+	}
+endsnippet
+
+# switch without default
+snippet switchndef
+	switch (${1:/* variable */})
+	{
+		case ${2:/* variable case */}:
+			${3}
+			${4:break;}${5}
+	}
+endsnippet
+
+snippet ns "namespace .. (namespace)"
+namespace${1/.+/ /m}${1:`!p snip.rv = snip.basename or "name"`}
+{
+	${VISUAL}${0}
+}
+endsnippet
+
+snippet copy "std::copy"
+std::copy(${1}.cbegin(), ${2}.cend(), std::ostream_iterator<${3:std::string}>(${4:std::cout}, ${5:"\n"}));
+endsnippet
+
+# #include <...>
+snippet inc
+#include <${1:iostream}>
+endsnippet

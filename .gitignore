@@ -26,6 +26,8 @@
 .config/qBittorrent/
 .config/Thunar/
 .config/xfce4/
+.config/VSCodium/
 .emacs.d/.cache/
+.vim/bundle/
 
 *.bak

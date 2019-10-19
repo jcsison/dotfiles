@@ -12,7 +12,7 @@ export TEXMFHOME=~/.texmf
 
 sxhkd &
 tint2 &
-trackma-gtk &
+# trackma-gtk &
 compton -b
 xrdb -merge /home/chieri/.config/urxvt/Xresources
 feh --bg-fill /home/chieri/dotfiles/utils/1524336084033.jpg

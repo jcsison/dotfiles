@@ -58,9 +58,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[01;34m\]\[\033[01;36m\]\u\[\033[01;34m\]@\[\033[01;36m\]\h\[\033[01;36m\] \[\033[01;32m\]\w \[\033[01;34m\]> \[\033[00m\]\$ '
+    PS1='\[\033[01;34m\]\[\033[01;36m\]\u\[\033[01;34m\]@\[\033[01;36m\]clover\[\033[01;36m\] \[\033[01;32m\]\w \[\033[01;34m\]> \[\033[00m\]\$ '
 else
-    PS1='\u@\h \w > \$ '
+    PS1='\u@clover \w > \$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -98,3 +98,6 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
     eval $(ssh-agent -s) &> /dev/null
     ssh-add &> /dev/null
 fi
+
+set -o vi
+

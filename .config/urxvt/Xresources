@@ -6,11 +6,9 @@ URxvt.scrollBar: false
 URxvt.colorUL: #0088CC
 
 ! URxvt-Perls ------------------------------------------------------
+URxvt.perl-lib:             /home/chieri/dotfiles/.config/urxvt/perls
 URxvt*altSendsEscape:       true
-URxvt.perl-ext-common:      default,clipboard,keyboard-select
-URxvt.keysym.M-c:           perl:clipboard:copy
-URxvt.keysym.M-v:           perl:clipboard:paste
-URxvt.keysym.M-C-v:         perl:clipboard:paste_escaped
+URxvt.perl-ext-common:      default,keyboard-select
 URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 
