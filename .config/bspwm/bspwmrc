@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # Padding
-bspc config top_padding 40
-bspc config bottom_padding 20
-bspc config left_padding 20
-bspc config right_padding 20
+bspc config top_padding 35
+bspc config bottom_padding 15
+bspc config left_padding 15
+bspc config right_padding 15
 
 # Borders and gaps
 bspc config border_width 1
