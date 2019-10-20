@@ -1,8 +1,0 @@
-(show-paren-mode +1)
-(column-number-mode +1)
-(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
-(setq delete-old-versions t)
-(global-set-key "\C-h" 'backward-delete-char)
-(global-set-key "\M-h" 'backward-kill-word)
-(setq x-select-enable-clipboard t)
-(fset 'yes-or-no-p 'y-or-n-p)
