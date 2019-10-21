@@ -29,5 +29,7 @@
 .config/VSCodium/
 .emacs.d/.cache/
 .vim/bundle/
+.vim/sessions
 
 *.bak
+*.uuid

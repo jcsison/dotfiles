@@ -22,5 +22,6 @@ xinput --set-prop 'Elan Touchpad' 'libinput Tapping Enabled' 1
 xinput --set-prop 'Elan Touchpad' 'libinput Horizontal Scroll Enabled' 0
 mpd
 mpc stop
+pulseaudio -D
 wmname LG3D
 exec bspwm
