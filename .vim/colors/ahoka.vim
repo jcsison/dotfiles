@@ -220,7 +220,7 @@ endif
 " Vim Highlighting: (see :help highlight-groups)"{{{
 " ----------------------------------------------------------------------------
 exe "hi! ColorColumn"   .s:fg_none        .s:bg_line        .s:fmt_none
-exe "hi! Conceal"       .s:fg_line       .s:bg_none        .s:fmt_none
+exe "hi! Conceal"       .s:fg_line        .s:bg_none        .s:fmt_none
 "       Cursor"
 "       CursorIM"
 exe "hi! CursorColumn"  .s:fg_none        .s:bg_line        .s:fmt_none

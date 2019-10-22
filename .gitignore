@@ -12,12 +12,8 @@
 .config/Code/
 .config/dconf/
 .config/Electron
-.config/galculator/
-.config/gcloud/
 .config/htop/
-.config/inkscape/
 .config/matplotlib/
-.config/ModTheSpire/
 .config/mopidy/
 .config/neofetch/
 .config/NuGet/

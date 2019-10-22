@@ -1,6 +1,7 @@
 set nocp
 filetype off
 
+" Plugins {{{
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -26,50 +27,37 @@ Plugin 'honza/vim-snippets'
 Plugin 'Raimondi/delimitMate'
 Plugin 'luochen1990/rainbow'
 Plugin 'junegunn/vim-easy-align'
-" Plugin 'SyntaxAttr.vim'
 " }}}
 
 " Language specific plugins {{{
-" C and C++
-Plugin 'a.vim'
-Plugin 'vim-jp/vim-cpp'
-Plugin 'octol/vim-cpp-enhanced-highlight'
-" Plugin 'Conque-GDB'
-Plugin 'rhysd/vim-clang-format'
+
+" C#
+Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'OrangeT/vim-csharp'
 
 " JS
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'myhere/vim-nodejs-complete'
-
-" GLSL
-Plugin 'tikhomirov/vim-glsl'
-
-" Ruby
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'noprompt/vim-yardoc'
-
-" Lua
-Plugin 'raymond-w-ko/vim-lua-indent'
 
 " Web
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'othree/html5.vim'
-Plugin 'cakebaker/scss-syntax.vim'
 " }}}
 
 call vundle#end()
+
 filetype plugin indent on
 syntax on
+" }}}
 
 " Settings {{{
 " These really should be commented.
 set autoindent
 set backspace=indent,eol,start
+set breakindent
+set breakindentopt=shift:4
 set cindent
 set cinoptions=g0
 set cmdheight=1
-set colorcolumn=80
 set completeopt=menuone
 set concealcursor=c
 set conceallevel=2
@@ -106,6 +94,7 @@ set showmatch
 set smartcase
 set softtabstop=4
 set spelllang=en_us
+set splitbelow
 set switchbuf+=usetab,newtab
 set t_Co=256
 set t_vb=
@@ -120,7 +109,8 @@ set visualbell
 set wrap
 " }}}
 
-function! FoldText() " {{{
+" Functions {{{
+function! FoldText()
     " example: █ function! FoldText() ████████ 12 lines █
     let line = getline(v:foldstart)
     let line = substitute(line, '^\s*\(#\|//\|/\*\|"\)\?\s*\|\s*\(#\|//\|/\*\|"\)\?\s*{{' . '{\d*\s*\(\*/\)\?', '', 'g')
@@ -132,7 +122,8 @@ function! FoldText() " {{{
     let foldtextend = lines_count_text . repeat(foldchar, 8)
     let foldtextlength = strlen(substitute(foldtextstart . foldtextend, '.', 'x', 'g')) + &foldcolumn + &nuw
     return foldtextstart . repeat(foldchar, winwidth(0)-foldtextlength) . foldtextend
-endfunction " }}}
+endfunction
+" }}}
 
 " Mappings {{{
 " Alt Key helper for urxvt
@@ -226,6 +217,7 @@ inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 imap     <expr><CR>    pumvisible() ? "<C-r>=CRCompleteFunc()<CR>" : "<Plug>delimitMateCR"
 " }}}
 
+" Others {{{
 map -a	:call SyntaxAttr()<CR>
 
 if filereadable('/proc/cpuinfo')
@@ -283,9 +275,7 @@ let g:airline_theme = 'powerlineish'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#hunks#non_zero_only = 1
 
-let g:ruby_indent_access_modifier_style = 'outdent'
-
-let g:licenses_authors_name = 'ahoka'
+let g:licenses_authors_name = 'Jesser Sison'
 
 set sessionoptions-=help
 set sessionoptions-=options
@@ -308,11 +298,17 @@ au FileType cpp setl cindent cino=j1,(0,ws,Ws
 au FileType coffee,html,lua,perl,python,ruby,sh,xml setl shiftwidth=2 softtabstop=2 tabstop=2
 au FileType css set omnifunc=csscomplete#CompleteCSS | setlocal iskeyword+=-
 
+let NERDTreeShowHidden=1
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
 colorscheme ahoka
+" }}}
 
 " GVim {{{
 set guioptions=+a
-set guifont=ProFont
+set guifont=tewi
 set guicursor=n-v-c:block-Cursor
 set guicursor+=i:block-Cursor
 set guicursor+=n-v-c:blinkon0
