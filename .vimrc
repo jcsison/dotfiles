@@ -1,6 +1,6 @@
+" Plugins {{{
 set nocp
 
-" Plugins {{{
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -53,7 +53,6 @@ Plug 'plasticboy/vim-markdown'
 " }}}
 
 call plug#end()
-
 " }}}
 
 " Settings {{{
@@ -119,6 +118,21 @@ set wrap
 " }}}
 
 " Functions {{{
+" Alt Key helper for urxvt
+if !has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    autocmd InsertEnter * set timeoutlen=0
+    autocmd InsertLeave * set timeoutlen=2000
+  augroup END
+endif
+
+function! Altmap(char)
+  if has('gui_running') | return ' <A-'.a:char.'> ' | else | return ' <Esc>'.a:char.' '|endif
+endfunction
+
+" Text folding
 function! FoldText()
     let line = getline(v:foldstart)
     let line = substitute(line, '^\s*\(#\|//\|/\*\|"\)\?\s*\|\s*\(#\|//\|/\*\|"\)\?\s*{{' . '{\d*\s*\(\*/\)\?', '', 'g')
@@ -134,23 +148,12 @@ endfunction
 " }}}
 
 " Mappings {{{
-" Alt Key helper for urxvt
-if !has('gui_running')
-  set ttimeoutlen=10
-  augroup FastEscape
-    autocmd!
-    autocmd InsertEnter * set timeoutlen=0
-    autocmd InsertLeave * set timeoutlen=2000
-  augroup END
-endif
-
-function! Altmap(char)
-  if has('gui_running') | return ' <A-'.a:char.'> ' | else | return ' <Esc>'.a:char.' '|endif
-endfunction
-
 let mapleader="\<Space>"
 
+" Toggle NERDTree with F2
 map <silent> <F2> :NERDTreeToggle \| :NERDTreeMirror<CR>
+
+" Toggle Tagbar with F3
 map <silent> <F3> :TagbarToggle<CR>
 
 " Move tabs with shift + h/l
@@ -189,7 +192,7 @@ inoremap <silent><C-n> <C-o>:nohl<CR>
 " Map ctrl + s to save current buffer if it has been modified
 noremap <silent><C-s> :update<CR>
 
-" Map shift + s to write all buffers
+" Map shift + s to write to all buffers
 noremap <silent><S-s> :wa<CR>
 
 noremap  <C-f>      :GrepBuffer<Space>
@@ -199,9 +202,10 @@ inoremap <C-f> <C-o>:GrepBuffer<Space>
 inoremap ;<CR> <End>;
 inoremap ,<CR> <End>,
 
-" space open/closes folds in normal mode
+" Space open/closes folds in normal mode
 nnoremap <space> za
-" space creates folds in visual mode
+
+" Space creates folds in visual mode
 vnoremap <space> zf
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
@@ -228,22 +232,23 @@ autocmd FileType javascriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters_explicit = 1
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
 let g:jsx_ext_required = 0
-let g:ale_linters = {
-\   'javascript': ['standard'],
-\}
+
 let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
 \   '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠'
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_linters_explicit = 1
-let g:ale_lint_on_save = 1
-let g:ale_fix_on_save = 1
-let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
+let g:ale_linters = {
+\   'javascript': ['standard'],
+\}
 " }}}
 
 " Others {{{
