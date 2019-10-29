@@ -12,7 +12,7 @@ servers = (
     address = "irc.chat.twitch.tv";
     chatnet = "twitch";
     port = "6667";
-    password = "oauth:v6tx62vua942vkag8duunrbslnkxth";
+    password = "";
     use_ssl = "no";
     ssl_verify = "no";
     autoconnect = "no";
@@ -28,12 +28,9 @@ servers = (
 );
 
 chatnets = {
-  twitch = { type = "IRC"; nick = "ayece"; };
+  twitch = { type = "IRC"; nick = "Liechy"; };
   rizonbnc = { type = "IRC"; };
-  rizon = {
-    type = "IRC";
-    autosendcmd = "/msg NickServ IDENTIFY pitchdark";
-  };
+  rizon = { type = "IRC"; };
 };
 
 channels = (

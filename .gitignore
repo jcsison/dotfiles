@@ -1,6 +1,4 @@
 .config/mimeapps.list
-.config/QtProject.conf
-.config/Trolltech.conf
 .mpd/mpd.log
 .mpd/pid
 .mpd/state
@@ -9,23 +7,21 @@
 .config/ahoviewer/
 .config/autostart/
 .config/cef_user_data/
-.config/Code/
+.config/coc/
+.config/configstore
 .config/dconf/
-.config/Electron
 .config/htop/
-.config/matplotlib/
 .config/mopidy/
 .config/neofetch/
 .config/NuGet/
-.config/octave/
 .config/pulse/
 .config/qBittorrent/
 .config/Thunar/
-.config/xfce4/
 .config/VSCodium/
 .emacs.d/.cache/
-.vim/bundle/
-.vim/sessions
+.vim/autoload/
+.vim/plugged/
+.vim/sessions/
 
 *.bak
 *.uuid

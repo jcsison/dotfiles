@@ -1,56 +1,62 @@
 set nocp
-filetype off
 
 " Plugins {{{
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
 
 " General plugins {{{
-Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
-Plugin 'xolox/vim-misc'
-Plugin 'embear/vim-localvimrc'
-Plugin 'xolox/vim-session'
-Plugin 'bling/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'majutsushi/tagbar'
-Plugin 'yegappan/grep'
-Plugin 'Yggdroot/indentLine'
-Plugin 'DoxygenToolkit.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'rdnetto/YCM-Generator'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'Raimondi/delimitMate'
-Plugin 'luochen1990/rainbow'
-Plugin 'junegunn/vim-easy-align'
+Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'Raimondi/delimitMate'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'yegappan/grep'
+Plug 'Yggdroot/indentLine'
+Plug 'scrooloose/nerdtree'
+Plug 'luochen1990/rainbow'
+Plug 'godlygeek/tabular'
+Plug 'majutsushi/tagbar'
+Plug 'SirVer/ultisnips'
+Plug 'bling/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'embear/vim-localvimrc'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-session'
+Plug 'honza/vim-snippets'
+Plug 'tpope/vim-surround'
+Plug 'wesQ3/vim-windowswap'
 " }}}
 
 " Language specific plugins {{{
 
 " C#
-Plugin 'OmniSharp/omnisharp-vim'
-Plugin 'OrangeT/vim-csharp'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'OrangeT/vim-csharp'
 
 " JS
-Plugin 'myhere/vim-nodejs-complete'
+Plug 'myhere/vim-nodejs-complete'
 
 " Web
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'othree/html5.vim'
+
+" Markdown
+Plug 'plasticboy/vim-markdown'
 " }}}
 
-call vundle#end()
+call plug#end()
 
-filetype plugin indent on
-syntax on
 " }}}
 
 " Settings {{{
-" These really should be commented.
 set autoindent
 set backspace=indent,eol,start
 set breakindent
@@ -80,9 +86,10 @@ set incsearch
 set laststatus=2
 set lazyredraw
 set linebreak
+set list
+set listchars=eol:↵,trail:·,tab:»·,nbsp:␣
 set mouse=a
 set noerrorbells
-set nolist
 set noshowmode
 set nostartofline
 set notimeout
@@ -90,6 +97,7 @@ set number
 set nuw=6
 set re=1
 set shiftwidth=4
+set showbreak=↪\
 set showmatch
 set smartcase
 set softtabstop=4
@@ -99,6 +107,7 @@ set switchbuf+=usetab,newtab
 set t_Co=256
 set t_vb=
 set tabstop=4
+set tags^=./.git/tags;
 set textwidth=80
 set timeoutlen=1000
 set title
@@ -111,7 +120,6 @@ set wrap
 
 " Functions {{{
 function! FoldText()
-    " example: █ function! FoldText() ████████ 12 lines █
     let line = getline(v:foldstart)
     let line = substitute(line, '^\s*\(#\|//\|/\*\|"\)\?\s*\|\s*\(#\|//\|/\*\|"\)\?\s*{{' . '{\d*\s*\(\*/\)\?', '', 'g')
     let line = ' ' . line . ' '
@@ -140,10 +148,10 @@ function! Altmap(char)
   if has('gui_running') | return ' <A-'.a:char.'> ' | else | return ' <Esc>'.a:char.' '|endif
 endfunction
 
+let mapleader="\<Space>"
+
 map <silent> <F2> :NERDTreeToggle \| :NERDTreeMirror<CR>
 map <silent> <F3> :TagbarToggle<CR>
-map <silent> <F4> :ccl<CR>
-map <silent> <F5> :make! \| :copen<CR>
 
 " Move tabs with shift + h/l
 nnoremap <silent><S-h> :tabmove -1<CR>
@@ -157,11 +165,16 @@ nnoremap <silent><C-l> :tabn<CR>
 nnoremap <silent><C-j> :wincmd j<CR>
 nnoremap <silent><C-k> :wincmd k<CR>
 
-" Switch splits with alt + hjkl
-execute 'nnoremap <silent>'.Altmap('h').':wincmd h<CR>'
-execute 'nnoremap <silent>'.Altmap('j').':wincmd j<CR>'
-execute 'nnoremap <silent>'.Altmap('k').':wincmd k<CR>'
-execute 'nnoremap <silent>'.Altmap('l').':wincmd l<CR>'
+" Switch splits with alt + hjkl or alt + arrow keys
+nnoremap <silent> <A-h> :wincmd h<CR>
+nnoremap <silent> <A-j> :wincmd j<CR>
+nnoremap <silent> <A-k> :wincmd k<CR>
+nnoremap <silent> <A-l> :wincmd l<CR>
+
+nnoremap <silent> <A-Left>  :wincmd h<CR>
+nnoremap <silent> <A-Down>  :wincmd j<CR>
+nnoremap <silent> <A-Up>    :wincmd k<CR>
+nnoremap <silent> <A-Right> :wincmd l<CR>
 
 " Resize splits with shift + alt + hjkl
 nnoremap <silent><S-A-h> :vertical resize -5<CR>
@@ -197,16 +210,6 @@ xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
-" autocomplete mappings
-let g:ulti_expand_or_jump_res = 0
-function! CRCompleteFunc()
-    let snippet = UltiSnips#ExpandSnippet()
-    if g:ulti_expand_res > 0
-        return snippet
-    endif
-    return "\<CR>"
-endfunction
-
 inoremap <expr><Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr><Down>  pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
@@ -215,6 +218,32 @@ inoremap <expr><Up>    pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 
 imap     <expr><CR>    pumvisible() ? "<C-r>=CRCompleteFunc()<CR>" : "<Plug>delimitMateCR"
+" }}}
+
+" Language Specific {{{
+autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType javascriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+
+let g:jsx_ext_required = 0
+let g:ale_linters = {
+\   'javascript': ['standard'],
+\}
+let g:ale_fixers = {
+\   'javascript': ['prettier', 'eslint'],
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters_explicit = 1
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
 " }}}
 
 " Others {{{
@@ -235,11 +264,6 @@ let g:indentLine_color_tty = 236
 
 let g:localvimrc_ask = 0
 
-let g:load_doxygen_syntax = 1
-let g:DoxygenToolkit_commentType = 'C++'
-
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-let g:ycm_extra_conf_globlist = ['~/Git/*']
 let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsJumpForwardTrigger = '<CR>'
 let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
@@ -265,11 +289,6 @@ let g:rainbow_conf = {
 \       },
 \	}
 \}
-
-let g:syntastic_stl_format = ''
-let g:syntastic_c_auto_refresh_includes = 1
-let g:syntastic_cpp_no_include_search = 1
-let g:syntastic_cpp_compiler_options = '-std=c++14'
 
 let g:airline_theme = 'powerlineish'
 let g:airline_powerline_fonts = 1
@@ -302,6 +321,9 @@ let NERDTreeShowHidden=1
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+highlight NonText ctermbg=8
+highlight SpecialKey ctermbg=8
 
 colorscheme ahoka
 " }}}

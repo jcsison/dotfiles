@@ -241,7 +241,7 @@ exe "hi! CursorLineNr"  .s:fg_red         .s:bg_background  .s:fmt_none
 exe "hi! MatchParen"    .s:fg_background  .s:bg_aqua        .s:fmt_none
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
 exe "hi! MoreMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
-exe "hi! NonText"       .s:fg_background  .s:bg_none        .s:fmt_none
+exe "hi! NonText"       .s:fg_line        .s:bg_none        .s:fmt_none
 exe "hi! Pmenu"         .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_none
 exe "hi! PmenuSel"      .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
 exe "hi! PmenuSbar"     .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_none
