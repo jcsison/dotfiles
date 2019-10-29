@@ -36,7 +36,6 @@ Plug 'wesQ3/vim-windowswap'
 " }}}
 
 " Language specific plugins {{{
-
 " C#
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'OrangeT/vim-csharp'
