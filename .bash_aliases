@@ -54,6 +54,7 @@ alias texpack='tlmgr install'
 alias uninstall='sudo apt-get purge'
 alias update='sudo apt-get update ; sudo apt-get dist-upgrade'
 alias vim='nvim'
+alias vimf='nvim $(ls | fzf)'
 alias winclass='xprop | grep WM_CLASS'
 alias winpid='xprop _NET_WM_PID'
 

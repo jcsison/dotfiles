@@ -4,7 +4,7 @@ set nocp
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  au VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -45,8 +45,8 @@ Plug 'OrangeT/vim-csharp'
 Plug 'myhere/vim-nodejs-complete'
 
 " Web
-Plug 'hail2u/vim-css3-syntax'
 Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
 
 " Markdown
 Plug 'plasticboy/vim-markdown'
@@ -95,6 +95,10 @@ set notimeout
 set number
 set nuw=6
 set re=1
+set sessionoptions-=help
+set sessionoptions-=options
+set sessionoptions+=resize
+set sessionoptions+=tabpages
 set shiftwidth=4
 set showbreak=↪\
 set showmatch
@@ -148,6 +152,7 @@ endfunction
 " }}}
 
 " Mappings {{{
+" Set leader key to Space
 let mapleader="\<Space>"
 
 " Toggle NERDTree with F2
@@ -195,18 +200,13 @@ noremap <silent><C-s> :update<CR>
 " Map shift + s to write to all buffers
 noremap <silent><S-s> :wa<CR>
 
+" Grep buffer with ctrl + f
 noremap  <C-f>      :GrepBuffer<Space>
 inoremap <C-f> <C-o>:GrepBuffer<Space>
 
 " ;/, + return moves to the end of the current line and puts ;/,
-inoremap ;<CR> <End>;
-inoremap ,<CR> <End>,
-
-" Space open/closes folds in normal mode
-nnoremap <space> za
-
-" Space creates folds in visual mode
-vnoremap <space> zf
+inoremap ;<Enter> <End>;
+inoremap ,<Enter> <End>,
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
@@ -225,9 +225,13 @@ imap     <expr><CR>    pumvisible() ? "<C-r>=CRCompleteFunc()<CR>" : "<Plug>deli
 " }}}
 
 " Language Specific {{{
-autocmd FileType css setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
-autocmd FileType javascriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
+" Trim trailing whitespace
+au FileType c,cpp,coffee,java,ruby,python,sh au BufWritePre * :%s/\s\+$//e | :call histdel('/', -1)
+
+au FileType coffee,css,html,javascript,javascriptreact,lua,perl,python,ruby,sh,xml setl shiftwidth=2 softtabstop=2 tabstop=2
+au FileType cpp setl cindent cino=j1,(0,ws,Ws
+au FileType css set omnifunc=csscomplete#CompleteCSS | setlocal iskeyword+=-
+au FileType gitcommit,markdown setl spell
 
 highlight ALEErrorSign ctermbg=NONE ctermfg=red
 highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
@@ -252,13 +256,23 @@ let g:ale_linters = {
 " }}}
 
 " Others {{{
-map -a	:call SyntaxAttr()<CR>
+au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+au StdinReadPre * let s:std_in=1
+au VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 if filereadable('/proc/cpuinfo')
     let &makeprg = 'make -j'.(system('grep -c ^processor /proc/cpuinfo')+1)
 endif
 
+let delimitMate_expand_cr = 2
+let delimitMate_expand_space = 1
+
 let NERDTreeIgnore=[ '\.[ls]\?o$', '\~$' ]
+let NERDTreeShowHidden=1
+
+let g:airline_theme = 'powerlineish'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#hunks#non_zero_only = 1
 
 let g:indentLine_char = '│'
 let g:indentLine_bufNameExclude = [ 'NERD_tree.*' ]
@@ -267,15 +281,9 @@ let g:indentLine_color_gui = '#222222'
 let g:indentLine_color_term = 236
 let g:indentLine_color_tty = 236
 
+let g:licenses_authors_name = 'Jesser Sison'
+
 let g:localvimrc_ask = 0
-
-let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsJumpForwardTrigger = '<CR>'
-let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
-let g:UltiSnipsEditSplit = 'vertical'
-
-let delimitMate_expand_cr = 2
-let delimitMate_expand_space = 1
 
 let g:rainbow_active = 1
 let g:rainbow_conf = {
@@ -295,38 +303,21 @@ let g:rainbow_conf = {
 \	}
 \}
 
-let g:airline_theme = 'powerlineish'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#hunks#non_zero_only = 1
-
-let g:licenses_authors_name = 'Jesser Sison'
-
-set sessionoptions-=help
-set sessionoptions-=options
-set sessionoptions+=resize
-set sessionoptions+=tabpages
-
 let g:session_autosave = 'yes'
 let g:session_autoload = 'yes'
 let g:session_autosave_periodic = 5
 let g:session_default_to_last = 1
 let g:session_persist_globals = [ '&expandtab' ]
 
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-" Trim trailing whitespace
-au FileType c,cpp,coffee,java,ruby,python,sh au BufWritePre * :%s/\s\+$//e | :call histdel('/', -1)
+let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsJumpForwardTrigger = '<CR>'
+let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
+let g:UltiSnipsEditSplit = 'vertical'
 
-au FileType gitcommit,markdown setl spell
+map -a :call SyntaxAttr()<CR>
+" }}}
 
-au FileType cpp setl cindent cino=j1,(0,ws,Ws
-au FileType coffee,html,lua,perl,python,ruby,sh,xml setl shiftwidth=2 softtabstop=2 tabstop=2
-au FileType css set omnifunc=csscomplete#CompleteCSS | setlocal iskeyword+=-
-
-let NERDTreeShowHidden=1
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-
+" Theming {{{
 highlight NonText ctermbg=8
 highlight SpecialKey ctermbg=8
 
