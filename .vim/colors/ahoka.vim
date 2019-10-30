@@ -85,7 +85,7 @@ else
   let s:vmode      = "cterm"
   let s:background = "234"
   let s:window     = "236"
-  let s:darkcolumn = "233"
+  let s:darkcolumn = "235"
   let s:addbg      = "65"
   let s:addfg      = "193"
   let s:changebg   = "60"
@@ -94,7 +94,7 @@ else
   let s:selection  = "8"
   let s:line       = "0"
   let s:comment    = "245"
-  let s:folded     = "239"
+  let s:folded     = "241"
   let s:red        = "9"
   let s:orange     = "3"
   let s:yellow     = "11"
@@ -102,6 +102,7 @@ else
   let s:aqua       = "14"
   let s:blue       = "12"
   let s:magenta    = "13"
+  let s:linenum    = "250"
 endif
 
 "}}}
@@ -140,6 +141,7 @@ exe "let s:bg_addbg      = ' ".s:vmode."bg=".s:addbg     ."'"
 exe "let s:bg_addfg      = ' ".s:vmode."bg=".s:addfg     ."'"
 exe "let s:bg_changebg   = ' ".s:vmode."bg=".s:changebg  ."'"
 exe "let s:bg_changefg   = ' ".s:vmode."bg=".s:changefg  ."'"
+exe "let s:bg_linenum    = ' ".s:vmode."bg=".s:linenum   ."'"
 
 exe "let s:fg_none       = ' ".s:vmode."fg=".s:none      ."'"
 exe "let s:fg_foreground = ' ".s:vmode."fg=".s:foreground."'"
@@ -161,6 +163,7 @@ exe "let s:fg_addbg      = ' ".s:vmode."fg=".s:addbg     ."'"
 exe "let s:fg_addfg      = ' ".s:vmode."fg=".s:addfg     ."'"
 exe "let s:fg_changebg   = ' ".s:vmode."fg=".s:changebg  ."'"
 exe "let s:fg_changefg   = ' ".s:vmode."fg=".s:changefg  ."'"
+exe "let s:fg_linenum    = ' ".s:vmode."fg=".s:linenum   ."'"
 
 exe "let s:fmt_none      = ' ".s:vmode."=NONE".          " term=NONE"        ."'"
 exe "let s:fmt_bold      = ' ".s:vmode."=NONE".s:b.      " term=NONE".s:b    ."'"
@@ -214,6 +217,7 @@ else
   let s:sp_addfg      = ""
   let s:sp_changebg   = ""
   let s:sp_changefg   = ""
+  let s:sp_linenum    = ""
 endif
 
 "}}}
@@ -232,11 +236,11 @@ exe "hi! DiffDelete"    .s:fg_background  .s:bg_red         .s:fmt_none
 exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
 exe "hi! ErrorMsg"      .s:fg_background  .s:bg_red         .s:fmt_stnd
 exe "hi! VertSplit"     .s:fg_darkcolumn  .s:bg_none        .s:fmt_none
-exe "hi! Folded"        .s:fg_folded      .s:bg_darkcolumn  .s:fmt_none
-exe "hi! FoldColumn"    .s:fg_selection   .s:bg_darkcolumn  .s:fmt_none
-exe "hi! SignColumn"    .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
+exe "hi! Folded"        .s:fg_folded      .s:bg_none        .s:fmt_none
+exe "hi! FoldColumn"    .s:fg_selection   .s:bg_none        .s:fmt_none
+exe "hi! SignColumn"    .s:fg_none        .s:bg_none        .s:fmt_none
 "       Incsearch"
-exe "hi! LineNr"        .s:fg_selection   .s:bg_darkcolumn  .s:fmt_none
+exe "hi! LineNr"        .s:fg_linenum     .s:bg_none        .s:fmt_none
 exe "hi! CursorLineNr"  .s:fg_red         .s:bg_background  .s:fmt_none
 exe "hi! MatchParen"    .s:fg_background  .s:bg_aqua        .s:fmt_none
 exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
@@ -265,22 +269,22 @@ exe "hi! WarningMsg"    .s:fg_red         .s:bg_none        .s:fmt_none
 "       WildMenu"
 
 " gitgutter
-exe "hi! GitGutterAdd"          .s:fg_green .s:bg_darkcolumn .s:fmt_none
-exe "hi! GitGutterChange"       .s:fg_yellow.s:bg_darkcolumn .s:fmt_none
-exe "hi! GitGutterDelete"       .s:fg_red   .s:bg_darkcolumn .s:fmt_none
-exe "hi! GitGutterChangeDelete" .s:fg_yellow.s:bg_darkcolumn .s:fmt_none
+exe "hi! GitGutterAdd"          .s:fg_green  .s:bg_none .s:fmt_none
+exe "hi! GitGutterChange"       .s:fg_yellow .s:bg_none .s:fmt_none
+exe "hi! GitGutterDelete"       .s:fg_red    .s:bg_none .s:fmt_none
+exe "hi! GitGutterChangeDelete" .s:fg_yellow .s:bg_none .s:fmt_none
 
 " Syntastic
-exe "hi! SyntasticErrorSign"    .s:fg_red   .s:bg_darkcolumn .s:fmt_undr
-exe "hi! SyntasticWarningSign"  .s:fg_yellow.s:bg_darkcolumn .s:fmt_none
+exe "hi! SyntasticErrorSign"    .s:fg_red    .s:bg_none .s:fmt_undr
+exe "hi! SyntasticWarningSign"  .s:fg_yellow .s:bg_none .s:fmt_none
 
 " Misc
-exe "hi! cppSTLnamespace"       .s:fg_orange.s:bg_none       .s:fmt_none
+exe "hi! cppSTLnamespace"       .s:fg_orange .s:bg_none       .s:fmt_none
 
 if has('gui_running')
   exe "hi! Normal" .s:fg_foreground .s:bg_background .s:fmt_none
 else
-  exe "hi! Normal" .s:fg_foreground .s:bg_none .s:fmt_none
+  exe "hi! Normal" .s:fg_foreground .s:bg_none       .s:fmt_none
 endif
 
 "}}}
@@ -390,4 +394,3 @@ hi! link diffAdded Special
 " THE SOFTWARE.
 
 " }}}
-

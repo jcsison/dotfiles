@@ -10,6 +10,7 @@
 .config/coc/
 .config/configstore
 .config/dconf/
+.config/fontforge/
 .config/htop/
 .config/mopidy/
 .config/neofetch/

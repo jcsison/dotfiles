@@ -17,21 +17,21 @@ Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'yegappan/grep'
 Plug 'Yggdroot/indentLine'
+Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'luochen1990/rainbow'
-Plug 'godlygeek/tabular'
 Plug 'majutsushi/tagbar'
-Plug 'SirVer/ultisnips'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'embear/vim-localvimrc'
+Plug 'etdev/vim-hexcolor'
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-session'
-Plug 'honza/vim-snippets'
+Plug 'sheerun/vim-polyglot'
+Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-surround'
+Plug 'wellle/targets.vim'
 Plug 'wesQ3/vim-windowswap'
 " }}}
 
@@ -44,11 +44,11 @@ Plug 'OrangeT/vim-csharp'
 Plug 'myhere/vim-nodejs-complete'
 
 " Web
-Plug 'othree/html5.vim'
+" Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 
 " Markdown
-Plug 'plasticboy/vim-markdown'
+" Plug 'plasticboy/vim-markdown'
 " }}}
 
 call plug#end()
@@ -61,6 +61,7 @@ set breakindent
 set breakindentopt=shift:4
 set cindent
 set cinoptions=g0
+set clipboard=unnamedplus
 set cmdheight=1
 set completeopt=menuone
 set concealcursor=c
@@ -94,10 +95,6 @@ set notimeout
 set number
 set nuw=6
 set re=1
-set sessionoptions-=help
-set sessionoptions-=options
-set sessionoptions+=resize
-set sessionoptions+=tabpages
 set shiftwidth=4
 set showbreak=↪\
 set showmatch
@@ -137,16 +134,16 @@ endfunction
 
 " Text folding
 function! FoldText()
-    let line = getline(v:foldstart)
-    let line = substitute(line, '^\s*\(#\|//\|/\*\|"\)\?\s*\|\s*\(#\|//\|/\*\|"\)\?\s*{{' . '{\d*\s*\(\*/\)\?', '', 'g')
-    let line = ' ' . line . ' '
-    let lines_count = v:foldend - v:foldstart + 1
-    let lines_count_text = ' ' . lines_count . ' lines '
-    let foldchar = matchstr(&fillchars, 'fold:\zs.')
-    let foldtextstart = strpart(repeat(foldchar, max([1, indent(v:foldstart)])) . line, 0, (winwidth(0)*2)/3)
-    let foldtextend = lines_count_text . repeat(foldchar, 8)
-    let foldtextlength = strlen(substitute(foldtextstart . foldtextend, '.', 'x', 'g')) + &foldcolumn + &nuw
-    return foldtextstart . repeat(foldchar, winwidth(0)-foldtextlength) . foldtextend
+  let line = getline(v:foldstart)
+  let line = substitute(line, '^\s*\(#\|//\|/\*\|"\)\?\s*\|\s*\(#\|//\|/\*\|"\)\?\s*{{' . '{\d*\s*\(\*/\)\?', '', 'g')
+  let line = ' ' . line . ' '
+  let lines_count = v:foldend - v:foldstart + 1
+  let lines_count_text = ' ' . lines_count . ' lines '
+  let foldchar = matchstr(&fillchars, 'fold:\zs.')
+  let foldtextstart = strpart(repeat(foldchar, max([1, indent(v:foldstart)])) . line, 0, (winwidth(0)*2)/3)
+  let foldtextend = lines_count_text . repeat(foldchar, 8)
+  let foldtextlength = strlen(substitute(foldtextstart . foldtextend, '.', 'x', 'g')) + &foldcolumn + &nuw
+  return foldtextstart . repeat(foldchar, winwidth(0)-foldtextlength) . foldtextend
 endfunction
 " }}}
 
@@ -154,11 +151,17 @@ endfunction
 " Set leader key to Space
 let mapleader="\<Space>"
 
-" Toggle NERDTree with F2
-map <silent> <F2> :NERDTreeToggle \| :NERDTreeMirror<CR>
+" Toggle NERDTree with Ctrl + e
+noremap <silent><C-e> :NERDTreeToggle \| :NERDTreeMirror<CR>
 
-" Toggle Tagbar with F3
-map <silent> <F3> :TagbarToggle<CR>
+" Toggle Tagbar with Ctrl + t
+noremap <silent><C-t> :TagbarToggle<CR>
+
+" Scroll with shift + up/down
+noremap <C-Down> <C-e>
+noremap <C-Up>   <C-y>
+noremap <S-j>    <C-e>
+noremap <S-k>    <C-y>
 
 " Move tabs with shift + h/l
 nnoremap <silent><S-h> :tabmove -1<CR>
@@ -173,15 +176,15 @@ nnoremap <silent><C-j> :wincmd j<CR>
 nnoremap <silent><C-k> :wincmd k<CR>
 
 " Switch splits with alt + hjkl or alt + arrow keys
-nnoremap <silent> <A-h> :wincmd h<CR>
-nnoremap <silent> <A-j> :wincmd j<CR>
-nnoremap <silent> <A-k> :wincmd k<CR>
-nnoremap <silent> <A-l> :wincmd l<CR>
+nnoremap <silent><A-h> :wincmd h<CR>
+nnoremap <silent><A-j> :wincmd j<CR>
+nnoremap <silent><A-k> :wincmd k<CR>
+nnoremap <silent><A-l> :wincmd l<CR>
 
-nnoremap <silent> <A-Left>  :wincmd h<CR>
-nnoremap <silent> <A-Down>  :wincmd j<CR>
-nnoremap <silent> <A-Up>    :wincmd k<CR>
-nnoremap <silent> <A-Right> :wincmd l<CR>
+nnoremap <silent><A-Left>  :wincmd h<CR>
+nnoremap <silent><A-Down>  :wincmd j<CR>
+nnoremap <silent><A-Up>    :wincmd k<CR>
+nnoremap <silent><A-Right> :wincmd l<CR>
 
 " Resize splits with shift + alt + hjkl
 nnoremap <silent><S-A-h> :vertical resize -5<CR>
@@ -201,17 +204,27 @@ noremap <silent><S-s> :wa<CR>
 
 " Grep buffer with ctrl + f
 noremap  <C-f>      :GrepBuffer<Space>
-inoremap <C-f> <C-o>:GrepBuffer<Space>
+inoremap <C-f><C-o> :GrepBuffer<Space>
 
 " ;/, + return moves to the end of the current line and puts ;/,
-inoremap ;<Enter> <End>;
-inoremap ,<Enter> <End>,
+inoremap ;<CR> <End>;
+inoremap ,<CR> <End>,
+
+" Map leader + x/d/D to black hole register
+nnoremap <leader>x "_x
+nnoremap <leader>d "_d
+nnoremap <leader>D "_D
+vnoremap <leader>d "_d
+
+" Map leader + o/O to create a newline without switching modes
+nnoremap <leader>o o<ESC>
+nnoremap <leader>O O<ESC>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
+xnoremap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+nnoremap ga <Plug>(EasyAlign)
 
 inoremap <expr><Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr><Down>  pumvisible() ? "\<C-n>" : "\<Down>"
@@ -219,48 +232,36 @@ inoremap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
 imap     <expr><S-Tab> pumvisible() ? "\<C-p>" : "<Plug>delimitMateS-Tab"
 inoremap <expr><Up>    pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
-
-imap     <expr><CR>    pumvisible() ? "<C-r>=CRCompleteFunc()<CR>" : "<Plug>delimitMateCR"
 " }}}
 
 " Language Specific {{{
 " Trim trailing whitespace
 au FileType c,cpp,coffee,java,ruby,python,sh au BufWritePre * :%s/\s\+$//e | :call histdel('/', -1)
 
+" Tab settings
 au FileType coffee,css,html,javascript,javascriptreact,lua,perl,python,ruby,sh,xml setl shiftwidth=2 softtabstop=2 tabstop=2
-au FileType cpp setl cindent cino=j1,(0,ws,Ws
-au FileType css set omnifunc=csscomplete#CompleteCSS | setlocal iskeyword+=-
+
+" Enable spellcheck
 au FileType gitcommit,markdown setl spell
 
-highlight ALEErrorSign ctermbg=NONE ctermfg=red
-highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
-
-let g:ale_fix_on_save = 1
+" ALE
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_linters_explicit = 1
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠'
-let g:jsx_ext_required = 0
-
 let g:ale_fixers = {
-\   'javascript': ['prettier', 'eslint'],
-\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\  'javascript': ['prettier', 'eslint'],
+\  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
 let g:ale_linters = {
-\   'javascript': ['standard'],
+\  'javascript': ['standard'],
 \}
 " }}}
 
 " Others {{{
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+au CursorMovedI,InsertLeave * if pumvisible() == 0 | silent! pclose | endif
 au StdinReadPre * let s:std_in=1
-au VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+au VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd p | endif
 
 if filereadable('/proc/cpuinfo')
-    let &makeprg = 'make -j'.(system('grep -c ^processor /proc/cpuinfo')+1)
+  let &makeprg = 'make -j'.(system('grep -c ^processor /proc/cpuinfo')+1)
 endif
 
 let delimitMate_expand_cr = 2
@@ -269,9 +270,17 @@ let delimitMate_expand_space = 1
 let NERDTreeIgnore=[ '\.[ls]\?o$', '\~$' ]
 let NERDTreeShowHidden=1
 
-let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'base16'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#hunks#non_zero_only = 1
+
+let g:ale_fix_on_save = 1
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_linters_explicit = 1
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
 
 let g:indentLine_char = '│'
 let g:indentLine_bufNameExclude = [ 'NERD_tree.*' ]
@@ -280,43 +289,36 @@ let g:indentLine_color_gui = '#222222'
 let g:indentLine_color_term = 236
 let g:indentLine_color_tty = 236
 
-let g:licenses_authors_name = 'Jesser Sison'
+let g:jsx_ext_required = 0
 
-let g:localvimrc_ask = 0
+let g:licenses_authors_name = 'Jesser Sison'
 
 let g:rainbow_active = 1
 let g:rainbow_conf = {
-\   'guifgs': ['#94aad1', '#8ab4be', '#edc472', '#c98dad'],
-\	'ctermfgs': ['12', '14', '11', '13'],
-\	'operators': '_!\|=\|&\|\.\|:\|;\|,\|<\|>\|+\|-\|\/\@<!\*\|\/\(\/\|\*\)\@!_',
-\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
-\	'separately': {
-\		'*': {},
-\       'cpp': {
-\           'parentheses': [
-\               'start=/(/ end=/)/ fold',
-\               'start=/\[/ end=/\]/ fold',
-\               'start=/{/ end=/}/ fold',
-\               'start=/\(\(\<operator\>\)\@<!<\)\&[a-zA-Z0-9_]\@<=<\ze[^<]/ end=/>/']
-\       },
-\	}
+\  'guifgs': ['#94aad1', '#8ab4be', '#edc472', '#c98dad'],
+\  'ctermfgs': ['12', '14', '11', '13'],
+\  'operators': '_!\|=\|&\|\.\|:\|;\|,\|<\|>\|+\|-\|\/\@<!\*\|\/\(\/\|\*\)\@!_',
+\  'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\  'separately': {
+\    '*': {},
+\    'cpp': {
+\      'parentheses': [
+\        'start=/(/ end=/)/ fold',
+\        'start=/\[/ end=/\]/ fold',
+\        'start=/{/ end=/}/ fold',
+\        'start=/\(\(\<operator\>\)\@<!<\)\&[a-zA-Z0-9_]\@<=<\ze[^<]/ end=/>/']
+\    },
+\  }
 \}
 
-let g:session_autosave = 'yes'
-let g:session_autoload = 'yes'
-let g:session_autosave_periodic = 5
-let g:session_default_to_last = 1
-let g:session_persist_globals = [ '&expandtab' ]
-
-let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsJumpForwardTrigger = '<CR>'
-let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
-let g:UltiSnipsEditSplit = 'vertical'
-
 map -a :call SyntaxAttr()<CR>
+
+syntax on
 " }}}
 
 " Theming {{{
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 highlight NonText ctermbg=8
 highlight SpecialKey ctermbg=8
 

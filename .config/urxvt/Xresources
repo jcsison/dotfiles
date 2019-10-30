@@ -5,6 +5,9 @@ URxvt.scrollstyle: plain
 URxvt.scrollBar: false
 URxvt.colorUL: #0088CC
 
+URxvt.depth: 24
+URxvt.internalBorder: 16
+
 ! URxvt-Perls ------------------------------------------------------
 URxvt.perl-lib:             /home/chieri/dotfiles/.config/urxvt/perls
 URxvt*altSendsEscape:       true
@@ -13,8 +16,8 @@ URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 
 ! Font settings ----------------------------------------------------
-URxvt*font:xft:tewi:size=9
-URxvt*letterSpace: 0
+URxvt*font: xft:tewi:size=9
+URxvt.letterSpace: 0
 
 ! Colors -----------------------------------------------------------
 
@@ -56,3 +59,11 @@ URxvt*letterSpace: 0
 *.color15:      #eff1f5
 
 Xft.lcdfilter: lcddefault
+
+! Common Keybinds for Navigations ----------------------------------
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Control-Left: \033[1;5D
