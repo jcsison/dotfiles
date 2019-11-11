@@ -2,130 +2,131 @@
 
 # Modified Keys
 alt + BackSpace
-    xvkbd -xsendevent -text '\[Delete]' &> /dev/null
+  xvkbd -xsendevent -text '\[Delete]' &> /dev/null
 alt + comma
-    xvkbd -xsendevent -text "\[Prior]" &> /dev/null
+  xvkbd -xsendevent -text "\[Prior]" &> /dev/null
 alt + period
-    xvkbd -xsendevent -text "\[Next]" &> /dev/null
+  xvkbd -xsendevent -text "\[Next]" &> /dev/null
 ctrl + comma
-    xvkbd -xsendevent -text '\[Home]' &> /dev/null
+  xvkbd -xsendevent -text '\[Home]' &> /dev/null
 ctrl + period
-    xvkbd -xsendevent -text '\[End]' &> /dev/null
+  xvkbd -xsendevent -text '\[End]' &> /dev/null
 {XF86PowerOff}
-    xvkbd -xsenedvent -text '\[Delete]' &> /dev/null
+  xvkbd -xsenedvent -text '\[Delete]' &> /dev/null
 
 # Desktop Switching
 super + comma
-    bspc desktop --focus prev
+  bspc desktop --focus prev
 super + period
-    bspc desktop --focus next
+  bspc desktop --focus next
 F1
-    bspc desktop --focus prev
+  bspc desktop --focus prev
 F2
-    bspc desktop --focus next
+  bspc desktop --focus next
 super + {1-9,0}
-    bspc desktop --focus ^{1-9,10}
+  bspc desktop --focus ^{1-9,10}
 
 # Node Switching
 alt + Tab
-    bspc node --focus next.local
+  bspc node --focus next.local
 alt + grave
-    bspc node --focus prev.local
+  bspc node --focus prev.local
 super + {Left,Down,Up,Right}
-    bspc node --focus {west,south,north,east}
+  bspc node --focus {west,south,north,east}
 super + a
-    bspc node --focus next.free
+  bspc node --focus next.free
 
 # Node Manipulation
 super + Tab
-    bspc node --swap last
+  bspc node --swap last
 {super,super + shift} + F3
-    bspc node @focused:/ --flip {vertical,horizontal}
+  bspc node @focused:/ --flip {vertical,horizontal}
 super + {ctrl,alt} + F3
-    bspc node @focused:/ --rotate {270,90}
+  bspc node @focused:/ --rotate {270,90}
 super + shift + {comma,period}
-    bspc node @focused:/ --circulate {backward,forward}
+  bspc node @focused:/ --circulate {backward,forward}
 super + shift + {1-9,0}
-    bspc node --to-desktop ^{1-9,10}
+  bspc node --to-desktop ^{1-9,10}
 super + shift + {Left,Down,Up,Right}
-    bspc node --resize {left -50 0,bottom 0 +50,top 0 -50,right +50 0}
+  bspc node --resize {left -50 0,bottom 0 +50,top 0 -50,right +50 0}
 super + shift + alt + {Right,Up,Down,Left}
-    bspc node --resize {left +50 0,bottom 0 -50,top 0 +50,right -50 0}
+  bspc node --resize {left +50 0,bottom 0 -50,top 0 +50,right -50 0}
 super + shift + ctrl + {Left,Down,Up,Right}
-    bspc node --resize {left -25 0,bottom 0 +25,top 0 -25,right +25 0}
+  bspc node --resize {left -25 0,bottom 0 +25,top 0 -25,right +25 0}
 super + shift + alt + ctrl + {Right,Up,Down,Left}
-    bspc node --resize {left +25 0,bottom 0 -25,top 0 +25,right -25 0}
+  bspc node --resize {left +25 0,bottom 0 -25,top 0 +25,right -25 0}
 super + alt + {z,x,c,v,b}
-    bspc config -d focused split_ratio {0.299,0.3947,0.5,0.585,0.68012};\
-    bspc node @focused:/ --equalize
+  bspc config -d focused split_ratio {0.299,0.3947,0.5,0.585,0.68012};\
+  bspc node @focused:/ --equalize
 super + {minus,equal}
-    bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 5 ))
+  bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 5 ))
 super + b
-    bspc node @/ -B
+  bspc node @/ -B
 super + alt + {7-9,0}
-    size={0,20,40,60};\
-    bspc config top_padding "$(($size+20))";\
-    bspc config bottom_padding "$size";\
-    bspc config left_padding "$size";\
-    bspc config right_padding "$size"
+  size={0,20,40,60};\
+  bspc config top_padding "$(($size+20))";\
+  bspc config bottom_padding "$size";\
+  bspc config left_padding "$size";\
+  bspc config right_padding "$size"
 super + grave
-    bspc config -d focused split_ratio 0.5;\
-    bspc node @focused:/ --equalize;\
-    bspc config -d focused window_gap 40;\
-    bspc config top_padding 40;\
-    bspc config bottom_padding 20;\
-    bspc config left_padding 20;\
-    bspc config right_padding 20
+  bspc config -d focused split_ratio 0.5;\
+  bspc node @focused:/ --equalize;\
+  bspc config -d focused window_gap 40;\
+  bspc config top_padding 35;\
+  bspc config bottom_padding 20;\
+  bspc config left_padding 20;\
+  bspc config right_padding 20
 super + {_,shift +}i
-    insert={true,false};\
-    $insert && bspc node -i || \
-    for win in `bspc query -N -n .leaf.\!window.local`; do bspc node $win -k; done;
+  insert={true,false};\
+  $insert && bspc node -i || \
+  for win in `bspc query -N -n .leaf.\!window.local`; do bspc node $win -k; done;
 
 # Node State Modifiers
 F4
-    bspc desktop --layout next
+  bspc desktop --layout next
 super + F4
-    bspc node -t ~fullscreen
+  bspc node -t ~fullscreen
 alt + F4
-    bspc node @focused:/ --flag hidden
+  bspc node @focused:/ --flag hidden
 super + {t,f}
-    bspc node -t {tiled,floating}
+  bspc node -t {tiled,floating}
 super + {_, shift +}c
-    bspc node --{close,kill}
+  bspc node --{close,kill}
 
 # Brightness Control
 {F6,F7}
-    brightness {down,up}
+  brightness {down,up}
 
 # Volume/mpc Control
 F8
-    amixer -D cras set Master toggle
+  amixer -D cras set Master toggle
 super + F8
-    mpc toggle
+  mpc toggle
 alt + F8
-    mpc stop
+  mpc stop
 ctrl + F8
-    mpc play
+  mpc play
 {F9,F10}
-    amixer -D cras set Master 5{-,+} unmute
+  amixer -D cras set Master 5{-,+} unmute
 ctrl + {F9,F10}
-    amixer -D cras set Master 1{-,+} unmute
+  amixer -D cras set Master 1{-,+} unmute
 
 # Floating Node Manipulation
 super + ctrl + {Left,Down,Up,Right}
-    bspc node -v {-20 0,0 20,0 -20,20 0}
+  bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # Application Hotkeys
 super + Return
-    urxvt
+  urxvt
 alt + Return
-    thunar
+  thunar
 alt + space
-    galculator
+  galculator
 Print
-    scrot ~/pictures/screenshots/$(date +%F-%S).png
+  scrot ~/pictures/screenshots/$(date +%F-%S).png
 super + Escape
-    pkill -USR1 -x sxhkd
+  pkill -USR1 -x sxhkd
 super + {space,r}
-    rofi -show run -color-window "#273238, #273238, #1e2529" -color-normal "#273238, #c1c1c1, #273238, #394249, #ffffff" -color-active "#273238, #80cbc4, #273238, #394249, #80cbc4" -color-urgent "#273238, #ff1844, #273238, #394249, #ff1844" -font "Cousine 11" -lines 5 -width 25
-
+  rofi -show run -color-window "#273238, #273238, #1e2529" -color-normal "#273238, #c1c1c1, #273238, #394249, #ffffff" -color-active "#273238, #80cbc4, #273238, #394249, #80cbc4" -color-urgent "#273238, #ff1844, #273238, #394249, #ff1844" -font "Cousine 11" -lines 5 -width 25
+super + alt + a
+  pkill -f x11grab

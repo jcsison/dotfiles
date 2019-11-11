@@ -29,6 +29,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'etdev/vim-hexcolor'
 Plug 'xolox/vim-misc'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-repeat'
 Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-surround'
 Plug 'wellle/targets.vim'
@@ -239,7 +240,7 @@ inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 au FileType c,cpp,coffee,java,ruby,python,sh au BufWritePre * :%s/\s\+$//e | :call histdel('/', -1)
 
 " Tab settings
-au FileType coffee,css,html,javascript,javascriptreact,lua,perl,python,ruby,sh,xml setl shiftwidth=2 softtabstop=2 tabstop=2
+au FileType coffee,css,html,javascript,javascriptreact,json,lua,perl,python,ruby,sh,xml setl shiftwidth=2 softtabstop=2 tabstop=2
 
 " Enable spellcheck
 au FileType gitcommit,markdown setl spell
@@ -247,6 +248,7 @@ au FileType gitcommit,markdown setl spell
 " ALE
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
 let g:ale_fixers = {
+\  'css': ['prettier', 'stylelint'],
 \  'javascript': ['prettier', 'eslint'],
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
@@ -279,6 +281,7 @@ let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_linters_explicit = 1
+let g:ale_sign_column_always = 1
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '⚠'
 

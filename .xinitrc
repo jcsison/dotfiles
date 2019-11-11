@@ -20,6 +20,7 @@ xsetroot -cursor_name left_ptr &
 xmodmap -e "pointer = 1 0 3 4 5"
 xinput --set-prop 'Elan Touchpad' 'libinput Tapping Enabled' 1
 xinput --set-prop 'Elan Touchpad' 'libinput Horizontal Scroll Enabled' 0
+xset s off
 mpd
 mpc stop
 pulseaudio -D
