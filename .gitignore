@@ -12,6 +12,7 @@
 .config/dconf/
 .config/fontforge/
 .config/htop/
+.config/LambdaSharp/
 .config/mopidy/
 .config/neofetch/
 .config/NuGet/

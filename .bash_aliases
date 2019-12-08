@@ -2,6 +2,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 alias awoo='ssh horo@awoo'
+alias aws='aws2'
 alias checkip='curl -s checkip.dyndns.org | grep -Eo "[0-9\.]+"'
 alias cmatrix='cmatrix -b'
 alias cp='cp -iv'
@@ -18,6 +19,7 @@ alias font='sudo fc-cache -f -v'
 alias fzfl='fzf | ls'
 alias git-add='git add -A'
 alias git-clean='git repack -a -d --depth=250 --window=250'
+alias git-commit='git cz'
 alias git-exclude='git rm --cached `git ls-files -i --exclude-from=.gitignore`'
 alias git-push='git push origin master'
 alias git-rm='git rm --cached'
@@ -67,8 +69,9 @@ alias winpid='xprop _NET_WM_PID'
 # alias r-a-dio='nohup mpv --no-ytdl https://stream.r-a-d.io/main.mp3 &>/dev/null &'
 
 function audio() { streamlink --player "mpv --no-video" "$@" worst; }
-function git-commit() { git commit -m "[$(date +"%D %H:%M")] $*"; }
 function html2pdf() { wkhtmltopdf --zoom 1.25 -s Letter "$@".html "$@.pdf"; }
 function stream() { streamlink --player mpv "$@" best; }
 function twitch() { streamlink --player mpv twitch.tv/"$@" best & irssi --connect=twitch; }
 function twitchaudio() { streamlink --player "mpv --no-video" twitch.tv/"$@" audio_only; }
+
+# function git-commit() { git commit -m "[$(date +"%D %H:%M")] $*"; }

@@ -19,6 +19,7 @@ Plug 'yegappan/grep'
 Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
@@ -38,7 +39,6 @@ Plug 'wesQ3/vim-windowswap'
 
 " Language specific plugins {{{
 " C#
-Plug 'OmniSharp/omnisharp-vim'
 Plug 'OrangeT/vim-csharp'
 
 " JS
@@ -59,7 +59,7 @@ call plug#end()
 set autoindent
 set backspace=indent,eol,start
 set breakindent
-set breakindentopt=shift:4
+set breakindentopt=shift:2
 set cindent
 set cinoptions=g0
 set clipboard=unnamedplus
@@ -239,21 +239,20 @@ inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 " Trim trailing whitespace
 au FileType c,cpp,coffee,java,ruby,python,sh au BufWritePre * :%s/\s\+$//e | :call histdel('/', -1)
 
-" Tab settings
+" Type settings
 au FileType coffee,css,html,javascript,javascriptreact,json,lua,perl,python,ruby,sh,xml setl shiftwidth=2 softtabstop=2 tabstop=2
 
-" Enable spellcheck
 au FileType gitcommit,markdown setl spell
 
 " ALE
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
 let g:ale_fixers = {
 \  'css': ['prettier', 'stylelint'],
-\  'javascript': ['prettier', 'eslint'],
+\  'javascript': ['eslint'],
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
 let g:ale_linters = {
-\  'javascript': ['standard'],
+\  'javascript': ['eslint'],
 \}
 " }}}
 
@@ -269,7 +268,9 @@ endif
 let delimitMate_expand_cr = 2
 let delimitMate_expand_space = 1
 
+let NERDTreeDirArrows = 1
 let NERDTreeIgnore=[ '\.[ls]\?o$', '\~$' ]
+let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden=1
 
 let g:airline_theme = 'base16'
@@ -295,6 +296,19 @@ let g:indentLine_color_tty = 236
 let g:jsx_ext_required = 0
 
 let g:licenses_authors_name = 'Jesser Sison'
+
+let g:NERDTreeIndicatorMapCustom = {
+\  "Modified"  : "~",
+\  "Staged"    : "+",
+\  "Untracked" : "^",
+\  "Renamed"   : "➜",
+\  "Unmerged"  : "=",
+\  "Deleted"   : "-",
+\  "Dirty"     : "%",
+\  "Clean"     : "|",
+\  "Ignored"   : ":",
+\  "Unknown"   : "?"
+\  }
 
 let g:rainbow_active = 1
 let g:rainbow_conf = {
