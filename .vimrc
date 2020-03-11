@@ -44,8 +44,14 @@ Plug 'OrangeT/vim-csharp'
 " JS
 Plug 'myhere/vim-nodejs-complete'
 
+" TS
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+
 " Web
 " Plug 'othree/html5.vim'
+Plug 'StanAngeloff/php.vim'
+Plug 'phpactor/phpactor'
 Plug 'hail2u/vim-css3-syntax'
 
 " Markdown
@@ -95,7 +101,6 @@ set nostartofline
 set notimeout
 set number
 set nuw=6
-set re=1
 set shiftwidth=4
 set showbreak=↪\
 set showmatch
@@ -240,7 +245,7 @@ inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 au FileType c,cpp,coffee,java,ruby,python,sh au BufWritePre * :%s/\s\+$//e | :call histdel('/', -1)
 
 " Type settings
-au FileType coffee,css,html,javascript,javascriptreact,json,lua,perl,python,ruby,sh,xml setl shiftwidth=2 softtabstop=2 tabstop=2
+au FileType coffee,css,html,javascript,javascriptreact,json,lua,perl,php,python,ruby,sh,typescript,typescriptreact,xml setl shiftwidth=2 softtabstop=2 tabstop=2
 
 au FileType gitcommit,markdown setl spell
 
@@ -248,10 +253,12 @@ au FileType gitcommit,markdown setl spell
 let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
 let g:ale_fixers = {
 \  'css': ['prettier', 'stylelint'],
-\  'javascript': ['eslint'],
+\  'javascript': ['eslint', 'prettier'],
+\  'typescript': ['eslint'],
 \  '*': ['remove_trailing_lines', 'trim_whitespace'],
 \}
 let g:ale_linters = {
+\  'css': ['stylelint'],
 \  'javascript': ['eslint'],
 \}
 " }}}
@@ -277,7 +284,8 @@ let g:airline_theme = 'base16'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#hunks#non_zero_only = 1
 
-let g:ale_fix_on_save = 1
+" let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'

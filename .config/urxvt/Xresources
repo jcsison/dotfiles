@@ -8,6 +8,9 @@ URxvt.colorUL: #0088CC
 URxvt.depth: 24
 URxvt.internalBorder: 16
 
+URxvt.inputMethod: ibus
+URxvt.preeditType: OverTheSpot
+
 ! URxvt-Perls ------------------------------------------------------
 URxvt.perl-lib:             /home/chieri/dotfiles/.config/urxvt/perls
 URxvt*altSendsEscape:       true
