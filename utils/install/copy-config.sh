@@ -2,4 +2,6 @@
 
 rm -ivrf .bashrc .profile
 
-cp -vr ~/dotfiles/.[!.]* ~/
+ln -s ~/dotfiles/.[!.]* ~/
+
+rm -ir ~/.git*
