@@ -14,8 +14,8 @@ sudo apt-get install \
   deborphan \
   dict \
   feh \
-  fortunes \
   ffmpeg \
+  fortunes \
   fzf \
   galculator \
   irssi \
@@ -25,6 +25,7 @@ sudo apt-get install \
   mpc \
   mpd \
   mpv \
+  ncdu \
   ncmpcpp \
   neovim \
   pulseaudio \
@@ -39,10 +40,10 @@ sudo apt-get install \
   tint2 \
   tldr \
   wmname \
-  x11-xserver-utils \
   x11-utils \
-  xorg \
+  x11-xserver-utils \
   xinput \
+  xorg \
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -
 

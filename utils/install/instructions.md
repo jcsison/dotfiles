@@ -2,13 +2,7 @@
 
 From a freshly installed Debian system, install `wpa_supplicant`:
 
-```bash
-```
-
 Set-up network in `/etc/network/interfaces`:
-
-```bash
-```
 
 Gain root access:
 
@@ -54,7 +48,7 @@ exit
 Fix font rendering:
 ```bash
 sudo dpkg-reconfigure fontconfig-config
-# native > slight > automatic > yes
+# native > none > automatic > yes
 ```
 
 Install Firefox Nightly:
@@ -74,3 +68,17 @@ Manually install programs:
 - [Anki](https://apps.ankiweb.net/#linux)
 - [Discord](https://discordapp.com/api/download?platform=linux&format=deb)
 - [VSCodium](https://github.com/VSCodium/vscodium/releases)
+
+Mount ntfs with `fstab`:
+
+```bash
+# find uuid, uid, and gid
+sudo blkid
+id -u
+id -g
+sudo vim /etc/fstab
+UUID=[uuid] ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=[uid],gid=[gid] 0 0
+```
+
+- Optional:
+    - install `wine`
