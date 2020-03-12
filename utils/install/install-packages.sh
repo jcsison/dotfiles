@@ -17,17 +17,20 @@ sudo apt-get install \
   ffmpeg \
   fortunes \
   fzf \
+  g++ \
   galculator \
   htop \
   irssi \
   libnotify-bin \
   lxappearance \
+  make \
   man \
   mpc \
   mpd \
   mpv \
   ncdu \
   ncmpcpp \
+  neofetch \
   neovim \
   pulseaudio \
   ranger \

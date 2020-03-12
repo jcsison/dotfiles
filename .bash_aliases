@@ -25,7 +25,6 @@ alias git-pull='git pull'
 alias git-push='git push'
 alias git-rm='git rm --cached'
 alias git-undo='git reset --soft HEAD~1'
-alias github-undo='git push -f origin HEAD^:master'
 alias gz='tar -zxvf'
 alias hdmi='xrandr --output HDMI2 --mode 1920x1080'
 alias horo='sudo mount -o remount,exec /media/removable/horo'
@@ -71,6 +70,7 @@ alias winpid='xprop _NET_WM_PID'
 # alias r-a-dio='nohup mpv --no-ytdl https://stream.r-a-d.io/main.mp3 &>/dev/null &'
 
 function audio() { streamlink --player "mpv --no-video" "$@" worst; }
+function github-undo() { git push -f origin HEAD^:"$@"; }
 function html2pdf() { wkhtmltopdf --zoom 1.25 -s Letter "$@".html "$@.pdf"; }
 function stream() { streamlink --player mpv "$@" best; }
 function twitch() { streamlink --player mpv twitch.tv/"$@" best & irssi --connect=twitch; }

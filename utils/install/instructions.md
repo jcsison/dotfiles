@@ -22,7 +22,7 @@ Add user to sudo group, then relog:
 ```bash
 usermod -aG sudo [username]
 exit
-exit
+logout
 ```
 
 Clone dotfiles repo to home directory:
@@ -42,7 +42,13 @@ Copy config files, then relog:
 
 ```bash
 ./copy-config.sh
-exit
+logout
+```
+
+Start X server:
+
+```bash
+startx
 ```
 
 Fix font rendering:

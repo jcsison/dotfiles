@@ -1,0 +1,7 @@
+[user]
+	email = jesser.sison@live.com
+	name = Jesser Sison
+[init]
+	templatedir = ~/.git_template
+[core]
+	editor = vim
