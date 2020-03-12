@@ -41,6 +41,7 @@ sudo apt-get install \
   wmname \
   x11-xserver-utils \
   x11-utils \
+  xorg \
   xinput \
 
 wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | sudo apt-key add -

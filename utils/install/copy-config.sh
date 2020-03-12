@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm -rf .bashrc .profile
+rm -ivrf .bashrc .profile
 
-cp ~/dotfiles/.[!.]* ~/
+cp -vr ~/dotfiles/.[!.]* ~/

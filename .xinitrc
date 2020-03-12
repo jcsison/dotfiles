@@ -18,6 +18,7 @@ tint2 &
 compton -b
 xrdb -merge /home/$USER/.config/urxvt/Xresources
 feh --bg-fill /home/$USER/dotfiles/utils/1572143388899.png
+setxkbmap -option caps:super
 xsetroot -cursor_name left_ptr &
 xmodmap -e "pointer = 1 0 3 4 5"
 xinput --set-prop 'Elan Touchpad' 'libinput Tapping Enabled' 1

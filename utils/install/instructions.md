@@ -36,13 +36,22 @@ cd dotfiles/utils/install
 ./install-packages.sh
 ```
 
-- Copy config files
+- Copy config files, then relog
 
 ```bash
 ./copy-config.sh
+exit
+```
+
+- Fix font rendering
+```bash
+sudo dpkg-reconfigure fontconfig-config
+# native > slight > automatic > yes
 ```
 
 - Manually install programs
-    - Anki
-    - Discord
-    - Firefox Nightly
+    - [Firefox Nightly](wget https://download.mozilla.org/?product=firefox-nightly-latest-ssl&os=linux64&lang=en-US)
+
+    - [Anki](https://apps.ankiweb.net/#linux)
+    - [Discord](https://discordapp.com/api/download?platform=linux&format=deb)
+    - [VSCodium](https://github.com/VSCodium/vscodium/releases)
