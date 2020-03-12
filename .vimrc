@@ -55,7 +55,8 @@ Plug 'phpactor/phpactor'
 Plug 'hail2u/vim-css3-syntax'
 
 " Markdown
-" Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+Plug 'plasticboy/vim-markdown'
 " }}}
 
 call plug#end()
@@ -304,6 +305,9 @@ let g:indentLine_color_tty = 236
 let g:jsx_ext_required = 0
 
 let g:licenses_authors_name = 'Jesser Sison'
+
+let g:mkdp_markdown_css='~/dotfiles/.vim/etc/github-markdown.css'
+let g:mkdp_refresh_slow = 1
 
 let g:NERDTreeIndicatorMapCustom = {
 \  "Modified"  : "~",
