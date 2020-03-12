@@ -18,6 +18,7 @@ sudo apt-get install \
   fortunes \
   fzf \
   galculator \
+  htop \
   irssi \
   libnotify-bin \
   lxappearance \
