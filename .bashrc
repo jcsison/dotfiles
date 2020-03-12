@@ -58,9 +58,17 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
+  if [ "$HOSTNAME" = localhost ]; then
     PS1='\[\033[01;34m\]\[\033[01;36m\]\u\[\033[01;34m\]@\[\033[01;36m\]clover\[\033[01;36m\] \[\033[01;32m\]\w \[\033[01;34m\]> \[\033[00m\]\$ '
+  else
+    PS1='\[\033[01;34m\]\[\033[01;36m\]\u\[\033[01;34m\]@\[\033[01;36m\]\h\[\033[01;36m\] \[\033[01;32m\]\w \[\033[01;34m\]> \[\033[00m\]\$ '
+  fi
 else
+  if [ "$HOSTNAME" = localhost ]; then
     PS1='\u@clover \w > \$ '
+  else
+    PS1='\u@\h \w > \$ '
+  fi
 fi
 unset color_prompt force_color_prompt
 
