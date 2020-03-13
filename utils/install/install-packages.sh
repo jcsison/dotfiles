@@ -46,6 +46,7 @@ sudo apt-get install \
   wmname \
   x11-utils \
   x11-xserver-utils \
+  xdotool \
   xinput \
   xorg \
 

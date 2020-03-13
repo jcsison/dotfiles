@@ -114,6 +114,13 @@ ctrl + {F9,F10}
 # Floating Node Manipulation
 super + ctrl + {Left,Down,Up,Right}
   bspc node -v {-20 0,0 20,0 -20,20 0}
+super + ctrl + f
+  IFS='x' read screenWidth screenHeight < <(xdpyinfo | grep dimensions | grep -o '[0-9x]*' | head -n1);\
+  width=$(xdotool getactivewindow getwindowgeometry --shell | head -4 | tail -1 | sed 's/[^0-9]*//');\
+  height=$(xdotool getactivewindow getwindowgeometry --shell | head -5 | tail -1 | sed 's/[^0-9]*//');\
+  newPosX=$((screenWidth/2-width/2-4));\
+  newPosY=$((screenHeight/2-height/2-3));\
+  xdotool getactivewindow windowmove "$newPosX" "$newPosY"
 
 # Application Hotkeys
 super + Return
