@@ -12,6 +12,7 @@
 .config/dconf/
 .config/discord/
 .config/fontforge/
+.config/google-chrome/
 .config/htop/
 .config/LambdaSharp/
 .config/mopidy/

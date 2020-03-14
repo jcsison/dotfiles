@@ -142,13 +142,13 @@ tabbrowser tabpanels,
   /*     display: none !important; */
 }
 
-#identity-box:hover {
-  opacity: 1 !important;
-}
-
 #identity-box,
 #identity-box:hover {
   transition: ease-in-out 0.3s !important;
+}
+
+#identity-box:hover {
+  opacity: 1 !important;
 }
 
 .tab-icon-image {
@@ -189,14 +189,14 @@ toolbarbutton,
 #sidebar-search-label,
 #sidebar-title,
 .menubar-text {
-  font-family: tewi !important;
+  font-family: tewi, monospace !important;
   font-size: 11px !important;
 
   /* font-weight: 600 !important; */
 }
 
 #clientBox {
-  font-family: tewi !important;
+  font-family: tewi, monospace !important;
   font-size: 11px !important;
 
   /* font-weight: 600 !important; */
@@ -390,11 +390,11 @@ toolbar #urlbar-container {
 }
 
 #TabsToolbar .tabbrowser-tab[selected]:hover {
-  margin-top: -2px !important;
+  margin-top: -3px !important;
 
   /* border-radius: 12px !important; */
   opacity: 0.9 !important;
-  margin-bottom: 4px !important;
+  margin-bottom: 3px !important;
   color: var(--secondary-text) !important;
 }
 
@@ -407,7 +407,7 @@ toolbar #urlbar-container {
 
 /* hover tab */
 #TabsToolbar .tabbrowser-tab:hover {
-  background-color: var(--alt-bg) !important;
+  /* background-color: var(--alt-bg) !important; */
   opacity: 0.9 !important;
   background-size: 100% 100% !important;
   background-repeat: no-repeat !important;

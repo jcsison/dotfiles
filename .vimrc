@@ -102,7 +102,7 @@ set nostartofline
 set notimeout
 set number
 set nuw=6
-set shiftwidth=4
+set shiftwidth=2
 set showbreak=↪\
 set showmatch
 set smartcase

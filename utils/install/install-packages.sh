@@ -32,7 +32,9 @@ sudo apt-get install \
   ncmpcpp \
   neofetch \
   neovim \
+  okular \
   pulseaudio \
+  qt5ct \
   ranger \
   rofi \
   rxvt-unicode \
@@ -43,6 +45,7 @@ sudo apt-get install \
   thunar \
   tint2 \
   tldr \
+  unzip \
   wmname \
   x11-utils \
   x11-xserver-utils \

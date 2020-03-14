@@ -86,5 +86,13 @@ sudo vim /etc/fstab
 UUID=[uuid] ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=[uid],gid=[gid] 0 0
 ```
 
-- Optional:
-    - install `wine`
+Optional Packages:
+  - gir1.2-gtk-3.0
+  - gobject-introspection
+  - python3-cairo
+  - python3-gi-cairo
+  - python3-pil
+  - python3-pip
+  - python3-pyqt5
+  - scrcpy
+  - wine
