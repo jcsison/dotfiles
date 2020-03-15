@@ -14,6 +14,7 @@ sudo apt-get install \
   debian-goodies \
   deborphan \
   dict \
+  dunst \
   feh \
   ffmpeg \
   fortunes \
@@ -40,6 +41,7 @@ sudo apt-get install \
   pulseaudio \
   qt5ct \
   ranger \
+  redshift \
   rofi \
   rxvt-unicode \
   scrot \

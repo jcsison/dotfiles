@@ -93,7 +93,7 @@ super + shift + f
 super + shift + ctrl + f
   bspc node -t floating;\
   xdotool getactivewindow windowsize 798 858;\
-  xdotool getactivewindow windowmove 560 120
+  xdotool getactivewindow windowmove 100 120
 super + ctrl + f
   bspc node -t floating;\
   IFS='x' read screenWidth screenHeight < <(xdpyinfo | grep dimensions | grep -o '[0-9x]*' | head -n1);\

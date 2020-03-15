@@ -1,5 +1,6 @@
 .config/mimeapps.list
 .config/zoomus.conf
+.config/trackma/accounts.dict
 .mpd/mpd.log
 .mpd/pid
 .mpd/state
@@ -13,6 +14,7 @@
 .config/dconf/
 .config/discord/
 .config/fontforge/
+.config/GIMP/
 .config/google-chrome/
 .config/htop/
 .config/ibus/

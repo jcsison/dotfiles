@@ -4,7 +4,6 @@ LC_CTYPE=en_US.UTF-8
 LC_MESSAGES=en_US.UTF-8
 
 export GTK_IM_MODULE=ibus
-export GTK_IM_MODULE_FILE=/usr/lib/x86_64-linux-gnu/gtk-3.0/3.0.0/immodules.cache
 export MPD_HOST=/home/$USER/.mpd/socket
 export QT_IM_MODULE=ibus
 export QT_QPA_PLATFORMTHEME=qt5ct
@@ -12,6 +11,7 @@ export TEXMFHOME=~/.texmf
 export XMODIFIERS=@im=ibus
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+mpc stop
 sxhkd &
 tint2 &
 compton -b
@@ -26,9 +26,8 @@ xinput --set-prop 'Elan Touchpad' 'libinput Horizontal Scroll Enabled' 0
 xset s off
 
 /usr/lib/notification-daemon/notification-daemon &
+redshift &
 pulseaudio -D
-mpd
-mpc stop
 ibus-daemon -d
 discord &
 trackma-qt &

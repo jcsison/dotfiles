@@ -1,6 +1,6 @@
 # Instructions
 
-From a freshly installed Debian system, install `wpa_supplicant`:
+From a freshly installed Debian setup, install `wpa_supplicant`:
 
 Set-up network in `/etc/network/interfaces`:
 
@@ -13,7 +13,6 @@ su
 Install `sudo`:
 
 ```bash
-apt-get install git
 apt-get install sudo
 ```
 
@@ -25,9 +24,10 @@ exit
 logout
 ```
 
-Clone dotfiles repo to home directory:
+Install `git` and clone dotfiles repo to home directory:
 
 ```bash
+sudo apt-get install git
 git clone https://github.com/jcsison/dotfiles
 ```
 
@@ -60,7 +60,7 @@ sudo dpkg-reconfigure fontconfig-config
 Install Firefox Nightly:
 
 ```bash
-# note: change 76 for current version
+# note: replace 76 for latest version
 wget https://archive.mozilla.org/pub/firefox/nightly/latest-mozilla-central/firefox-76.0a1.en-US.linux-x86_64.tar.bz2
 tar -xvf firefox-76.0a1.en-US.linux-x86_64.tar.bz2
 sudo mkdir -p /opt/firefox
