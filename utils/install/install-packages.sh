@@ -26,6 +26,7 @@ sudo apt-get install \
   htop \
   ibus-mozc \
   irssi \
+  libfile-path-expand-perl \
   libnotify-bin \
   lxappearance \
   make \

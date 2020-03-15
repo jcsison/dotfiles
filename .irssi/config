@@ -162,8 +162,8 @@ statusbar = {
 settings = {
   core = {
     real_name = "Unknown";
-    user_name = "chieri";
-    nick = "chieri";
+    user_name = "$USER";
+    nick = "$USER";
     timestamp_format = "%H:%M:%S";
   };
   "fe-text" = { actlist_sort = "refnum"; indent_always = "no"; };
@@ -204,13 +204,13 @@ settings = {
     chanact_abbreviate_names = "6";
     neat_colorize = "yes";
     neat_ignorechars = "_`";
-    notify_icon = "/home/mokou/.irssi/scripts/notify-icon.png";
+    notify_icon = "~/.irssi/scripts/notify-icon.png";
     mg_next_delay = "5";
     mg_no_transfer_delay = "60";
     mg_dcc_closed_retry_delay = "10";
     mg_transfer_confirmation_delay = "30";
     mg_message_prefix = "xdcc send ";
-    dccmove_dir = "~/Anime";
+    dccmove_dir = "~/Downloads";
   };
   "fe-common/core" = {
     theme = "ahoka";
