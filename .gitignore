@@ -1,4 +1,5 @@
 .config/mimeapps.list
+.config/zoomus.conf
 .mpd/mpd.log
 .mpd/pid
 .mpd/state
@@ -14,6 +15,7 @@
 .config/fontforge/
 .config/google-chrome/
 .config/htop/
+.config/ibus/
 .config/LambdaSharp/
 .config/mopidy/
 .config/neofetch/

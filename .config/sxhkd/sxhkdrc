@@ -29,8 +29,6 @@ super + {1-9,0}
 # Node Switching
 alt + Tab
   bspc node --focus next.local
-alt + grave
-  bspc node --focus prev.local
 super + {Left,Down,Up,Right}
   bspc node --focus {west,south,north,east}
 super + a

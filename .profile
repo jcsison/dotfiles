@@ -26,7 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-if [ -d "$HOME/dotfiles/utils" ] ; then
-    PATH="$HOME/dotfiles/utils:$PATH"
+if [ -d "$HOME/dotfiles/utils/bin" ] ; then
+    PATH="$HOME/dotfiles/utils/bin:$PATH"
 fi
 

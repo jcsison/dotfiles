@@ -94,7 +94,6 @@ state_line_color = "white"
 state_flags_color = "magenta"
 statusbar_color = "magenta"
 volume_color = "white"
-visualizer_color = "blue cyan green yellow red magenta"
 
 # Screen
 locked_screen_width_part = "35"

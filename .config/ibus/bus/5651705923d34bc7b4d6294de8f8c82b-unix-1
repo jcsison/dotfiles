@@ -1,3 +1,0 @@
-# This file is created by ibus-daemon, please do not modify it
-IBUS_ADDRESS=unix:abstract=/home/chieri/.cache/ibus/dbus-Ht41rvjb,guid=16c42ef19bbb49002f7b4ea85e39a69f
-IBUS_DAEMON_PID=19003

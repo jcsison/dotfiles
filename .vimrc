@@ -264,7 +264,7 @@ let g:ale_linters = {
 \}
 " }}}
 
-" Others {{{
+" Plugin Settings {{{
 au CursorMovedI,InsertLeave * if pumvisible() == 0 | silent! pclose | endif
 au StdinReadPre * let s:std_in=1
 au VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd p | endif
@@ -285,7 +285,6 @@ let g:airline_theme = 'base16'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#hunks#non_zero_only = 1
 
-" let g:ale_fix_on_save = 1
 let g:ale_fix_on_save = 0
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1

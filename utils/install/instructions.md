@@ -87,12 +87,14 @@ UUID=[uuid] ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=[uid],gi
 ```
 
 Optional Packages:
-  - gir1.2-gtk-3.0
-  - gobject-introspection
-  - python3-cairo
-  - python3-gi-cairo
-  - python3-pil
-  - python3-pip
-  - python3-pyqt5
+  - gimp
+  - trackma (pip):
+    - gir1.2-gtk-3.0
+    - gobject-introspection
+    - python3-cairo
+    - python3-gi-cairo
+    - python3-pil
+    - python3-pip
+    - python3-pyqt5
   - scrcpy
   - wine

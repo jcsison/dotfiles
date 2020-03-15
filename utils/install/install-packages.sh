@@ -9,6 +9,7 @@ sudo apt-get install \
   alsa-utils \
   bspwm \
   compton \
+  ctags \
   curl \
   debian-goodies \
   deborphan \
@@ -19,7 +20,10 @@ sudo apt-get install \
   fzf \
   g++ \
   galculator \
+  gtk2-engines-murrine \
+  gtk2-engines-pixbuf \
   htop \
+  ibus-mozc \
   irssi \
   libnotify-bin \
   lxappearance \

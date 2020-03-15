@@ -393,7 +393,7 @@ toolbar #urlbar-container {
   margin-top: -3px !important;
 
   /* border-radius: 12px !important; */
-  opacity: 0.9 !important;
+  /* opacity: 0.9 !important; */
   margin-bottom: 3px !important;
   color: var(--secondary-text) !important;
 }
@@ -408,7 +408,7 @@ toolbar #urlbar-container {
 /* hover tab */
 #TabsToolbar .tabbrowser-tab:hover {
   /* background-color: var(--alt-bg) !important; */
-  opacity: 0.9 !important;
+  /* opacity: 0.9 !important; */
   background-size: 100% 100% !important;
   background-repeat: no-repeat !important;
   color: var(--secondary-text) !important;
@@ -662,6 +662,7 @@ menu.bookmark-item:not([query]):not([label='Bookmarks Toolbar'])[open] {
 .tab-icon-overlay {
   list-style-image: url('https://puu.sh/r0Ect/f22929bb47.png') !important;
   opacity: 0.7 !important;
+  margin: 0 0 0 -16px !important;
   filter: grayscale(100%) !important;
 }
 
