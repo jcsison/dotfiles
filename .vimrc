@@ -85,6 +85,7 @@ set foldcolumn=1
 set foldmethod=marker
 set foldtext=FoldText()
 set formatoptions=croqlt
+set guicursor=n-c:block-Cursor/lCursor,i-ci-v-ve:ver25-Cursor2/lCursor2,r-cr:hor20,o:hor50
 set hidden
 set history=1000
 set hlsearch
@@ -339,6 +340,9 @@ let g:rainbow_conf = {
 \  }
 \}
 
+" }}}
+
+" Other {{{
 map -a :call SyntaxAttr()<CR>
 
 syntax on
@@ -351,13 +355,4 @@ highlight NonText ctermbg=8
 highlight SpecialKey ctermbg=8
 
 colorscheme ahoka
-" }}}
-
-" GVim {{{
-set guioptions=+a
-set guifont=tewi
-set guicursor=n-v-c:block-Cursor
-set guicursor+=i:block-Cursor
-set guicursor+=n-v-c:blinkon0
-set guicursor+=i:blinkon0
 " }}}
