@@ -12,7 +12,7 @@ URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
 ! URxvt-Perls ------------------------------------------------------
-URxvt.perl-lib:             /home/chieri/dotfiles/.config/urxvt/perls
+URxvt.perl-lib:             ~/dotfiles/.config/urxvt/perls
 URxvt*altSendsEscape:       true
 URxvt.perl-ext-common:      default,keyboard-select
 URxvt.keysym.M-Escape:      perl:keyboard-select:activate

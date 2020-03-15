@@ -2,13 +2,13 @@
 
 # Padding
 bspc config top_padding 30
-bspc config bottom_padding 15
-bspc config left_padding 15
-bspc config right_padding 15
+bspc config bottom_padding 10
+bspc config left_padding 10
+bspc config right_padding 10
 
 # Borders and gaps
 bspc config border_width 1
-bspc config window_gap 40
+bspc config window_gap 50
 bspc config borderless_monocle false
 bspc config gapless_monocle false
 
