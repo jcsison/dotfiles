@@ -15,6 +15,7 @@ mpc stop
 sxhkd &
 tint2 &
 compton -b
+dunst &
 xrdb -merge /home/$USER/.config/urxvt/Xresources
 feh --bg-fill /home/$USER/dotfiles/utils/wallpaper/1572143388899.png
 
