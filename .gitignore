@@ -1,4 +1,5 @@
 .config/mimeapps.list
+.config/QtProject.conf
 .config/zoomus.conf
 .config/trackma/accounts.dict
 .mpd/mpd.log
@@ -26,6 +27,7 @@
 .config/qBittorrent/
 .config/Thunar/
 .config/VSCodium/
+.config/xfce4/
 .emacs.d/.cache/
 .vim/autoload/
 .vim/plugged/

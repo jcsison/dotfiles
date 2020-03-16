@@ -5,8 +5,8 @@
 
 # If not running interactively, don't do anything
 case $- in
-    *i*) ;;
-      *) return;;
+  *i*) ;;
+    *) return;;
 esac
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -47,27 +47,31 @@ esac
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
-    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
-    else
-	color_prompt=
-    fi
+  if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
+  else
+    color_prompt=
+  fi
 fi
+
+git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
+}
 
 if [ "$color_prompt" = yes ]; then
   if [ "$HOSTNAME" = localhost ]; then
-    PS1='\[\033[01;36m\]\u\[\033[01;34m\]@\[\033[01;36m\]clover \[\033[01;32m\]\w \[\033[01;36m\]> \[\033[00m\]'
+    PS1='\[\033[01;36m\]\u\[\033[01;34m\]@\[\033[01;36m\]clover \[\033[01;32m\]\w \[\033[01;31m\]$(git_branch)\[\033[01;36m\]> \[\033[00m\]'
   else
-    PS1='\[\033[01;36m\]\u\[\033[01;34m\]@\[\033[01;36m\]\h \[\033[01;32m\]\w \[\033[01;36m\]> \[\033[00m\]'
+    PS1='\[\033[01;36m\]\u\[\033[01;34m\]@\[\033[01;36m\]\h \[\033[01;32m\]\w \[\033[01;31m\]$(git_branch)\[\033[01;36m\]> \[\033[00m\]'
   fi
 else
   if [ "$HOSTNAME" = localhost ]; then
-    PS1='\u@clover \w > '
+    PS1='\u@clover \w $(git_branch)> '
   else
-    PS1='\u@\h \w > '
+    PS1='\u@\h $(git_branch)\w > '
   fi
 fi
 unset color_prompt force_color_prompt
@@ -75,19 +79,19 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;\u: \w\a\]$PS1"
-    ;;
+  PS1="\[\e]0;\u: \w\a\]$PS1"
+  ;;
 *)
-    ;;
+  ;;
 esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 fi
 
 if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
+  . ~/.bash_aliases
 fi
 
 # enable programmable completion features (you don't need to enable
@@ -103,9 +107,8 @@ fi
 
 
 if [ -z "$SSH_AUTH_SOCK" ]; then
-    eval $(ssh-agent -s) &> /dev/null
-    ssh-add &> /dev/null
+  eval $(ssh-agent -s) &> /dev/null
+  ssh-add &> /dev/null
 fi
 
 set -o vi
-

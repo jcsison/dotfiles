@@ -12,12 +12,24 @@ export XMODIFIERS=@im=ibus
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 mpc stop
-sxhkd &
-tint2 &
 compton -b
+tint2 &
+sxhkd &
 dunst &
-xrdb -merge /home/$USER/.config/urxvt/Xresources
-feh --bg-fill /home/$USER/dotfiles/utils/wallpaper/1572143388899.png
+xrdb -merge ~/.config/urxvt/Xresources
+
+today=$(date +'%m%d')
+if [[ "$today" > "1220" || "$today" < "0319" ]]; then
+  feh --bg-fill ~/dotfiles/utils/wallpaper/winter.png
+elif [[ "$today" > "0921" ]]; then
+  echo fall
+  feh --bg-fill ~/dotfiles/utils/wallpaper/winter.png
+elif [[ "$today" > "0619" ]]; then
+  feh --bg-fill ~/dotfiles/utils/wallpaper/summer.jpg
+else
+  echo spring
+  feh --bg-fill ~/dotfiles/utils/wallpaper/winter.png
+fi
 
 setxkbmap -option caps:super
 xsetroot -cursor_name left_ptr &
@@ -26,7 +38,6 @@ xinput --set-prop 'Elan Touchpad' 'libinput Tapping Enabled' 1
 xinput --set-prop 'Elan Touchpad' 'libinput Horizontal Scroll Enabled' 0
 xset s off
 
-/usr/lib/notification-daemon/notification-daemon &
 redshift &
 pulseaudio -D
 ibus-daemon -d

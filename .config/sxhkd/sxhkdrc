@@ -57,11 +57,8 @@ super + {minus,equal}
 super + b
   bspc node @/ -B
 super + alt + {6-9,0}
-  size={-30,-10,10,30,50};\
-  bspc config top_padding "$(($size+20))";\
-  bspc config bottom_padding "$size";\
-  bspc config left_padding "$size";\
-  bspc config right_padding "$size"
+  size={-40,-20,0,20,40};\
+  bspc config window_gap "$(($size+50))"
 super + grave
   bspc config -d focused split_ratio 0.5;\
   bspc node @focused:/ --equalize;\
@@ -123,8 +120,10 @@ ctrl + {F9,F10}
 
 # Floating Node Manipulation
 super + ctrl + {Left,Down,Up,Right}
+  bspc node -t floating;\
   bspc node -v {-40 0,0 40,0 -40,40 0}
 super + ctrl + alt + {Left,Down,Up,Right}
+  bspc node -t floating;\
   bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # Application Hotkeys

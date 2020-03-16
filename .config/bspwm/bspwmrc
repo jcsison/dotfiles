@@ -38,10 +38,10 @@ bspc config auto_cancel true
 bspc config initial_polarity first_child
 
 bspc rule -a *:sun-awt-X11-XFramePeer state=floating
-bspc rule -a "Galculator" state=floating layer=above
-bspc rule -a "Lxappearance" state=floating layer=above
+bspc rule -a "Galculator" state=floating
+bspc rule -a "Lxappearance" state=floating
 bspc rule -a "Nightly" state=tiled
-bspc rule -a "qt5ct" state=floating layer=above
-bspc rule -a "Wine" state=floating layer=above
-bspc rule -a mpv state=floating layer=above
+bspc rule -a "qt5ct" state=floating
+bspc rule -a "Wine" state=floating
+bspc rule -a mpv state=floating
 bspc rule -a tint2 floating=on manage=off layer=below
