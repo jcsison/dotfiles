@@ -87,6 +87,7 @@ UUID=[uuid] ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=[uid],gi
 ```
 
 Optional Packages:
+  - default-jre
   - gimp
   - trackma (pip):
     - gir1.2-gtk-3.0

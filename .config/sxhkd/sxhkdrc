@@ -108,15 +108,15 @@ super + ctrl + f
 F8
   amixer set Master toggle
 super + F8
-  mpc toggle
+  amixer set Master 50% unmute
 alt + F8
-  mpc stop
+  mpc | grep -q "playing" && mpc stop || mpc play
 ctrl + F8
-  mpc play
+  mpc toggle
 {F9,F10}
-  amixer Master 5{-,+} unmute
+  amixer set Master 5%{-,+} unmute
 ctrl + {F9,F10}
-  amixer Master 1{-,+} unmute
+  amixer set Master 10%{-,+} unmute
 
 # Floating Node Manipulation
 super + ctrl + {Left,Down,Up,Right}
