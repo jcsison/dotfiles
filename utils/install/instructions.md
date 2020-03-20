@@ -52,9 +52,10 @@ startx
 ```
 
 Fix font rendering:
+
 ```bash
 sudo dpkg-reconfigure fontconfig-config
-# native > none > automatic > yes
+# autohinter > slight > automatic > yes
 ```
 
 Install Firefox Nightly:
@@ -71,8 +72,18 @@ rm -r firefox*
 ```
 
 Manually install programs:
+
 - [Anki](https://apps.ankiweb.net/#linux)
 - [Discord](https://discordapp.com/api/download?platform=linux&format=deb)
+- [Node.js](https://nodejs.org/en/)
+  - commitizen
+  - eslint
+  - eslint-config-prettier
+  - eslint-plugin-react
+  - prettier
+  - prettier/plugin-php
+  - stylelint
+  - stylelint-config-standard
 - [VSCodium](https://github.com/VSCodium/vscodium/releases)
 
 Mount ntfs with `fstab`:
@@ -87,15 +98,16 @@ UUID=[uuid] ntfs-3g defaults,nls=utf8,umask=000,dmask=027,fmask=137,uid=[uid],gi
 ```
 
 Optional Packages:
-  - default-jre
-  - gimp
-  - trackma (pip):
-    - gir1.2-gtk-3.0
-    - gobject-introspection
-    - python3-cairo
-    - python3-gi-cairo
-    - python3-pil
-    - python3-pip
-    - python3-pyqt5
-  - scrcpy
-  - wine
+
+- default-jre
+- gimp
+- trackma (pip):
+  - gir1.2-gtk-3.0
+  - gobject-introspection
+  - python3-cairo
+  - python3-gi-cairo
+  - python3-pil
+  - python3-pip
+  - python3-pyqt5
+- scrcpy
+- wine

@@ -1,9 +1,9 @@
 ! Urxvt ------------------------------------------------------------
 URxvt.background: [100]#222222
-URxvt.foreground: #CCCCCC
-URxvt.scrollstyle: plain
-URxvt.scrollBar: false
 URxvt.colorUL: #0088CC
+URxvt.foreground: #CCCCCC
+URxvt.scrollBar: false
+URxvt.scrollstyle: plain
 
 URxvt.depth: 24
 URxvt.internalBorder: 16
@@ -12,15 +12,22 @@ URxvt.inputMethod: ibus
 URxvt.preeditType: OverTheSpot
 
 ! URxvt-Perls ------------------------------------------------------
-URxvt.perl-lib:             ~/dotfiles/.config/urxvt/perls
 URxvt*altSendsEscape:       true
-URxvt.perl-ext-common:      default,keyboard-select
 URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
+URxvt.perl-ext-common:      default,keyboard-select
+URxvt.perl-lib:             ~/dotfiles/.config/urxvt/perls
 
 ! Font settings ----------------------------------------------------
 URxvt*font: xft:tewi:size=9
 URxvt.letterSpace: 0
+
+Xft.antialias: true
+Xft.autohint: false
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
 
 ! Colors -----------------------------------------------------------
 
@@ -60,8 +67,6 @@ URxvt.letterSpace: 0
 ! white
 *.color7:       #c0c5ce
 *.color15:      #eff1f5
-
-Xft.lcdfilter: lcddefault
 
 ! Common Keybinds for Navigations ----------------------------------
 URxvt.keysym.Shift-Up: command:\033]720;1\007

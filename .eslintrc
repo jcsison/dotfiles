@@ -4,8 +4,8 @@
     "es6": true
   },
   "extends": [
-    "prettier",
-    "standard"
+    "standard",
+    "prettier"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -19,7 +19,6 @@
     "sourceType": "module"
   },
   "plugins": [
-    "prettier",
     "react"
   ],
   "rules": {

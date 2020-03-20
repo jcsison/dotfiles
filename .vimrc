@@ -11,25 +11,25 @@ call plug#begin('~/.vim/plugged')
 
 " General plugins {{{
 Plug 'dense-analysis/ale'
+Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'Raimondi/delimitMate'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'yegappan/grep'
 Plug 'Yggdroot/indentLine'
+Plug 'itchyny/lightline.vim'
+Plug 'maximbaz/lightline-ale'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'alvan/vim-closetag'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'etdev/vim-hexcolor'
 Plug 'xolox/vim-misc'
-Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-repeat'
 Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-surround'
@@ -41,22 +41,26 @@ Plug 'wesQ3/vim-windowswap'
 " C#
 Plug 'OrangeT/vim-csharp'
 
-" JS
-Plug 'myhere/vim-nodejs-complete'
-
-" TS
-Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
-
-" Web
-" Plug 'othree/html5.vim'
-Plug 'StanAngeloff/php.vim'
-Plug 'phpactor/phpactor'
+" HTML/CSS
+Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
+
+" JS
+Plug 'yuezk/vim-js'
+Plug 'elzr/vim-json'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " Markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'plasticboy/vim-markdown'
+
+" PHP
+Plug 'StanAngeloff/php.vim'
+Plug 'phpactor/phpactor'
+
+" TS
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 " }}}
 
 call plug#end()
@@ -98,6 +102,8 @@ set list
 set listchars=eol:↵,trail:·,tab:»·,nbsp:␣
 set mouse=a
 set noerrorbells
+set nojoinspaces
+set nomodeline
 set noshowmode
 set nostartofline
 set notimeout
@@ -214,10 +220,6 @@ noremap <silent><S-s> :wa<CR>
 noremap  <C-f>      :GrepBuffer<Space>
 inoremap <C-f><C-o> :GrepBuffer<Space>
 
-" ;/, + return moves to the end of the current line and puts ;/,
-inoremap ;<CR> <End>;
-inoremap ,<CR> <End>,
-
 " Map leader + x/d/D to black hole register
 nnoremap <leader>x "_x
 nnoremap <leader>d "_d
@@ -242,30 +244,7 @@ inoremap <expr><Up>    pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 " }}}
 
-" Language Specific {{{
-" Trim trailing whitespace
-au FileType c,cpp,coffee,java,ruby,python,sh au BufWritePre * :%s/\s\+$//e | :call histdel('/', -1)
-
-" Type settings
-au FileType coffee,css,html,javascript,javascriptreact,json,lua,perl,php,python,ruby,sh,typescript,typescriptreact,xml setl shiftwidth=2 softtabstop=2 tabstop=2
-
-au FileType gitcommit,markdown setl spell
-
-" ALE
-let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
-let g:ale_fixers = {
-\  'css': ['prettier', 'stylelint'],
-\  'javascript': ['eslint', 'prettier'],
-\  'typescript': ['eslint'],
-\  '*': ['remove_trailing_lines', 'trim_whitespace'],
-\}
-let g:ale_linters = {
-\  'css': ['stylelint'],
-\  'javascript': ['eslint'],
-\}
-" }}}
-
-" Plugin Settings {{{
+" Plugin settings {{{
 au CursorMovedI,InsertLeave * if pumvisible() == 0 | silent! pclose | endif
 au StdinReadPre * let s:std_in=1
 au VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | wincmd p | endif
@@ -274,26 +253,19 @@ if filereadable('/proc/cpuinfo')
   let &makeprg = 'make -j'.(system('grep -c ^processor /proc/cpuinfo')+1)
 endif
 
-let delimitMate_expand_cr = 2
-let delimitMate_expand_space = 1
-
 let NERDTreeDirArrows = 1
 let NERDTreeIgnore=[ '\.[ls]\?o$', '\~$' ]
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden=1
 
-let g:airline_theme = 'base16'
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#hunks#non_zero_only = 1
-
-let g:ale_fix_on_save = 0
+let g:ale_fix_on_save = 1
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 'never'
 let g:ale_linters_explicit = 1
 let g:ale_sign_column_always = 1
 let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '⚠'
+let g:ale_sign_warning = '#'
 
 let g:indentLine_char = '│'
 let g:indentLine_bufNameExclude = [ 'NERD_tree.*' ]
@@ -302,12 +274,36 @@ let g:indentLine_color_gui = '#222222'
 let g:indentLine_color_term = 236
 let g:indentLine_color_tty = 236
 
-let g:jsx_ext_required = 0
-
 let g:licenses_authors_name = 'Jesser Sison'
 
-let g:mkdp_markdown_css='~/dotfiles/.vim/etc/github-markdown.css'
-let g:mkdp_refresh_slow = 1
+let g:lightline = {
+\  'colorscheme': 'jellybeans',
+\  'active': {
+\    'left': [ [ 'mode', 'paste' ],
+\              [ 'gitbranch',  'readonly', 'filename', 'modified' ] ],
+\    'right': [ [ 'linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok' ],
+\               [ 'lineinfo' ],
+\               [ 'percent' ],
+\               [ 'fileformat', 'fileencoding', 'filetype' ] ]
+\  },
+\ 'component_function': {
+\    'gitbranch': 'FugitiveHead'
+\  },
+\  }
+let g:lightline.component_expand = {
+\  'linter_checking': 'lightline#ale#checking',
+\  'linter_errors': 'lightline#ale#errors',
+\  'linter_infos': 'lightline#ale#infos',
+\  'linter_ok': 'lightline#ale#ok',
+\  'linter_warnings': 'lightline#ale#warnings',
+\  }
+let g:lightline.component_type = {
+\  'linter_checking': 'right',
+\  'linter_errors': 'error',
+\  'linter_infos': 'right',
+\  'linter_ok': 'right',
+\  'linter_warnings': 'warning',
+\  }
 
 let g:NERDTreeIndicatorMapCustom = {
 \  "Modified"  : "~",
@@ -326,20 +322,57 @@ let g:rainbow_active = 1
 let g:rainbow_conf = {
 \  'guifgs': ['#94aad1', '#8ab4be', '#edc472', '#c98dad'],
 \  'ctermfgs': ['12', '14', '11', '13'],
-\  'operators': '_!\|=\|&\|\.\|:\|;\|,\|<\|>\|+\|-\|\/\@<!\*\|\/\(\/\|\*\)\@!_',
+\  'operators': '_,_',
 \  'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
 \  'separately': {
 \    '*': {},
-\    'cpp': {
-\      'parentheses': [
-\        'start=/(/ end=/)/ fold',
-\        'start=/\[/ end=/\]/ fold',
-\        'start=/{/ end=/}/ fold',
-\        'start=/\(\(\<operator\>\)\@<!<\)\&[a-zA-Z0-9_]\@<=<\ze[^<]/ end=/>/']
-\    },
+\    'css': 0,
+\    'vim': {
+\      'parentheses_options': 'containedin=vimFuncBody',
+\    }
 \  }
+\  }
+
+let g:startify_custom_header =
+\ 'startify#pad(startify#fortune#boxed())'
+" }}}
+
+" Language specific settings {{{
+" Trim trailing whitespace
+au FileType c,cpp,coffee,java,ruby,python,sh au BufWritePre * :%s/\s\+$//e | :call histdel('/', -1)
+
+" Type settings
+au FileType coffee,css,html,javascript,javascriptreact,json,lua,perl,php,python,ruby,sh,typescript,typescriptreact,xml setl shiftwidth=2 softtabstop=2 tabstop=2
+
+au FileType gitcommit,markdown setl spell
+
+" ALE settings
+let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
+let g:ale_fixers = {
+\  'css': ['prettier'],
+\  'html': ['prettier'],
+\  'javascript': ['prettier'],
+\  'json': ['prettier'],
+\  'markdown': ['prettier'],
+\  'php': ['prettier'],
+\  'typescript': ['prettier'],
+\  '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
+let g:ale_linters = {
+\  'css': ['stylelint'],
+\  'html': ['tidy'],
+\  'javascript': ['eslint'],
+\  'php': ['php'],
 \}
 
+" Plugin settings
+let g:mkdp_markdown_css='~/dotfiles/.vim/etc/github-markdown.css'
+let g:mkdp_refresh_slow = 1
+
+let g:vim_json_syntax_conceal = 0
+
+let g:vim_markdown_conceal = 0
+let g:vim_markdown_folding_disabled = 1
 " }}}
 
 " Other {{{

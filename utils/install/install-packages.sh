@@ -39,6 +39,7 @@ sudo apt-get install \
   neofetch \
   neovim \
   okular \
+  php \
   pulseaudio \
   qt5ct \
   ranger \
@@ -50,6 +51,7 @@ sudo apt-get install \
   ssh \
   sxhkd \
   thunar \
+  tidy \
   tint2 \
   tldr \
   unzip \
