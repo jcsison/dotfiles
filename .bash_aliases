@@ -2,7 +2,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 
 alias awoo='ssh horo@awoo'
-alias aws='aws2'
+alias bz2='tar -xvjf'
 alias checkip='curl -s checkip.dyndns.org | grep -Eo "[0-9\.]+"'
 alias cmatrix='cmatrix -b'
 alias cp='cp -iv'

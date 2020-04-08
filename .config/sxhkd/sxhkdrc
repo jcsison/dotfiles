@@ -19,10 +19,6 @@ super + comma
   bspc desktop --focus prev
 super + period
   bspc desktop --focus next
-F1
-  bspc desktop --focus prev
-F2
-  bspc desktop --focus next
 super + {1-9,0}
   bspc desktop --focus ^{1-9,10}
 
@@ -36,7 +32,7 @@ super + a
 
 # Node Manipulation
 super + Tab
-  bspc node --swap last
+  bspc node --swap last.local
 {super,super + shift} + F3
   bspc node @focused:/ --flip {vertical,horizontal}
 super + {ctrl,alt} + F3

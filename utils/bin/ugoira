@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# Convert to webm from a pixiv ugoira
+
+# Framerate argument
+while [[ $# > 0 ]]
+do
+  key="$1"
+
+  case $key in
+    -f|--framerate)
+      FRAMERATE="$2"
+      shift
+      ;;
+    *)
+      FRAMERATE=50
+      FILENAME="$1"
+  esac
+  shift
+done
+
+UGOIRA_SUFFIX=_ugoira1920x1080.zip
+IMAGE_ID=$(basename ${FILENAME/${UGOIRA_SUFFIX}})
+THIS_DIR=$(pwd)
+
+# Extract to temporary directory
+mkdir $IMAGE_ID
+unzip -q $FILENAME -d $IMAGE_ID
+cd $IMAGE_ID
+
+# Convert all jpg to png
+echo "Converting images to png..."
+for i in *.jpg; do
+  convert $i ${i/jpg/png}
+  # rm $i
+done
+echo "Done."
+
+# Then, take the sequence of PNG files and convert to YUV
+echo "Generating YUV..."
+NUM_FRAMES=$(ls -1 *.png | wc -l)
+png2yuv -I p -f $FRAMERATE -b 0 -n $NUM_FRAMES -j %06d.png > ${IMAGE_ID}.yuv
+
+# Then encode to webm
+echo "Encoding to webm..."
+vpxenc --good --cpu-used=0 --auto-alt-ref=1 --lag-in-frames=16 \
+  --end-usage=vbr --passes=2 --threads=2 --target-bitrate=3000 \
+  -o ../${IMAGE_ID}.webm ${IMAGE_ID}.yuv
+
+cd ..
+rm -r $IMAGE_ID

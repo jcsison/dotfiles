@@ -171,11 +171,9 @@ noremap <silent><C-e> :NERDTreeToggle \| :NERDTreeMirror<CR>
 " Toggle Tagbar with Ctrl + t
 noremap <silent><C-t> :TagbarToggle<CR>
 
-" Scroll with shift + up/down
+" Scroll with ctrl + up/down
 noremap <C-Down> <C-e>
 noremap <C-Up>   <C-y>
-noremap <S-j>    <C-e>
-noremap <S-k>    <C-y>
 
 " Move tabs with shift + h/l
 nnoremap <silent><S-h> :tabmove -1<CR>
@@ -242,6 +240,10 @@ inoremap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
 imap     <expr><S-Tab> pumvisible() ? "\<C-p>" : "<Plug>delimitMateS-Tab"
 inoremap <expr><Up>    pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
+
+" Unbind F1
+nnoremap <F1> :echo<CR>
+inoremap <F1> <C-o>:echo<CR>
 " }}}
 
 " Plugin settings {{{

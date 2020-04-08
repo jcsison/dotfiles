@@ -25,12 +25,14 @@ sudo apt-get install \
   gtk2-engines-pixbuf \
   htop \
   ibus-mozc \
+  imagemagick \
   irssi \
   libfile-path-expand-perl \
   libnotify-bin \
   lxappearance \
   make \
   man \
+  mjpegtools \
   mpc \
   mpd \
   mpv \
@@ -55,6 +57,7 @@ sudo apt-get install \
   tint2 \
   tldr \
   unzip \
+  vpx-tools \
   wmname \
   x11-utils \
   x11-xserver-utils \

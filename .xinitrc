@@ -1,4 +1,4 @@
-: ${LANG:=en_US.UTF-8}; export LANG
+:${LANG:=en_US.UTF-8}; export LANG
 LC_ALL=en_US.UTF-8
 LC_CTYPE=en_US.UTF-8
 LC_MESSAGES=en_US.UTF-8
@@ -41,7 +41,7 @@ xset s off
 
 redshift &
 pulseaudio -D
-ibus-daemon -d
+ibus-daemon -d --xim
 discord &
 trackma-qt &
 wmname LG3D
