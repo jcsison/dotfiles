@@ -26,6 +26,7 @@
 .config/NuGet/
 .config/pulse/
 .config/qBittorrent/
+.config/Slack/
 .config/Thunar/
 .config/VSCodium/
 .config/xfce4/

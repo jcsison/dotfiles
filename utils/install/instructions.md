@@ -75,11 +75,13 @@ Manually install programs:
 
 - [Anki](https://apps.ankiweb.net/#linux)
 - [Discord](https://discordapp.com/api/download?platform=linux&format=deb)
+  - [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord)
 - [Node.js](https://nodejs.org/en/)
   - commitizen
   - eslint
   - eslint-config-prettier
   - eslint-plugin-react
+  - http-server
   - prettier
   - prettier/plugin-php
   - stylelint

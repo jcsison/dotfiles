@@ -55,14 +55,14 @@ super + b
 super + alt + {6-9,0}
   size={-40,-20,0,20,40};\
   bspc config window_gap "$(($size+50))"
-super + grave
+{super,super + shift} + grave
   bspc config -d focused split_ratio 0.5;\
-  bspc node @focused:/ --equalize;\
-  bspc config -d focused window_gap 50;\
-  bspc config top_padding 30;\
-  bspc config bottom_padding 10;\
-  bspc config left_padding 10;\
-  bspc config right_padding 10
+  bspc node @focused:/ {--equalize,--balance};\
+  bspc config window_gap 70;\
+  bspc config top_padding 50;\
+  bspc config bottom_padding 30;\
+  bspc config left_padding 30;\
+  bspc config right_padding 30
 super + {_,shift +}i
   insert={true,false};\
   $insert && bspc node -i || \
