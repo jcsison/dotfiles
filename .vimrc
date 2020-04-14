@@ -93,7 +93,6 @@ set guicursor=n-c:block-Cursor/lCursor,i-ci-v-ve:ver25-Cursor2/lCursor2,r-cr:hor
 set hidden
 set history=1000
 set hlsearch
-set ignorecase
 set incsearch
 set laststatus=2
 set lazyredraw
@@ -166,26 +165,32 @@ endfunction
 let mapleader="\<Space>"
 
 " Toggle NERDTree with Ctrl + e
-noremap <silent><C-e> :NERDTreeToggle \| :NERDTreeMirror<CR>
+nnoremap <silent><C-e> :NERDTreeToggle \| :NERDTreeMirror<CR>
 
 " Toggle Tagbar with Ctrl + t
-noremap <silent><C-t> :TagbarToggle<CR>
+nnoremap <silent><C-t> :TagbarToggle<CR>
 
-" Scroll with ctrl + up/down
-noremap <C-Down> <C-e>
-noremap <C-Up>   <C-y>
+" Scroll with ctrl + up/down/j/k
+nnoremap <c-down> <c-e>
+nnoremap <c-up>   <c-y>
+nnoremap <c-j>    <c-e>
+nnoremap <c-k>    <c-y>
 
-" Move tabs with shift + h/l
-nnoremap <silent><S-h> :tabmove -1<CR>
-nnoremap <silent><S-l> :tabmove +1<CR>
+vnoremap <c-down> <c-e>
+vnoremap <c-up>   <c-y>
+vnoremap <c-j>    <c-e>
+vnoremap <c-k>    <c-y>
 
-" Switch tabs with ctrl + h/l
-nnoremap <silent><C-h> :tabp<CR>
-nnoremap <silent><C-l> :tabn<CR>
+" Shift+h/j/k/l
+nnoremap <silent><S-h> 5h
+nnoremap <silent><S-j> 5j
+nnoremap <silent><S-k> 5k
+nnoremap <silent><S-l> 5l
 
-" Switch HSplits with ctrl + j/k
-nnoremap <silent><C-j> :wincmd j<CR>
-nnoremap <silent><C-k> :wincmd k<CR>
+vnoremap <silent><S-h> 5h
+vnoremap <silent><S-j> 5j
+vnoremap <silent><S-k> 5k
+vnoremap <silent><S-l> 5l
 
 " Switch splits with alt + hjkl or alt + arrow keys
 nnoremap <silent><A-h> :wincmd h<CR>
@@ -205,24 +210,22 @@ nnoremap <silent><S-A-k> :resize +5<CR>
 nnoremap <silent><S-A-l> :vertical resize +5<CR>
 
 " Remove search highlighting with ctrl + n
-noremap  <silent><C-n> :nohl<CR>
+nnoremap <silent><C-n> :nohl<CR>
 inoremap <silent><C-n> <C-o>:nohl<CR>
 
-" Map ctrl + s to save current buffer if it has been modified
-noremap <silent><C-s> :update<CR>
-
-" Map shift + s to write to all buffers
-noremap <silent><S-s> :wa<CR>
+" Clear highlighting on escape in normal mode
+nnoremap <silent><ESC> :nohl<return><ESC>
+nnoremap <silent><ESC>^[ <ESC>^[
 
 " Grep buffer with ctrl + f
-noremap  <C-f>      :GrepBuffer<Space>
+nnoremap <C-f>      :GrepBuffer<Space>
 inoremap <C-f><C-o> :GrepBuffer<Space>
 
 " Map leader + x/d/D to black hole register
 nnoremap <leader>x "_x
 nnoremap <leader>d "_d
 nnoremap <leader>D "_D
-vnoremap <leader>d "_d
+nnoremap <leader>d "_d
 
 " Map leader + o/O to create a newline without switching modes
 nnoremap <leader>o o<ESC>
@@ -244,6 +247,7 @@ inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 " Unbind F1
 nnoremap <F1> :echo<CR>
 inoremap <F1> <C-o>:echo<CR>
+vnoremap <F1> :echo<CR>
 " }}}
 
 " Plugin settings {{{

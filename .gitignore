@@ -14,11 +14,13 @@
 .config/configstore
 .config/dconf/
 .config/discord/
+.config/filezilla/
 .config/fontforge/
 .config/GIMP/
 .config/google-chrome/
 .config/htop/
 .config/ibus/
+.config/kdeglobals
 .config/kdenliverc
 .config/LambdaSharp/
 .config/mopidy/

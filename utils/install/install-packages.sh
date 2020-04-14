@@ -43,6 +43,7 @@ sudo apt-get install \
   okular \
   php \
   pulseaudio \
+  qbittorrent \
   qt5ct \
   ranger \
   redshift \
