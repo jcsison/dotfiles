@@ -93,6 +93,7 @@ set guicursor=n-c:block-Cursor/lCursor,i-ci-v-ve:ver25-Cursor2/lCursor2,r-cr:hor
 set hidden
 set history=1000
 set hlsearch
+set ignorecase
 set incsearch
 set laststatus=2
 set lazyredraw
@@ -353,7 +354,7 @@ au FileType coffee,css,html,javascript,javascriptreact,json,lua,perl,php,python,
 au FileType gitcommit,markdown setl spell
 
 " ALE settings
-let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
+" let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
 let g:ale_fixers = {
 \  'css': ['prettier'],
 \  'html': ['prettier'],

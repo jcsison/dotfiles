@@ -26,6 +26,7 @@
 .config/mopidy/
 .config/neofetch/
 .config/NuGet/
+.config/Postman/
 .config/pulse/
 .config/qBittorrent/
 .config/Slack/

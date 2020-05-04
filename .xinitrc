@@ -29,8 +29,7 @@ today=$(date +'%m%d')
 if [[ "$today" > "1220" || "$today" < "0319" ]]; then
   feh --bg-fill ~/dotfiles/utils/wallpaper/winter.png
 elif [[ "$today" > "0921" ]]; then
-  echo fall
-  feh --bg-fill ~/dotfiles/utils/wallpaper/winter.png
+  feh --bg-fill ~/dotfiles/utils/wallpaper/fall.jpg
 elif [[ "$today" > "0619" ]]; then
   feh --bg-fill ~/dotfiles/utils/wallpaper/summer.jpg
 else

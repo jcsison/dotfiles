@@ -102,9 +102,9 @@ super + ctrl + f
 
 # Volume/mpc Control
 F8
-  amixer set Master toggle
-super + F8
   amixer set Master 50% unmute
+super + F8
+  amixer set Master toggle
 alt + F8
   mpc | grep -q "playing" && mpc stop || mpc play
 ctrl + F8

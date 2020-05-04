@@ -1,11 +1,11 @@
 {
     "close_to_tray": true,
     "colors": {
-        "is_airing": "#D2FAFA",
+        "is_airing": "#00a3fa",
         "is_playing": "#9696FA",
-        "is_queued": "#D2FAD2",
-        "new_episode": "0,12",
-        "not_aired": "#FAFAD2",
+        "is_queued": "#fa0070",
+        "new_episode": "#a72246",
+        "not_aired": "#32b365",
         "progress_bg": "#F5F5F5",
         "progress_complete": "#00D200",
         "progress_fg": "#74C0FA",

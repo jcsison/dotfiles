@@ -4,7 +4,7 @@
   corner_radius = 0
   ellipsize = middle
   follow = mouse
-  font = tewi 8
+  font = Source Sans Pro 9
   force_xinerama = false
   format = "<span foreground='#f3f4f5'><b>%s %p</b></span>\n%b"
   frame_color = "#232323"
@@ -40,10 +40,10 @@
   word_wrap = yes
 
 [shortcuts]
-  close = ctrl+space
-  close_all = ctrl+shift+space
+  close = ctrl+shift+space
+  close_all = ctrl+mod1+shift+space
   context = ctrl+shift+period
-  history = ctrl+Tab
+  history = ctrl+space
 
 [urgency_low]
   background = "#232323"

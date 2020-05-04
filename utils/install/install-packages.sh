@@ -21,6 +21,7 @@ sudo apt-get install \
   fzf \
   g++ \
   galculator \
+  git-flow \
   gtk2-engines-murrine \
   gtk2-engines-pixbuf \
   htop \
@@ -31,6 +32,7 @@ sudo apt-get install \
   libnotify-bin \
   lxappearance \
   make \
+  maim \
   man \
   mjpegtools \
   mpc \

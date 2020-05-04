@@ -4,7 +4,7 @@
     "auto_status_change_if_scored": true,
     "autoretrieve": "days",
     "autoretrieve_days": 3,
-    "autosend": "minutes",
+    "autosend": "always",
     "autosend_at_exit": true,
     "autosend_minutes": 60,
     "autosend_size": 5,
