@@ -31,8 +31,8 @@ sudo apt-get install \
   libfile-path-expand-perl \
   libnotify-bin \
   lxappearance \
-  make \
   maim \
+  make \
   man \
   mjpegtools \
   mpc \
@@ -43,6 +43,7 @@ sudo apt-get install \
   neofetch \
   neovim \
   okular \
+  pavucontrol \
   php \
   pulseaudio \
   qbittorrent \

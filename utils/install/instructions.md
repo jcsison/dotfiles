@@ -86,6 +86,7 @@ Manually install programs:
   - prettier/plugin-php
   - stylelint
   - stylelint-config-standard
+  - stylelint-order
   - stylelint-scss
 - [VSCodium](https://github.com/VSCodium/vscodium/releases)
 
