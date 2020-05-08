@@ -98,7 +98,7 @@ super + ctrl + f
 
 # Brightness Control
 {F6,F7}
-  brightness {down,up}
+  sudo -S ~/dotfiles/utils/bin/brightness {down,up}
 
 # Volume/mpc Control
 F8

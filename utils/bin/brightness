@@ -1,0 +1,21 @@
+#!/bin/bash
+
+BRIGHTNESS=$(cat /sys/class/backlight/*/brightness);
+MAX_BRIGHTNESS=$(cat /sys/class/backlight/*/max_brightness);
+STEP=$(($MAX_BRIGHTNESS / 10))
+USERNAME=$(whoami)
+
+error_report(){
+	printf "error: the backlight brightness value $1 is out of range, use only [0,$MAX_BRIGHTNESS]\n";
+}
+
+if [ $# -eq 0 ];
+  then echo $BRIGHTNESS
+elif [ $1 == "up" ] && [ $(($BRIGHTNESS + $STEP)) -le $MAX_BRIGHTNESS ];
+  then echo $(($BRIGHTNESS + $STEP)) > /sys/class/backlight/*/brightness;
+elif [ $1 == "down" ] && [ $(($BRIGHTNESS - $STEP)) -ge 0 ];
+  then echo $(($BRIGHTNESS - $STEP)) > /sys/class/backlight/*/brightness;
+elif [ $1 -ge 0 ] && [ $1 -le $MAX_BRIGHTNESS ];
+  then echo $1 > /sys/class/backlight/*/brightness;
+else error_report;
+fi;

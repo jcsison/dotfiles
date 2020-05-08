@@ -1,6 +1,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 
+alias brightness="sudo ~/dotfiles/utils/bin/brightness"
 alias cd..='cd ..'
 alias checkip='curl -s checkip.dyndns.org | grep -Eo "[0-9\.]+"'
 alias cmatrix='cmatrix -b'
