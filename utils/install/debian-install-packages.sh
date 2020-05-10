@@ -7,6 +7,7 @@ sudo apt-get update
 sudo apt-get install \
   alsa-oss \
   alsa-utils \
+  arandr \
   bspwm \
   compton \
   ctags \

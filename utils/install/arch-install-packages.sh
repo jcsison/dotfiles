@@ -7,6 +7,7 @@ sudo pacman -Syu
 sudo pacman -S \
   alsa-oss \
   alsa-utils \
+  arandr \
   base-devel \
   bspwm \
   cowfortune \
