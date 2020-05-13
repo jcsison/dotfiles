@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-airbnb",
   "rules": {
-      "number-leading-zero": "always"
+      "number-leading-zero": "always",
+      "rule-empty-line-before": null
     }
 }

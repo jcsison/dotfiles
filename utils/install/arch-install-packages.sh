@@ -17,18 +17,19 @@ sudo pacman -S \
   dunst \
   feh \
   ffmpeg \
+  fuse \
   fzf \
   galculator \
   gcc \
-  gtk2-engine-murrine \
-  gtk2-engines \
+  gtk-engine-murrine \
+  gtk-engines \
   htop \
   imagemagick \
   irssi \
   libnotify \
   lxappearance \
   maim \
-  man-pages \
+  man \
   mjpegtools \
   mpc \
   mpd \
@@ -37,6 +38,9 @@ sudo pacman -S \
   ncmpcpp \
   neofetch \
   neovim \
+  nodejs-lts-erbium \
+  npm \
+  ntfs-3g \
   okular \
   pavucontrol \
   perl-file-path-expand \
@@ -56,12 +60,30 @@ sudo pacman -S \
   tint2 \
   tldr \
   unzip \
+  usbutils \
   wmname \
   xcape \
   xdotool \
   xorg-server \
+  xorg-xinit \
   xorg-xinput \
+  xorg-xsetroot \
+  xsel \
 
-sudo yay -S \
+git clone https://aur.archlinux.org/yay-git.git
+
+cd yay-git
+
+makepkg -si
+
+cd ..
+
+rm -rf yay-git
+
+yay -S \
+  discord \
+  firefox-nightly \
   ibus-mozc \
+  postman \
+  slack-desktop \
   vscodium-bin \

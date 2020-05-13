@@ -18,7 +18,7 @@ export XMODIFIERS=@im=ibus
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 mpc stop
-compton -b
+picom -b
 tint2 &
 sxhkd &
 dunst &
@@ -45,7 +45,7 @@ xinput --set-prop 'Elan Touchpad' 'libinput Horizontal Scroll Enabled' 0
 xset s off
 
 exists redshift &
-exists pulseaudio -D
+exists pulseaudio --start
 exists ibus-daemon -d --xim
 exists discord &
 exists slack &

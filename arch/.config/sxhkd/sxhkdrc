@@ -1,0 +1,139 @@
+#!/bin/sh
+
+# Modified Keys
+alt + BackSpace
+  xvkbd -xsendevent -text '\[Delete]' &> /dev/null
+alt + comma
+  xvkbd -xsendevent -text "\[Prior]" &> /dev/null
+alt + period
+  xvkbd -xsendevent -text "\[Next]" &> /dev/null
+ctrl + comma
+  xvkbd -xsendevent -text '\[Home]' &> /dev/null
+ctrl + period
+  xvkbd -xsendevent -text '\[End]' &> /dev/null
+{XF86PowerOff}
+  xvkbd -xsenedvent -text '\[Delete]' &> /dev/null
+
+# Desktop Switching
+super + comma
+  bspc desktop --focus prev
+super + period
+  bspc desktop --focus next
+super + {1-9,0}
+  bspc desktop --focus ^{1-9,10}
+
+# Node Switching
+alt + Tab
+  bspc node --focus next.local
+super + {Left,Down,Up,Right}
+  bspc node --focus {west,south,north,east}
+super + a
+  bspc node --focus next.free
+
+# Node Manipulation
+super + Tab
+  bspc node --swap last.local
+{super,super + shift} + F3
+  bspc node @focused:/ --flip {vertical,horizontal}
+super + {ctrl,alt} + F3
+  bspc node @focused:/ --rotate {270,90}
+super + shift + {comma,period}
+  bspc node @focused:/ --circulate {backward,forward}
+super + shift + {1-9,0}
+  bspc node --to-desktop ^{1-9,10}
+super + shift + {Left,Down,Up,Right}
+  bspc node --resize {left -40 0,bottom 0 +40,top 0 -40,right +40 0}
+super + shift + alt + {Right,Up,Down,Left}
+  bspc node --resize {left +40 0,bottom 0 -40,top 0 +40,right -40 0}
+super + alt + {1-5}
+  bspc config -d focused split_ratio {0.299,0.3947,0.5,0.585,0.68012};\
+  bspc node @focused:/ --equalize
+super + {minus,equal}
+  bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 4 ))
+super + b
+  bspc node @/ -B
+super + alt + {6-9,0}
+  size={-40,-20,0,20,40};\
+  bspc config window_gap "$(($size+50))"
+{super,super + shift} + grave
+  bspc config -d focused split_ratio 0.5;\
+  bspc node @focused:/ {--equalize,--balance};\
+  bspc config window_gap 50;\
+  bspc config top_padding 30;\
+  bspc config bottom_padding 10;\
+  bspc config left_padding 10;\
+  bspc config right_padding 10
+super + {_,shift +}i
+  insert={true,false};\
+  $insert && bspc node -i || \
+  for win in `bspc query -N -n .leaf.\!window.local`; do bspc node $win -k; done;
+
+# Node State Modifiers
+F4
+  bspc desktop --layout next
+super + F4
+  bspc node -t ~fullscreen
+alt + F4
+  bspc node @focused:/ --flag hidden
+super + {t,f}
+  bspc node -t {tiled,floating}
+super + {_, shift +}c
+  bspc node --{close,kill}
+super + shift + f
+  bspc node -t floating;\
+  xdotool getactivewindow windowsize 1718 858;\
+  xdotool getactivewindow windowmove 100 120
+super + shift + ctrl + f
+  bspc node -t floating;\
+  xdotool getactivewindow windowsize 798 858;\
+  xdotool getactivewindow windowmove 100 120
+super + ctrl + f
+  bspc node -t floating;\
+  IFS='x' read screenWidth screenHeight < <(xdpyinfo | grep dimensions | grep -o '[0-9x]*' | head -n1);\
+  width=$(xdotool getactivewindow getwindowgeometry --shell | head -4 | tail -1 | sed 's/[^0-9]*//');\
+  height=$(xdotool getactivewindow getwindowgeometry --shell | head -5 | tail -1 | sed 's/[^0-9]*//');\
+  newPosX=$((screenWidth/2-(width/2+2)+1));\
+  newPosY=$((screenHeight/2-(height/2+2)+1+10));\
+  xdotool getactivewindow windowmove "$newPosX" "$newPosY"
+
+# Brightness Control
+{F6,F7}
+  sudo -S ~/dotfiles/utils/bin/brightness {down,up}
+
+# Volume/mpc Control
+F8
+  amixer set Master 50% unmute
+super + F8
+  amixer set Master toggle
+alt + F8
+  mpc | grep -q "playing" && mpc stop || mpc play
+ctrl + F8
+  mpc toggle
+{F9,F10}
+  amixer set Master 5%{-,+} unmute
+ctrl + {F9,F10}
+  amixer set Master 10%{-,+} unmute
+
+# Floating Node Manipulation
+super + ctrl + {Left,Down,Up,Right}
+  bspc node -t floating;\
+  bspc node -v {-40 0,0 40,0 -40,40 0}
+super + ctrl + alt + {Left,Down,Up,Right}
+  bspc node -t floating;\
+  bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Application Hotkeys
+super + Return
+  urxvt
+alt + Return
+  thunar
+alt + space
+  galculator
+Print
+  scrot ~/^o^/screenshots/$(date +%F-%S).png
+super + Escape
+  pkill -USR1 -x sxhkd
+super + {space,r}
+  rofi -show run -color-window "#273238, #273238, #1e2529" -color-normal "#273238, #c1c1c1, #273238, #394249, #ffffff" -color-active "#273238, #80cbc4, #273238, #394249, #80cbc4" -color-urgent "#273238, #ff1844, #273238, #394249, #ff1844" -font "Cousine 11" -lines 5 -width 25
+super + alt + a
+  pkill -f x11grab

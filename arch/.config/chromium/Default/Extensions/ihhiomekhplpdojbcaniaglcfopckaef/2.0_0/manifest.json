@@ -1,0 +1,24 @@
+{
+   "author": "Karandeep Singh Bhatia(karan173)",
+   "browser_action": {
+      "default_icon": "img/icon128.png",
+      "default_popup": "html/popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "js/script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "Add multiple links to Pocket at once through the selected text or by pasting links into the extension.",
+   "icons": {
+      "128": "img/icon128.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApu3iEGVHdcRng0dw15k3umm/QfVDqYXGqA7IQW+2iUAdmJk32vAGv7Cgw36P7k4ocoZDZTIrUWggOB6lQeYxTa5eiLK++D8FiuoxQEEM1/4F7Z+/A3Ws3MFqRdqLUuxPRyFAE+RsOUkZUzbmdef0YZtTzVBiAoAt5CJa/QUIw8MNFxt4GiILFFoskeDXi5MqDY0w8xKiTCpi2YW6QJjejhSDESKZZcjHdetKcE9QxyaSG52ApH+aSaIdy3CETNPWfIvJzhW7ImJD+YOOlDd8O0U4fRcHYf/mzLjJBe+aZB1L+Vdyo55mzcfYdyxhH5g8/57vqjTikuz+y83e9FX31wIDAQAB",
+   "manifest_version": 2,
+   "name": "Batch Save Pocket",
+   "permissions": [ "https://*/*", "http://*/*", "tabs", "storage" ],
+   "short_name": "Pocket Batch",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0",
+   "web_accessible_resources": [ "html/login.html" ]
+}

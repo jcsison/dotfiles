@@ -1,0 +1,30 @@
+{
+   "description": "A dark theme that give mood similar to Chrome's Incognito mode",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxRNJhukW0aizxsbBOYqh4HYbwoWFwlOy+0bXGOPneGxhJ3DA40t0hpksQciJvTldjK/p+qakrCD9Z83lLUoEAQb3ZatintGqmK//K7cuDPZ+QA0QE6vGCLvuA7jPpyewQDcEA7h6hWPzoeGcQJuaFp+2Hh64Y9vJup/RFFIzfsbPSlBWcDsi9Njg7W4+PJBjl8rbLLWLgaUKB9jNT1k+MgvUf3GYYeYnVEJ2pEdolEO619Xsk99a3wKE+2ZmaKRiwT+0umuJkdwBeD3mZly3eNaNZ/cOSG9xVMw32reFEXoKopBbZTPFDG1iwV2SdaRMXWDbdD+7FTz+l2wdu7l7pwIDAQAB",
+   "manifest_version": 2,
+   "name": "In the Incognito Mood",
+   "theme": {
+      "colors": {
+         "background_tab_inactive": [ 40, 40, 40 ],
+         "bookmark_text": [ 255, 255, 255 ],
+         "frame": [ 14, 16, 18 ],
+         "frame_inactive": [ 30, 30, 30 ],
+         "ntp_background": [ 48, 48, 48 ],
+         "ntp_text": [ 255, 255, 255 ],
+         "tab_background_text": [ 255, 255, 255 ],
+         "tab_text": [ 241, 243, 244 ],
+         "toolbar": [ 80, 80, 80 ]
+      },
+      "properties": {
+         "ntp_background_repeat": "repeat",
+         "ntp_logo_alternate": 1
+      },
+      "tints": {
+         "buttons": [ -1, -1, 0.85 ],
+         "frame": [ -1, 0.2, 0.35 ],
+         "frame_inactive": [ -1, 0.3, 0.6 ]
+      }
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.7.4"
+}

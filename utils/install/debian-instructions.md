@@ -1,6 +1,6 @@
 # Instructions
 
-From a freshly installed Debian setup, install `wpa_supplicant`:
+From a freshly installed baked Debian setup, install `wpa_supplicant`:
 
 Set-up network in `/etc/network/interfaces`:
 
@@ -85,6 +85,7 @@ Manually install programs:
   - prettier
   - prettier/plugin-php
   - stylelint
+  - stylelint-config-airbnb
   - stylelint-config-standard
   - stylelint-order
   - stylelint-scss
