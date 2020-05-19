@@ -23,6 +23,7 @@ sudo pacman -S \
   gcc \
   gtk-engine-murrine \
   gtk-engines \
+  gtop \
   htop \
   imagemagick \
   irssi \
@@ -47,7 +48,9 @@ sudo pacman -S \
   php \
   picom \
   pulseaudio \
+  python-pillow \
   qbittorrent \
+ 	qt5-styleplugins \
   qt5ct \
   ranger \
   redshift \
@@ -69,6 +72,8 @@ sudo pacman -S \
   xorg-xinput \
   xorg-xsetroot \
   xsel \
+  zathura \
+ 	zathura-pdf-mupdf \
 
 git clone https://aur.archlinux.org/yay-git.git
 
@@ -86,4 +91,5 @@ yay -S \
   ibus-mozc \
   postman \
   slack-desktop \
+  trackma-git \
   vscodium-bin \

@@ -7,9 +7,12 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   au VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+let g:python_host_prog='/usr/bin/python3'
+
 call plug#begin('~/.vim/plugged')
 
 " General plugins {{{
+Plug 'Valloric/MatchTagAlways'
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -265,6 +268,19 @@ let NERDTreeIgnore=[ '\.[ls]\?o$', '\~$' ]
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden=1
 
+let g:NERDTreeIndicatorMapCustom = {
+\  "Modified"  : "~",
+\  "Staged"    : "+",
+\  "Untracked" : "^",
+\  "Renamed"   : "➜",
+\  "Unmerged"  : "=",
+\  "Deleted"   : "-",
+\  "Dirty"     : "%",
+\  "Clean"     : "|",
+\  "Ignored"   : ":",
+\  "Unknown"   : "?"
+\  }
+
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_enter = 0
 let g:ale_lint_on_save = 1
@@ -273,6 +289,8 @@ let g:ale_linters_explicit = 1
 let g:ale_sign_column_always = 1
 let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '#'
+
+let g:closetag_filenames = '*.html,*.js,*.phtml,*.xhtml'
 
 let g:indentLine_char = '│'
 let g:indentLine_bufNameExclude = [ 'NERD_tree.*' ]
@@ -312,18 +330,14 @@ let g:lightline.component_type = {
 \  'linter_warnings': 'warning',
 \  }
 
-let g:NERDTreeIndicatorMapCustom = {
-\  "Modified"  : "~",
-\  "Staged"    : "+",
-\  "Untracked" : "^",
-\  "Renamed"   : "➜",
-\  "Unmerged"  : "=",
-\  "Deleted"   : "-",
-\  "Dirty"     : "%",
-\  "Clean"     : "|",
-\  "Ignored"   : ":",
-\  "Unknown"   : "?"
-\  }
+let g:mta_use_matchparen_group = 1
+let g:mta_filetypes = {
+    \ 'html' : 1,
+    \ 'javascript' : 1,
+    \ 'jinja' : 1,
+    \ 'xhtml' : 1,
+    \ 'xml' : 1,
+    \}
 
 let g:rainbow_active = 1
 let g:rainbow_conf = {

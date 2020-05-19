@@ -17,6 +17,7 @@ export TEXMFHOME=~/.texmf
 export XMODIFIERS=@im=ibus
 export _JAVA_AWT_WM_NONREPARENTING=1
 
+autorandr --change
 mpc stop
 picom -b
 tint2 &
@@ -49,7 +50,7 @@ exists pulseaudio --start
 exists ibus-daemon -d --xim
 exists discord &
 exists slack &
-exists trackma-qt &
+exists trackma-gtk &
 
 wmname LG3D
 

@@ -132,6 +132,8 @@ alt + space
 Print
   scrot ~/^o^/screenshots/$(date +%F-%S).png
 super + Escape
+  autorandr -c
+super + shift + Escape
   pkill -USR1 -x sxhkd
 super + {space,r}
   rofi -show run -color-window "#273238, #273238, #1e2529" -color-normal "#273238, #c1c1c1, #273238, #394249, #ffffff" -color-active "#273238, #80cbc4, #273238, #394249, #80cbc4" -color-urgent "#273238, #ff1844, #273238, #394249, #ff1844" -font "Cousine 11" -lines 5 -width 25
