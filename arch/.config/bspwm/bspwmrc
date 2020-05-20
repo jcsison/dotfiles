@@ -27,10 +27,7 @@ bspc config history_aware_focus true
 bspc config click_to_focus true
 
 # Set up displays
-bspc monitor --reset-desktops 1
-bspc monitor --add-desktops 2
-bspc monitor --add-desktops 3
-bspc monitor --add-desktops 4
+bspc monitor --reset-desktops 1 2 3 4
 
 # Misc
 bspc config auto_cancel true
@@ -38,12 +35,14 @@ bspc config automatic_scheme spiral
 bspc config initial_polarity first_child
 bspc config split_ratio 0.50
 
-bspc rule -a *:sun-awt-X11-XFramePeer state=floating
 bspc rule -a "Galculator" state=floating
 bspc rule -a "Lxappearance" state=floating
-bspc rule -a "Nightly" state=tiled
-bspc rule -a "qt5ct" state=floating
+bspc rule -a "Nightly" desktop=2 state=tiled
+bspc rule -a "Slack" desktop=4
 bspc rule -a "Wine" state=floating
+bspc rule -a "discord" desktop=4
+bspc rule -a "qt5ct" state=floating
 bspc rule -a "zoom" state=floating
+bspc rule -a *:sun-awt-X11-XFramePeer state=floating
 bspc rule -a mpv state=floating
 bspc rule -a tint2 floating=on manage=off layer=below
