@@ -71,9 +71,11 @@ sudo pacman -S \
   xorg-xinit \
   xorg-xinput \
   xorg-xsetroot \
+  xorg-xwininfo \
   xsel \
   zathura \
  	zathura-pdf-mupdf \
+  zip \
 
 git clone https://aur.archlinux.org/yay-git.git
 
@@ -87,6 +89,7 @@ rm -rf yay-git
 
 yay -S \
   discord \
+  kernel-modules-hook \
   firefox-nightly \
   ibus-mozc \
   postman \

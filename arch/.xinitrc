@@ -9,6 +9,7 @@ LC_ALL=en_US.UTF-8
 LC_CTYPE=en_US.UTF-8
 LC_MESSAGES=en_US.UTF-8
 
+export ANDROID_HOME=$HOME/Android/Sdk
 export GTK_IM_MODULE=ibus
 export MPD_HOST=/home/$USER/.mpd/socket
 export QT_IM_MODULE=ibus

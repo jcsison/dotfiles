@@ -30,3 +30,10 @@ if [ -d "$HOME/dotfiles/utils/bin" ] ; then
     PATH="$HOME/dotfiles/utils/bin:$PATH"
 fi
 
+if [ -d "$HOME/Android/Sdk/emulator" ] ; then
+    PATH="$HOME/Android/Sdk/emulator:$PATH"
+fi
+
+if [ -d "$HOME/Android/Sdk/platform-tools" ] ; then
+    PATH="$HOME/Android/Sdk/platform-tools:$PATH"
+fi

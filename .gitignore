@@ -35,6 +35,7 @@ utils/config/vfio/win10.xml
 **/.config/pulse/
 **/.config/qBittorrent/
 **/.config/xfce4/
+**/.config/Android\ Open\ Source\ Project/
 **/.emacs.d/.cache/
 **/.vim/autoload/
 **/.vim/plugged/

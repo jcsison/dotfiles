@@ -105,10 +105,21 @@ if ! shopt -oq posix; then
   fi
 fi
 
-
 if [ -z "$SSH_AUTH_SOCK" ]; then
   eval $(ssh-agent -s) &> /dev/null
   ssh-add &> /dev/null
+fi
+
+if [ -d "$HOME/dotfiles/utils/bin" ] ; then
+    PATH="$HOME/dotfiles/utils/bin:$PATH"
+fi
+
+if [ -d "$HOME/Android/Sdk/emulator" ] ; then
+    PATH="$HOME/Android/Sdk/emulator:$PATH"
+fi
+
+if [ -d "$HOME/Android/Sdk/platform-tools" ] ; then
+    PATH="$HOME/Android/Sdk/platform-tools:$PATH"
 fi
 
 set -o vi
