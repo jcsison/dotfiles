@@ -1,6 +1,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 
+alias android="emulator @Pixel_3a_API_30"
 alias brightness="sudo ~/dotfiles/utils/bin/brightness"
 alias cd..='cd ..'
 alias checkip='curl -s checkip.dyndns.org | grep -Eo "[0-9\.]+"'

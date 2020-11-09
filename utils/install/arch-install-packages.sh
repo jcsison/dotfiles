@@ -5,10 +5,12 @@
 sudo pacman -Syu
 
 sudo pacman -S \
+  alacritty \
   alsa-oss \
   alsa-utils \
   arandr \
   base-devel \
+  blueman \
   bspwm \
   cowfortune \
   ctags \

@@ -24,7 +24,7 @@ super + {1-9,0}
 
 # Node Switching
 alt + Tab
-  bspc node --focus next.local
+  bspc node --focus next.local.!hidden.window
 super + {Left,Down,Up,Right}
   bspc node --focus {west,south,north,east}
 super + a
@@ -124,7 +124,7 @@ super + ctrl + alt + {Left,Down,Up,Right}
 
 # Application Hotkeys
 super + Return
-  urxvt
+  alacritty
 alt + Return
   thunar
 alt + space

@@ -63,7 +63,7 @@ Plug 'phpactor/phpactor'
 
 " TS
 Plug 'leafgarland/typescript-vim'
-Plug 'peitalin/vim-jsx-typescript'
+"Plug 'peitalin/vim-jsx-typescript'
 " }}}
 
 call plug#end()
@@ -131,6 +131,7 @@ set ttimeout
 set ttimeoutlen=0
 set updatetime=500
 set visualbell
+set wildignore+=**/node_modules/**
 set wrap
 " }}}
 
@@ -268,7 +269,7 @@ let NERDTreeIgnore=[ '\.[ls]\?o$', '\~$' ]
 let NERDTreeMinimalUI = 1
 let NERDTreeShowHidden=1
 
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
 \  "Modified"  : "~",
 \  "Staged"    : "+",
 \  "Untracked" : "^",
@@ -291,6 +292,8 @@ let g:ale_sign_error = '✘'
 let g:ale_sign_warning = '#'
 
 let g:closetag_filenames = '*.html,*.js,*.phtml,*.xhtml'
+
+let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 let g:indentLine_char = '│'
 let g:indentLine_bufNameExclude = [ 'NERD_tree.*' ]
@@ -367,6 +370,8 @@ au FileType coffee,css,html,javascript,javascriptreact,json,lua,perl,php,python,
 
 au FileType gitcommit,markdown setl spell
 
+autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
+
 " ALE settings
 " let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
 let g:ale_fixers = {
@@ -384,6 +389,7 @@ let g:ale_linters = {
 \  'html': ['tidy'],
 \  'javascript': ['eslint'],
 \  'php': ['php'],
+\  'typescript': ['eslint'],
 \}
 
 " Plugin settings

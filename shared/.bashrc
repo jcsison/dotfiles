@@ -78,7 +78,7 @@ unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
-xterm*|rxvt*)
+xterm*|rxvt*|alacritty)
   PS1="\[\e]0;\u: \w\a\]$PS1"
   ;;
 *)
