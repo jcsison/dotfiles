@@ -4,7 +4,7 @@
   corner_radius = 0
   ellipsize = middle
   follow = mouse
-  font = Source Sans Pro 9
+  font = Source Sans Pro 6
   force_xinerama = false
   format = "<span foreground='#f3f4f5'><b>%s %p</b></span>\n%b"
   frame_color = "#232323"

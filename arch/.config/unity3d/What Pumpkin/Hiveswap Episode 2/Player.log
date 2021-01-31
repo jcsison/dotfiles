@@ -1,0 +1,4397 @@
+Mono path[0] = '/home/lychee/.local/share/Steam/steamapps/common/HIVESWAP Act 2/Hiveswap-Act2_Data/Managed'
+Mono config path = '/home/lychee/.local/share/Steam/steamapps/common/HIVESWAP Act 2/Hiveswap-Act2_Data/MonoBleedingEdge/etc'
+Preloaded 'libsteam_api.so'
+Display 0 'ASUS VG249 24"': 1920x1080 (primary device).
+Desktop is 1920 x 1080 @ 120 Hz
+Initialize engine version: 2019.4.0f1 (0af376155913)
+[Subsystems] Discovering subsystems at path /home/lychee/.local/share/Steam/steamapps/common/HIVESWAP Act 2/Hiveswap-Act2_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Renderer: Mesa Intel(R) UHD Graphics 630 (CFL GT2)
+Vendor:   Intel
+Version:  4.6 (Core Profile) Mesa 20.2.3
+GLES:     0
+ GL_3DFX_texture_compression_FXT1 GL_AMD_conservative_depth GL_AMD_depth_clamp_separate GL_AMD_draw_buffers_blend GL_AMD_gpu_shader_int64 GL_AMD_multi_draw_indirect GL_AMD_performance_monitor GL_AMD_pinned_memory GL_AMD_query_buffer_object GL_AMD_seamless_cubemap_per_texture GL_AMD_shader_stencil_export GL_AMD_shader_trinary_minmax GL_AMD_texture_texture4 GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_viewport_index GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_ES2_compatibility GL_ARB_ES3_1_compatibility GL_ARB_ES3_2_compatibility GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_base_instance GL_ARB_blend_func_extended GL_ARB_buffer_storage GL_ARB_clear_buffer_object GL_ARB_clear_texture GL_ARB_clip_control GL_ARB_compressed_texture_pixel_storage GL_ARB_compute_shader GL_ARB_compute_variable_group_size GL_ARB_conditional_render_inverted GL_ARB_conservative_depth GL_ARB_copy_buffer GL_ARB_copy_image GL_ARB_cull_distance GL_ARB_debug_output GL_ARB_depth_buffer_float GL_ARB
+_depth_clamp GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_draw_buffers GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_draw_indirect GL_ARB_draw_instanced GL_ARB_enhanced_layouts GL_ARB_explicit_attrib_location GL_ARB_explicit_uniform_location GL_ARB_fragment_coord_conventions GL_ARB_fragment_layer_viewport GL_ARB_fragment_shader GL_ARB_fragment_shader_interlock GL_ARB_framebuffer_no_attachments GL_ARB_framebuffer_object GL_ARB_framebuffer_sRGB GL_ARB_get_program_binary GL_ARB_get_texture_sub_image GL_ARB_gl_spirv GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_gpu_shader_int64 GL_ARB_half_float_pixel GL_ARB_half_float_vertex GL_ARB_indirect_parameters GL_ARB_instanced_arrays GL_ARB_internalformat_query GL_ARB_internalformat_query2 GL_ARB_invalidate_subdata GL_ARB_map_buffer_alignment GL_ARB_map_buffer_range GL_ARB_multi_bind GL_ARB_multi_draw_indirect GL_ARB_occlusion_query2 GL_ARB_parallel_shader_compile GL_ARB_pipeline_statistics_query GL_ARB_pixel_buffer_object GL_ARB_po
+int_sprite GL_ARB_polygon_offset_clamp GL_ARB_post_depth_coverage GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buffer_object GL_ARB_robust_buffer_access_behavior GL_ARB_robustness GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_seamless_cubemap_per_texture GL_ARB_separate_shader_objects GL_ARB_shader_atomic_counter_ops GL_ARB_shader_atomic_counters GL_ARB_shader_ballot GL_ARB_shader_bit_encoding GL_ARB_shader_clock GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shader_image_load_store GL_ARB_shader_image_size GL_ARB_shader_objects GL_ARB_shader_precision GL_ARB_shader_stencil_export GL_ARB_shader_storage_buffer_object GL_ARB_shader_subroutine GL_ARB_shader_texture_image_samples GL_ARB_shader_texture_lod GL_ARB_shader_viewport_layer_array GL_ARB_shading_language_420pack GL_ARB_shading_language_include GL_ARB_shading_language_packing GL_ARB_spirv_extensions GL_ARB_stencil_texturing GL_ARB_sync GL_ARB_tessellation_shader GL_ARB_texture_barrier G
+L_ARB_texture_buffer_object GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewpor
+t_array GL_ATI_blend_equation_separate GL_ATI_texture_float GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback G
+L_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM_multimode_draw_arrays GL_INTEL_blackhole_render GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_copy_image GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 11876896
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.058 seconds
+Default vsync count 1
+requesting resize 1920 x 1080
+Using native desktop resolution 1920 x 1080
+requesting fullscreen 1920 x 1080 at 0 Hz
+Desktop is 1920 x 1080 @ 120 Hz
+UnloadTime: 2.651174 ms
+[S_API] SteamAPI_Init(): Loaded '/home/lychee/.local/share/Steam/linux64/steamclient.so' OK.
+Setting breakpad minidump AppID = 1181840
+SteamInternal_SetMinidumpSteamID:  Caching Steam ID:  76561198071093342 [API loaded no]
+ChangeState Start => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 648.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 647.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 705.000000, 647.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 647.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 647.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+ChangeState Start => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Screen position out of view frustum (screen pos 704.000000, 646.000000) (Camera rect 0 0 1920 1080) 
+(Filename:  Line: 3432)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 18709.
+Total: 59.339479 ms (FindLiveObjects: 1.020909 ms CreateObjectMapping: 0.576539 ms MarkObjects: 57.638323 ms  DeleteObjects: 0.103073 ms)
+
+ChangeState Start => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Read 0 counters; Melted 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Read 0 counters; Melted 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Read 882 counters; Melted 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Start => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 513 unused Assets to reduce memory usage. Loaded Objects now: 19215.
+Total: 64.716029 ms (FindLiveObjects: 1.085005 ms CreateObjectMapping: 0.640263 ms MarkObjects: 62.282585 ms  DeleteObjects: 0.707837 ms)
+
+ChangeState Start => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1081 unused Assets to reduce memory usage. Loaded Objects now: 17993.
+Total: 66.101413 ms (FindLiveObjects: 0.605102 ms CreateObjectMapping: 0.802612 ms MarkObjects: 63.662677 ms  DeleteObjects: 1.030543 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 20891.
+Total: 68.510556 ms (FindLiveObjects: 1.096112 ms CreateObjectMapping: 0.847826 ms MarkObjects: 66.516703 ms  DeleteObjects: 0.049545 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 2447 unused Assets to reduce memory usage. Loaded Objects now: 18216.
+Total: 65.748748 ms (FindLiveObjects: 0.672931 ms CreateObjectMapping: 0.652265 ms MarkObjects: 62.667109 ms  DeleteObjects: 1.756097 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 131 unused Assets to reduce memory usage. Loaded Objects now: 19455.
+Total: 73.146416 ms (FindLiveObjects: 0.609762 ms CreateObjectMapping: 0.790623 ms MarkObjects: 70.011926 ms  DeleteObjects: 1.733692 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1279 unused Assets to reduce memory usage. Loaded Objects now: 18197.
+Total: 70.201514 ms (FindLiveObjects: 0.710706 ms CreateObjectMapping: 1.080293 ms MarkObjects: 66.947262 ms  DeleteObjects: 1.462632 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 20891.
+Total: 72.408647 ms (FindLiveObjects: 0.843439 ms CreateObjectMapping: 1.115952 ms MarkObjects: 70.386392 ms  DeleteObjects: 0.062378 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 2372 unused Assets to reduce memory usage. Loaded Objects now: 18048.
+Total: 70.450416 ms (FindLiveObjects: 0.803728 ms CreateObjectMapping: 1.589536 ms MarkObjects: 66.371973 ms  DeleteObjects: 1.684670 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 19308.
+Total: 73.887843 ms (FindLiveObjects: 1.055373 ms CreateObjectMapping: 1.021746 ms MarkObjects: 71.763220 ms  DeleteObjects: 0.046975 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 930 unused Assets to reduce memory usage. Loaded Objects now: 19198.
+Total: 72.962614 ms (FindLiveObjects: 0.927125 ms CreateObjectMapping: 1.310848 ms MarkObjects: 69.931435 ms  DeleteObjects: 0.792731 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 906 unused Assets to reduce memory usage. Loaded Objects now: 18229.
+Total: 78.380853 ms (FindLiveObjects: 1.186034 ms CreateObjectMapping: 1.374278 ms MarkObjects: 75.066067 ms  DeleteObjects: 0.753915 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 19395.
+Total: 71.415599 ms (FindLiveObjects: 1.068903 ms CreateObjectMapping: 0.937993 ms MarkObjects: 69.312854 ms  DeleteObjects: 0.094939 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1106 unused Assets to reduce memory usage. Loaded Objects now: 18221.
+Total: 70.144406 ms (FindLiveObjects: 0.581262 ms CreateObjectMapping: 0.728795 ms MarkObjects: 67.901013 ms  DeleteObjects: 0.932908 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 106 unused Assets to reduce memory usage. Loaded Objects now: 19113.
+Total: 70.108164 ms (FindLiveObjects: 0.630460 ms CreateObjectMapping: 1.289813 ms MarkObjects: 68.044090 ms  DeleteObjects: 0.143395 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 789 unused Assets to reduce memory usage. Loaded Objects now: 19284.
+Total: 70.920740 ms (FindLiveObjects: 0.636459 ms CreateObjectMapping: 0.730484 ms MarkObjects: 65.174384 ms  DeleteObjects: 4.379060 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1088 unused Assets to reduce memory usage. Loaded Objects now: 17991.
+Total: 76.218083 ms (FindLiveObjects: 1.347851 ms CreateObjectMapping: 1.158580 ms MarkObjects: 72.779880 ms  DeleteObjects: 0.931295 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 20891.
+Total: 72.350444 ms (FindLiveObjects: 0.799473 ms CreateObjectMapping: 1.538841 ms MarkObjects: 69.964454 ms  DeleteObjects: 0.047016 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 2416 unused Assets to reduce memory usage. Loaded Objects now: 18216.
+Total: 67.368882 ms (FindLiveObjects: 0.969728 ms CreateObjectMapping: 0.878844 ms MarkObjects: 63.654693 ms  DeleteObjects: 1.864821 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 131 unused Assets to reduce memory usage. Loaded Objects now: 19455.
+Total: 71.869719 ms (FindLiveObjects: 1.235279 ms CreateObjectMapping: 1.198444 ms MarkObjects: 69.247726 ms  DeleteObjects: 0.187781 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1223 unused Assets to reduce memory usage. Loaded Objects now: 18197.
+Total: 87.750733 ms (FindLiveObjects: 4.493238 ms CreateObjectMapping: 1.911771 ms MarkObjects: 80.124245 ms  DeleteObjects: 1.220662 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 20891.
+Total: 68.182570 ms (FindLiveObjects: 1.065342 ms CreateObjectMapping: 0.680111 ms MarkObjects: 66.380101 ms  DeleteObjects: 0.056568 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 2414 unused Assets to reduce memory usage. Loaded Objects now: 18081.
+Total: 91.128292 ms (FindLiveObjects: 1.501153 ms CreateObjectMapping: 1.783318 ms MarkObjects: 85.929769 ms  DeleteObjects: 1.913428 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 19339.
+Total: 70.627841 ms (FindLiveObjects: 1.491000 ms CreateObjectMapping: 0.809635 ms MarkObjects: 68.277885 ms  DeleteObjects: 0.048699 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 857 unused Assets to reduce memory usage. Loaded Objects now: 19286.
+Total: 87.416007 ms (FindLiveObjects: 2.804891 ms CreateObjectMapping: 2.057675 ms MarkObjects: 81.800158 ms  DeleteObjects: 0.752285 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 900 unused Assets to reduce memory usage. Loaded Objects now: 19315.
+Total: 74.605506 ms (FindLiveObjects: 0.757973 ms CreateObjectMapping: 0.751054 ms MarkObjects: 72.499950 ms  DeleteObjects: 0.595846 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 823 unused Assets to reduce memory usage. Loaded Objects now: 19274.
+Total: 219.130768 ms (FindLiveObjects: 1.790529 ms CreateObjectMapping: 0.853389 ms MarkObjects: 196.091848 ms  DeleteObjects: 20.394580 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 949 unused Assets to reduce memory usage. Loaded Objects now: 18262.
+Total: 75.846614 ms (FindLiveObjects: 1.129691 ms CreateObjectMapping: 1.101144 ms MarkObjects: 72.937463 ms  DeleteObjects: 0.677769 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 85 unused Assets to reduce memory usage. Loaded Objects now: 19426.
+Total: 70.508596 ms (FindLiveObjects: 0.926959 ms CreateObjectMapping: 0.748059 ms MarkObjects: 68.747985 ms  DeleteObjects: 0.085150 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1016 unused Assets to reduce memory usage. Loaded Objects now: 18252.
+Total: 74.277381 ms (FindLiveObjects: 1.316564 ms CreateObjectMapping: 1.111181 ms MarkObjects: 70.748634 ms  DeleteObjects: 1.100504 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 106 unused Assets to reduce memory usage. Loaded Objects now: 19144.
+Total: 71.503616 ms (FindLiveObjects: 0.830109 ms CreateObjectMapping: 1.007981 ms MarkObjects: 69.538252 ms  DeleteObjects: 0.126815 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 785 unused Assets to reduce memory usage. Loaded Objects now: 19315.
+Total: 70.571814 ms (FindLiveObjects: 0.759557 ms CreateObjectMapping: 0.820228 ms MarkObjects: 68.380085 ms  DeleteObjects: 0.611543 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1063 unused Assets to reduce memory usage. Loaded Objects now: 18022.
+Total: 73.438919 ms (FindLiveObjects: 1.092425 ms CreateObjectMapping: 1.042653 ms MarkObjects: 70.292016 ms  DeleteObjects: 1.011324 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 20922.
+Total: 71.368650 ms (FindLiveObjects: 1.341786 ms CreateObjectMapping: 1.163793 ms MarkObjects: 68.814605 ms  DeleteObjects: 0.047669 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 2443 unused Assets to reduce memory usage. Loaded Objects now: 18247.
+Total: 66.684218 ms (FindLiveObjects: 0.717247 ms CreateObjectMapping: 0.844563 ms MarkObjects: 63.237029 ms  DeleteObjects: 1.885034 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 131 unused Assets to reduce memory usage. Loaded Objects now: 19486.
+Total: 75.486317 ms (FindLiveObjects: 0.819743 ms CreateObjectMapping: 0.785054 ms MarkObjects: 73.671860 ms  DeleteObjects: 0.209087 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1246 unused Assets to reduce memory usage. Loaded Objects now: 18110.
+Total: 73.746745 ms (FindLiveObjects: 1.258552 ms CreateObjectMapping: 1.032930 ms MarkObjects: 70.165249 ms  DeleteObjects: 1.289490 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 35 unused Assets to reduce memory usage. Loaded Objects now: 18991.
+Total: 70.428917 ms (FindLiveObjects: 0.825475 ms CreateObjectMapping: 1.044712 ms MarkObjects: 68.479359 ms  DeleteObjects: 0.078983 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 788 unused Assets to reduce memory usage. Loaded Objects now: 18188.
+Total: 67.679057 ms (FindLiveObjects: 0.643758 ms CreateObjectMapping: 0.683957 ms MarkObjects: 65.410392 ms  DeleteObjects: 0.940520 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 104 unused Assets to reduce memory usage. Loaded Objects now: 19479.
+Total: 69.772508 ms (FindLiveObjects: 0.808535 ms CreateObjectMapping: 1.117349 ms MarkObjects: 67.733504 ms  DeleteObjects: 0.112705 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 1138 unused Assets to reduce memory usage. Loaded Objects now: 18228.
+Total: 70.507253 ms (FindLiveObjects: 0.992715 ms CreateObjectMapping: 0.791099 ms MarkObjects: 67.642093 ms  DeleteObjects: 1.080937 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 20922.
+Total: 80.337208 ms (FindLiveObjects: 1.886765 ms CreateObjectMapping: 1.412560 ms MarkObjects: 76.984512 ms  DeleteObjects: 0.052790 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 2372 unused Assets to reduce memory usage. Loaded Objects now: 18079.
+Total: 282.592898 ms (FindLiveObjects: 1.002321 ms CreateObjectMapping: 1.173532 ms MarkObjects: 255.983688 ms  DeleteObjects: 24.432971 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 19339.
+Total: 89.146450 ms (FindLiveObjects: 1.433823 ms CreateObjectMapping: 2.437654 ms MarkObjects: 85.227120 ms  DeleteObjects: 0.046948 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 888 unused Assets to reduce memory usage. Loaded Objects now: 19210.
+Total: 68.909723 ms (FindLiveObjects: 1.326168 ms CreateObjectMapping: 0.991781 ms MarkObjects: 65.817427 ms  DeleteObjects: 0.773930 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => SceneVerbMenu 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState SceneVerbMenu => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 860 unused Assets to reduce memory usage. Loaded Objects now: 18260.
+Total: 75.581344 ms (FindLiveObjects: 1.145902 ms CreateObjectMapping: 1.087680 ms MarkObjects: 72.725564 ms  DeleteObjects: 0.621742 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Trying to run outcome canvas while canvas still running, aborting run! 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 116 unused Assets to reduce memory usage. Loaded Objects now: 19426.
+Total: 71.687006 ms (FindLiveObjects: 1.019958 ms CreateObjectMapping: 0.847807 ms MarkObjects: 69.717299 ms  DeleteObjects: 0.101517 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 927 unused Assets to reduce memory usage. Loaded Objects now: 18195.
+Total: 72.992896 ms (FindLiveObjects: 0.677123 ms CreateObjectMapping: 0.634885 ms MarkObjects: 70.764962 ms  DeleteObjects: 0.915304 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 21023.
+Total: 71.434974 ms (FindLiveObjects: 1.018594 ms CreateObjectMapping: 1.033861 ms MarkObjects: 69.324650 ms  DeleteObjects: 0.057384 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Message 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Message => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JoeySelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter JudeSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter XefrosSelected to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 0Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 1Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting parameter 2Available to false 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Target 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 882 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Froze 0 counters 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Finished saving 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Target => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Conversation 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Conversation => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'Quad') is missing! 
+(Filename:  Line: 334)
+
+The referenced script on this Behaviour (Game Object 'FullScreenVideo') is missing! 
+(Filename:  Line: 334)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 2945 unused Assets to reduce memory usage. Loaded Objects now: 18597.
+Total: 75.252900 ms (FindLiveObjects: 2.016011 ms CreateObjectMapping: 1.086521 ms MarkObjects: 69.443768 ms  DeleteObjects: 2.706134 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 20163.
+Total: 64.022721 ms (FindLiveObjects: 0.705133 ms CreateObjectMapping: 0.826412 ms MarkObjects: 62.341652 ms  DeleteObjects: 0.148778 ms)
+
+ChangeState Explore => Explore 
+(Filename: ./Runtime/Export/Debug/Debug.bindings.h Line: 35)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 7f1ee5d7e640 -> priority: 1 
+  Thread -> id: 7f1ee557d640 -> priority: 1 
+  Thread -> id: 7f1ee4d7c640 -> priority: 1 
+  Thread -> id: 7f1ee457b640 -> priority: 1 

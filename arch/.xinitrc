@@ -14,6 +14,7 @@ export GTK_IM_MODULE=ibus
 export MPD_HOST=/home/$USER/.mpd/socket
 export QT_IM_MODULE=ibus
 export QT_QPA_PLATFORMTHEME=qt5ct
+export QT_QPA_PLATFORM_PLUGIN_PATH=/usr/lib/qt/plugins
 export TEXMFHOME=~/.texmf
 export XMODIFIERS=@im=ibus
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -52,6 +53,8 @@ exists ibus-daemon -d --xim
 exists discord &
 exists slack &
 exists trackma-gtk &
+exists nm-applet &
+exists blueman-applet &
 
 wmname LG3D
 

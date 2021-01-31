@@ -1,0 +1,24 @@
+2020/12/31-02:03:03.643 c8762 Reusing MANIFEST /home/lychee/dotfiles/arch/.config/discordcanary/Local Storage/leveldb/MANIFEST-000001
+2020/12/31-02:03:03.643 c8762 Recovering log #269
+2020/12/31-02:03:03.644 c8762 Reusing old log /home/lychee/dotfiles/arch/.config/discordcanary/Local Storage/leveldb/000269.log 
+2020/12/31-10:47:54.382 ca339 Level-0 table #273: started
+2020/12/31-10:47:54.389 ca339 Level-0 table #273: 24363 bytes OK
+2020/12/31-10:47:54.393 ca339 Delete type=0 #269
+2020/12/31-14:29:18.770 ca339 Level-0 table #275: started
+2020/12/31-14:29:18.789 ca339 Level-0 table #275: 24805 bytes OK
+2020/12/31-14:29:18.793 ca339 Delete type=0 #272
+2020/12/31-14:29:18.794 ca339 Compacting 4@0 + 1@1 files
+2020/12/31-14:29:18.800 ca339 Generated table #276@0: 67 keys, 29361 bytes
+2020/12/31-14:29:18.800 ca339 Compacted 4@0 + 1@1 files => 29361 bytes
+2020/12/31-14:29:18.805 ca339 compacted to: files[ 0 1 1 0 0 0 0 ]
+2020/12/31-14:29:18.805 ca339 Delete type=2 #275
+2020/12/31-14:29:18.805 ca339 Delete type=2 #266
+2020/12/31-14:29:18.805 ca339 Delete type=2 #270
+2020/12/31-14:29:18.805 ca339 Delete type=2 #268
+2020/12/31-14:29:18.805 ca339 Delete type=2 #273
+2020/12/31-16:04:37.866 ca339 Level-0 table #278: started
+2020/12/31-16:04:37.874 ca339 Level-0 table #278: 17687 bytes OK
+2020/12/31-16:04:37.879 ca339 Delete type=0 #274
+2020/12/31-16:30:32.819 ca339 Level-0 table #280: started
+2020/12/31-16:30:32.826 ca339 Level-0 table #280: 12785 bytes OK
+2020/12/31-16:30:32.830 ca339 Delete type=0 #277
