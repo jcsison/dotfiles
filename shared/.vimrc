@@ -29,6 +29,7 @@ Plug 'luochen1990/rainbow'
 Plug 'majutsushi/tagbar'
 Plug 'alvan/vim-closetag'
 Plug 'junegunn/vim-easy-align'
+Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'etdev/vim-hexcolor'
@@ -253,6 +254,10 @@ inoremap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 nnoremap <F1> :echo<CR>
 inoremap <F1> <C-o>:echo<CR>
 vnoremap <F1> :echo<CR>
+
+" jj to ESC
+imap jj <ESC>
+
 " }}}
 
 " Plugin settings {{{

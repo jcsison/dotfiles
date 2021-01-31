@@ -130,7 +130,8 @@ alt + Return
 alt + space
   galculator
 Print
-  scrot ~/^o^/screenshots/$(date +%F-%S).png
+  sleep 0.2; \
+  scrot -s ~/^o^/screenshots/$(date +%F-%S).png
 super + Escape
   autorandr -c
 super + shift + Escape
