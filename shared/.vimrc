@@ -7,21 +7,25 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   au VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-let g:python_host_prog='/usr/bin/python3'
+if has('macunix')
+  let g:python_host_prog='/usr/local/bin/python3'
+elseif
+  let g:python_host_prog='/usr/bin/python3'
+endif
 
 call plug#begin('~/.vim/plugged')
 
 " General plugins {{{
 Plug 'Valloric/MatchTagAlways'
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'yegappan/grep'
 Plug 'Yggdroot/indentLine'
 Plug 'itchyny/lightline.vim'
-Plug 'maximbaz/lightline-ale'
+" Plug 'maximbaz/lightline-ale'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -43,7 +47,7 @@ Plug 'wesQ3/vim-windowswap'
 
 " Language specific plugins {{{
 " C#
-Plug 'OrangeT/vim-csharp'
+" Plug 'OrangeT/vim-csharp'
 
 " HTML/CSS
 Plug 'othree/html5.vim'
@@ -59,8 +63,8 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'plasticboy/vim-markdown'
 
 " PHP
-Plug 'StanAngeloff/php.vim'
-Plug 'phpactor/phpactor'
+" Plug 'StanAngeloff/php.vim'
+" Plug 'phpactor/phpactor'
 
 " TS
 Plug 'leafgarland/typescript-vim'
@@ -287,18 +291,18 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 \  "Unknown"   : "?"
 \  }
 
-let g:ale_fix_on_save = 1
-let g:ale_lint_on_enter = 0
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_linters_explicit = 1
-let g:ale_sign_column_always = 1
-let g:ale_sign_error = '✘'
-let g:ale_sign_warning = '#'
+" let g:ale_fix_on_save = 1
+" let g:ale_lint_on_enter = 0
+" let g:ale_lint_on_save = 1
+" let g:ale_lint_on_text_changed = 'never'
+" let g:ale_linters_explicit = 1
+" let g:ale_sign_column_always = 1
+" let g:ale_sign_error = '✘'
+" let g:ale_sign_warning = '#'
 
 let g:closetag_filenames = '*.html,*.js,*.phtml,*.xhtml'
 
-let g:coc_global_extensions = [ 'coc-tsserver' ]
+" let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 let g:indentLine_char = '│'
 let g:indentLine_bufNameExclude = [ 'NERD_tree.*' ]
@@ -323,13 +327,13 @@ let g:lightline = {
 \    'gitbranch': 'FugitiveHead'
 \  },
 \  }
-let g:lightline.component_expand = {
-\  'linter_checking': 'lightline#ale#checking',
-\  'linter_errors': 'lightline#ale#errors',
-\  'linter_infos': 'lightline#ale#infos',
-\  'linter_ok': 'lightline#ale#ok',
-\  'linter_warnings': 'lightline#ale#warnings',
-\  }
+" let g:lightline.component_expand = {
+" \  'linter_checking': 'lightline#ale#checking',
+" \  'linter_errors': 'lightline#ale#errors',
+" \  'linter_infos': 'lightline#ale#infos',
+" \  'linter_ok': 'lightline#ale#ok',
+" \  'linter_warnings': 'lightline#ale#warnings',
+" \  }
 let g:lightline.component_type = {
 \  'linter_checking': 'right',
 \  'linter_errors': 'error',
@@ -379,23 +383,23 @@ autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescript.tsx
 
 " ALE settings
 " let g:ale_javascript_prettier_options = '--no-semi --single-quote --trailing-comma none'
-let g:ale_fixers = {
-\  'css': ['prettier'],
-\  'html': ['prettier'],
-\  'javascript': ['prettier'],
-\  'json': ['prettier'],
-\  'markdown': ['prettier'],
-\  'php': ['prettier'],
-\  'typescript': ['prettier'],
-\  '*': ['remove_trailing_lines', 'trim_whitespace'],
-\}
-let g:ale_linters = {
-\  'css': ['stylelint'],
-\  'html': ['tidy'],
-\  'javascript': ['eslint'],
-\  'php': ['php'],
-\  'typescript': ['eslint'],
-\}
+" let g:ale_fixers = {
+" \  'css': ['prettier'],
+" \  'html': ['prettier'],
+" \  'javascript': ['prettier'],
+" \  'json': ['prettier'],
+" \  'markdown': ['prettier'],
+" \  'php': ['prettier'],
+" \  'typescript': ['prettier'],
+" \  '*': ['remove_trailing_lines', 'trim_whitespace'],
+" \}
+" let g:ale_linters = {
+" \  'css': ['stylelint'],
+" \  'html': ['tidy'],
+" \  'javascript': ['eslint'],
+" \  'php': ['php'],
+" \  'typescript': ['eslint'],
+" \}
 
 " Plugin settings
 let g:mkdp_markdown_css='~/dotfiles/.vim/etc/github-markdown.css'
@@ -414,10 +418,13 @@ syntax on
 " }}}
 
 " Theming {{{
-highlight ALEErrorSign ctermbg=NONE ctermfg=red
-highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+" highlight ALEErrorSign ctermbg=NONE ctermfg=red
+" highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
 highlight NonText ctermbg=8
 highlight SpecialKey ctermbg=8
 
 colorscheme ahoka
 " }}}
+
+:lua package.path = package.path .. '.vim/lua'
+:lua require('init')
