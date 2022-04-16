@@ -9,7 +9,7 @@ endif
 
 if has('macunix')
   let g:python_host_prog='/usr/local/bin/python3'
-elseif
+else
   let g:python_host_prog='/usr/bin/python3'
 endif
 
