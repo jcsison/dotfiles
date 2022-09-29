@@ -90,6 +90,7 @@ cd ..
 rm -rf yay-git
 
 yay -S \
+  archlinux-keyring \
   discord \
   kernel-modules-hook \
   firefox-nightly \
