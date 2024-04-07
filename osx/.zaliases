@@ -1,7 +1,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 
-alias android="emulator @Pixel_3a_API_30"
+alias android="emulator @Pixel_6_Pro_API_33"
 alias brightness="sudo ~/dotfiles/utils/bin/brightness"
 alias cd..='cd ..'
 alias checkip='curl -s checkip.dyndns.org | grep -Eo "[0-9\.]+"'
@@ -40,6 +40,7 @@ alias gla='gl --all'
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
 alias gp='git push'
+alias gpo='git push --set-upstream origin'
 alias gpu='git status'
 alias gpull='git pull'
 alias gr='git reset'
@@ -75,6 +76,19 @@ alias pipesx='pipesx -r 0 -f 100'
 alias python='python3'
 alias reloadt='xrdb -merge ~/.config/urxvt/Xresources && source ~/.bashrc'
 alias rm='rm -iv'
+alias rn-all-android='rn-i-init && rn-android'
+alias rn-all-ios='rn-i-init && rn-ios'
+alias rn-android='yarn run android'
+alias rn-clean='yarn run clean'
+alias rn-i-init-android='rn-all-android'
+alias rn-i-init-ios='rn-all-ios'
+alias rn-i-init='rn-i && rn-init'
+alias rn-i='yarn'
+alias rn-init-android='rn-init && rn-android'
+alias rn-init-ios='rn-init && rn-ios'
+alias rn-init='yarn run init --verbose'
+alias rn-ios='yarn run ios --simulator "iPhone 14 Pro Max"'
+alias rn-lint='yarn run lint'
 alias screenfetch='neofetch'
 alias scrot='scrot ~/^o^/screenshots/%Y-%m-%d-%H%M%S_scrot.png'
 alias suspend='pmset sleepnow'
@@ -94,7 +108,10 @@ alias xgz='tar -zxvf'
 function audio() { streamlink --player "mpv --no-video" "$@" worst; }
 function html2pdf() { wkhtmltopdf --zoom 1.25 -s Letter "$@".html "$@.pdf"; }
 function stream() { streamlink --player mpv "$@" best; }
-function twitch() { streamlink --player mpv twitch.tv/"$@" best & irssi --connect=twitch; }
+function twitch() {
+  streamlink --player mpv twitch.tv/"$@" best &
+  irssi --connect=twitch
+}
 function twitchaudio() { streamlink --player "mpv --no-video" twitch.tv/"$@" audio_only; }
 
 # Enable Git completions for aliases

@@ -79,7 +79,7 @@ source $HOME/.zaliases
 
 # User configuration
 
-PROMPT='%{$fg[cyan]%}rice%{$fg[blue]%}@%{$fg[cyan]%}shower'
+PROMPT='%{$fg[cyan]%}jesser%{$fg[blue]%}@%{$fg[cyan]%}bb'
 PROMPT+=' %{$fg[green]%}%c%{$reset_color%} $(git_prompt_info)'
 PROMPT+="%(?:%{$fg_bold[cyan]%}➜%{$reset_color%} :%{$fg_bold[red]%}➜%{$reset_color%} )"
 
@@ -88,7 +88,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
-precmd () { print -Pn "\e]2;rice@shower | %~\a" }
+precmd () { print -Pn "\e]2;jesser@bb | %~\a" }
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -117,3 +117,10 @@ precmd () { print -Pn "\e]2;rice@shower | %~\a" }
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export REACT_EDITOR=nvim
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+export PATH="$PATH:/Users/jesser.sison/.dotnet/tools"
+export PATH="/usr/local/opt/ruby/bin:$PATH"

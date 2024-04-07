@@ -1,9 +1,7 @@
 local lspconfig = require('lspconfig')
 
 local buf_map = function(bufnr, mode, lhs, rhs, opts)
-  vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts or {
-    silent = true,
-  })
+  vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts or { silent = true })
 end
 
 lspconfig.tsserver.setup({

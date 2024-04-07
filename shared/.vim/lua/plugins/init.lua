@@ -7,20 +7,18 @@ packer.startup({
   function()
     use {
       'neovim/nvim-lspconfig',
-      config = [[require('plugins.config.lspconfig')]],
+      config = [[require('plugins.config.lspconfig')]]
     }
     use {
       'jose-elias-alvarez/null-ls.nvim',
-      config = [[require('plugins.config.null-ls')]],
+      config = [[require('plugins.config.null-ls')]]
     }
     use 'jose-elias-alvarez/nvim-lsp-ts-utils'
   end,
   config = {
     max_jobs = 16,
     compile_path = util.join_paths('.', 'packer_compiled.lua'),
-    git = {
-      default_url_format = plug_url_format,
-    },
+    git = { default_url_format = plug_url_format }
   }
 })
 
