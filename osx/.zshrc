@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jesser.sison/.oh-my-zsh"
+export ZSH="/Users/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -79,7 +79,7 @@ source $HOME/.zaliases
 
 # User configuration
 
-PROMPT='%{$fg[cyan]%}jesser%{$fg[blue]%}@%{$fg[cyan]%}bb'
+PROMPT='%{$fg[cyan]%}$USER%{$fg[blue]%}@%{$fg[cyan]%}$(hostname)'
 PROMPT+=' %{$fg[green]%}%c%{$reset_color%} $(git_prompt_info)'
 PROMPT+="%(?:%{$fg_bold[cyan]%}➜%{$reset_color%} :%{$fg_bold[red]%}➜%{$reset_color%} )"
 
@@ -88,7 +88,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
-precmd () { print -Pn "\e]2;jesser@bb | %~\a" }
+precmd () { print -Pn "\e]2;$USER@$(hostname) | %~\a" }
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -121,6 +121,9 @@ export NVM_DIR="$HOME/.nvm"
 export REACT_EDITOR=nvim
 
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-export PATH="$PATH:/Users/jesser.sison/.dotnet/tools"
+export PATH="$PATH:/Users/$USER/.dotnet/tools"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+if command -v jenv > /dev/null; then
+  eval "$(jenv init -)"
+fi
