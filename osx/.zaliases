@@ -1,7 +1,7 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 
-alias android="emulator @Pixel_6_Pro_API_33"
+alias android="emulator @Pixel_7a_API_34"
 alias brightness="sudo ~/dotfiles/utils/bin/brightness"
 alias cd..='cd ..'
 alias checkip='curl -s checkip.dyndns.org | grep -Eo "[0-9\.]+"'
@@ -86,8 +86,8 @@ alias rn-i-init='rn-i && rn-init'
 alias rn-i='yarn'
 alias rn-init-android='rn-init && rn-android'
 alias rn-init-ios='rn-init && rn-ios'
-alias rn-init='yarn run init --verbose'
-alias rn-ios='yarn run ios --simulator "iPhone 14 Pro Max"'
+alias rn-init='yarn run init --verbose -b internal -e prod'
+alias rn-ios='yarn run ios --simulator "iPhone 15 Pro"'
 alias rn-lint='yarn run lint'
 alias screenfetch='neofetch'
 alias scrot='scrot ~/^o^/screenshots/%Y-%m-%d-%H%M%S_scrot.png'
