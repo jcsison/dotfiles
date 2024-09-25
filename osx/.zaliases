@@ -106,6 +106,50 @@ alias xbz2='tar -xvjf'
 alias xgz='tar -zxvf'
 
 function audio() { streamlink --player "mpv --no-video" "$@" worst; }
+function decrypt() {
+  if [ -z "$1" ]; then
+    echo "Usage: decrypt <encrypted_file>"
+    return 1
+  fi
+
+  ENCRYPTED_FILE="$1"
+
+  if [ ! -f "$ENCRYPTED_FILE" ]; then
+    echo "Error: Encrypted file '$ENCRYPTED_FILE' not found!"
+    return 1
+  fi
+
+  OUTPUT_FILE="${ENCRYPTED_FILE%.asc}"
+  gpg --output "$OUTPUT_FILE" --decrypt "$ENCRYPTED_FILE"
+
+  if [ $? -eq 0 ]; then
+    echo "File '$ENCRYPTED_FILE' decrypted successfully to '$OUTPUT_FILE'"
+  else
+    echo "Decryption failed!"
+  fi
+}
+function encrypt() {
+  if [ -z "$1" ]; then
+    echo "Usage: encrypt <file> [recipient_email]"
+    return 1
+  fi
+
+  FILE="$1"
+  RECIPIENT="${2:-your_default_email@example.com}"
+
+  if [ ! -f "$FILE" ]; then
+    echo "Error: File '$FILE' not found!"
+    return 1
+  fi
+
+  gpg --armor --encrypt --recipient "$RECIPIENT" "$FILE"
+
+  if [ $? -eq 0 ]; then
+    echo "File '$FILE' encrypted successfully to '$FILE.asc'"
+  else
+    echo "Encryption failed!"
+  fi
+}
 function html2pdf() { wkhtmltopdf --zoom 1.25 -s Letter "$@".html "$@.pdf"; }
 function stream() { streamlink --player mpv "$@" best; }
 function twitch() {
