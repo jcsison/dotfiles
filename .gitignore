@@ -10,9 +10,11 @@
 **/.config/VIA/
 **/.config/VSCodium/
 **/.config/ahoviewer/
+**/.config/astro/
 **/.config/autostart/
 **/.config/cef_user_data/
 **/.config/chromium/
+**/.config/clerk/
 **/.config/coc/
 **/.config/dconf/
 **/.config/discord/
@@ -26,6 +28,7 @@
 **/.config/menus/
 **/.config/mopidy/
 **/.config/neofetch/
+**/.config/nextjs-nodejs/
 **/.config/octave/
 **/.config/pulse/
 **/.config/qBittorrent/
