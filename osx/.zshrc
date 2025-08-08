@@ -128,3 +128,6 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 if command -v jenv > /dev/null; then
   eval "$(jenv init -)"
 fi
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"

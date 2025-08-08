@@ -1,7 +1,8 @@
 alias ..='cd ..'
 alias ...='cd ../..'
 
-alias android="emulator @Pixel_7a_API_34"
+alias android="nohup emulator @Pixel_8_Pro_API_35 -dns-server 8.8.8.8 > /dev/null 2>&1 &"
+alias android6="nohup emulator @Pixel_6_Pro_API_35 -dns-server 8.8.8.8 > /dev/null 2>&1 &"
 alias brightness="sudo ~/dotfiles/utils/bin/brightness"
 alias cd..='cd ..'
 alias checkip='curl -s checkip.dyndns.org | grep -Eo "[0-9\.]+"'
@@ -100,11 +101,46 @@ alias update='sudo pacman -Syu'
 alias updatetime='sudo ntpdate -s us.pool.ntp.org'
 alias vim='nvim'
 alias vimf='nvim $(ls | fzf)'
+alias vpn='~/work/scripts/vpn.sh jumpcloud'
 alias winclass='xprop | grep WM_CLASS'
 alias winpid='xprop _NET_WM_PID'
 alias xbz2='tar -xvjf'
 alias xgz='tar -zxvf'
 
+function adbpair() {
+  DEFAULT_IP="192.168.7.56"
+
+  unset port
+  unset code
+
+  if [[ -n "$BASH_VERSION" ]]; then
+    read -e -i "$DEFAULT_IP" -p "Enter IP address: " ip
+    ip=${ip:-$DEFAULT_IP}
+  else
+    echo -n "Enter IP address [$DEFAULT_IP]: "
+    read ip
+    ip=${ip:-$DEFAULT_IP}
+  fi
+
+  while [[ -z "$port" ]]; do
+    echo -n "Enter port: "
+    read port
+    if [[ -z "$port" ]]; then
+      echo "Port is required."
+    fi
+  done
+
+  while [[ -z "$code" ]]; do
+    echo -n "Enter pairing code: "
+    read code
+    if [[ -z "$code" ]]; then
+      echo "Pairing code is required."
+    fi
+  done
+
+  echo "Running: adb pair $ip:$port $code"
+  adb pair "$ip:$port" "$code"
+}
 function audio() { streamlink --player "mpv --no-video" "$@" worst; }
 function decrypt() {
   if [ -z "$1" ]; then

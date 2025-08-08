@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rm -ivrf ~/.bashrc ~/.profile
+rm -ivrf ~/.bashrc ~/.profile ~/.zprofile
 
 ln -s ~/dotfiles/osx/.[!.]* ~/
 ln -s ~/dotfiles/shared/.[!.]* ~/
